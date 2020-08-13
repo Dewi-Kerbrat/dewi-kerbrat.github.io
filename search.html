@@ -37,11 +37,11 @@
 			</div>
 		</div>
 		<div class="ui doubling stackable grid container">
-			<div class="three wide column">
+			<div class="four wide column">
 
 
 				<!-- side menu -->
-				<div class="ui fluid vertical accordion text menu">
+				<div class="ui fluid vertical accordion text big menu">
 					<div class="header item">Outils numériques</div>
 					<div class="item">
 						<a class="active title"><i class="atlas icon"></i>Ressources<i class="dropdown icon"></i></a>
@@ -98,8 +98,8 @@
 				</div>
 		</div>
 
-			
-			<div class="thirteen wide column">
+
+			<div class="twelve wide column">
 
 
 				<div class="ui segment">
@@ -107,7 +107,7 @@
 					<div class="ui fluid form">
 						<p>Je recherche un nom de lieu (commune, département, rue...)</p>
 						<div class="ui fluid action input">
-							<input type="text" placeholder="Rechercher un nom...">
+							<input type="text" placeholder="Rechercher un nom..." value="Saint-Caradec">
 							<select class="ui compact selection dropdown">
 								<option value="me">partie du nom</option>
 								<option value="pm">nom entier</option>
@@ -119,11 +119,11 @@
 							</div>
 						</div>
 						<div class="ui accordion field">
-							<div class="active title">
+							<div class="title">
 								<i class="icon dropdown"></i>
 								Plus d'options
 							</div>
-							<div class="active content">
+							<div class="content">
 								<div class="field">
 									<label>Commune</label>
 									<div class="two fields">
@@ -172,10 +172,12 @@
 
 
 				<div class="ui segment">
-					<div id="map"></div>
-
 
 					<h2 class="ui header">La recherche a renvoyé<span class="ui horizontal big label">38</span>résultats</h2>
+
+					<div id="map"></div>
+
+					<div class="ui divider"></div>
 					<p>Cliquez sur le signe <i class="plus circle icon"></i>pour accéder à plus d'information sur le nom.</p>
 					<table class="ui celled table">
 						<thead>
@@ -201,7 +203,7 @@
 								<td>Sant-Karadeg</td>
 								<td>Hennebont</td>
 								<td>Quartier</td>
-								<td><button class="ui fluid primary icon button" data-content="Voir la notice"><i class="plus circle icon"></i></button></td>
+								<td><button class="ui disabled fluid primary icon button" data-content="Voir la notice"><i class="plus circle icon"></i></button></td>
 							</tr>
 							<tr>
 								<td></td>
@@ -209,7 +211,7 @@
 								<td>Sant-Karadeg</td>
 								<td>Saint-Caradec</td>
 								<td>Commune</td>
-								<td><button class="ui fluid primary icon button" data-content="Voir la notice"><i class="plus circle icon"></i></button></td>
+								<td><a class="ui fluid primary icon button" data-content="Voir la notice" href="sant-karadeg.html"><i class="plus circle icon"></i></a></td>
 							</tr>
 						</tbody>
 						<tfoot>
@@ -231,7 +233,7 @@
 				</table>
 			</div>
 		</div>
-		
+
 
 
 
@@ -267,7 +269,7 @@
             }
             window.onload = function(){
 		// Fonction d'initialisation qui s'exécute lorsque le DOM est chargé
-		initMap(); 
+		initMap();
             };
         </script>
 		<script>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Porched ar brezhoneg</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <script src="semantic/dist/semantic.min.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="ui inverted stackable sticky menu">
+      <div class="ui container">
+        <a class="item" href="index.html"><h1 class="ui inverted header"><i class="fingerprint icon"></i><div class="content">Portail numérique pour la langue bretonne<div class="ui sub header">Office public de la langue bretonne</div></div></h1></a>
+        <div class="right menu">
+          <div class="ui dropdown item">
+            <i class="globe icon"></i>
+            français
+            <i class="dropdown icon"></i>
+            <div class="menu">
+              <a href="#" class="item">brezhoneg</a>
+            </div>
+          </div>
+          <a href="www.brezhoneg.bzh" class="ui right item"><i class="external alternate icon"></i><div class="content">Accéder au site de l'OPLB</div></a>
+        </div>
+      </div>
+    </div>
+    <div class="ui doubling stackable grid container">
+      <div class="four wide column">
+
+
+        <!-- side menu -->
+        <div class="ui fluid vertical accordion text big menu">
+          <div class="header item">Outils numériques</div>
+          <div class="item">
+            <a class="active title"><i class="atlas icon"></i>Ressources<i class="dropdown icon"></i></a>
+            <div class="active content">
+              <div class="menu">
+                <a href="meurgorf.html" class="active item"><i class="history icon"></i>Meurgorf</a>
+                <a href="kerofis.html" class="item"><i class="map marked alternate icon"></i>Kerofis</a>
+                <a href="http://www.fr.brezhoneg.bzh/36-termofis.htm" class="item">TermOfis</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="title">
+              <i class="globe europe icon"></i>Traduction<i class="dropdown icon"></i>
+            </div>
+            <div class="content">
+              <div class="menu">
+                <a class="item">Apertium</a>
+                <a class="item">Autre</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="title">
+            <i class="microphone icon"></i>Parole<i class="dropdown icon"></i>
+          </div>
+          <div class="content">
+            <div class="menu">
+              <a href="#" class="item">Synthèse vocale</a>
+            </div>
+          </div>
+          </div>
+          <div class="item">
+            <div class="title"><i class="server icon"></i>Données<i class="dropdown icon"></i></div>
+            <div class="content">
+              <div class="menu">
+                <a class="item"><i class="file alternate outline icon"></i>Corpus</a>
+              </div>
+            </div>
+          </div>
+          <div class="ui hidden divider"></div>
+          <div class="header item">Les technologies de la langue</div>
+          <a href="#" class="item"><i class="newspaper outline icon"></i>Actualités</a>
+          <a href="#" class="item"><i class="info icon"></i>A propos</a>
+          <a href="#" class="item"><i class="external alternate icon"></i>Lien utiles</a>
+          <div class="ui hidden divider"></div>
+          <div class="item">
+            <button class="ui fluid labeled icon button"><i class="envelope icon"></i>Nous contacter</button>
+          </div>
+          <div class="ui fluid basic icon buttons">
+            <button class="ui button"><i class="facebook icon"></i></button>
+            <button class="ui button"><i class="twitter icon"></i></button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="eight wide column">
+        <div class="ui segment">
+          <h1 class="ui header"><i class="history icon"></i><div class="content">MeurGorf<div class="sub header">dictionnaire historique du breton</div></div></h1>
+          <div class="ui fluid form">
+            <div class="ui fluid action input">
+              <input type="text" placeholder="Rechercher un terme...">
+              <select class="ui compact selection dropdown">
+                <option value="me">mot entier</option>
+                <option value="pm">partie de mot</option>
+                <option value="dm">début de mot</option>
+                <option value="fm">fin de mot</option>
+              </select>
+              <div class="ui pink icon button">
+                <i class="search icon"></i>
+              </div>
+            </div>
+            <div class="ui accordion field">
+              <div class="title">
+                <i class="icon dropdown"></i>
+                Plus d'options
+              </div>
+              <div class="content">
+                <div class="two fields">
+                  <div class="field">
+                    <label>Catégorie grammaticale</label>
+                    <select multiple="" class="ui dropdown">
+                      <option value="tout">toutes</option>
+                      <option value="verb">verbe</option>
+                      <option value="nom">nom</option>
+                      <option value="adj">adjectif</option>
+                      <option value="adv">adverbe</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label>Source</label>
+                    <select multiple="" class="ui dropdown">
+                      <option value="tout">toutes</option>
+                      <option value="ABER">ABER</option>
+                      <option value="ABKE">ABKE</option>
+                      <option value="ADGL">ADGL</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="four wide column">
+        <div class="ui segment">
+
+        </div>
+      </div>
+    </div>
+    <script>
+    $('.ui.accordion')
+      .accordion()
+    ;
+    </script>
+    <script>
+    $('.ui.dropdown')
+      .dropdown()
+    ;
+    </script>
+    <script>
+    $('.menu .item')
+      .tab()
+    ;
+    </script>
+    <script>
+    $('.label')
+      .popup()
+    ;
+    $('.rating')
+      .popup()
+    ;
+    $('.ui.sticky')
+      .sticky()
+    ;
+    $('.ui.rating')
+      .rating()
+    ;
+    </script>
+  </body>
+</html>
