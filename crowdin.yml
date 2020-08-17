@@ -3,4 +3,4 @@ files:
     ignore:
       - node_modules
       - semantic
-    translation: br/%original_file_name%
+    translation: '%original_file_name%'
