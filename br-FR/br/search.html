@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Recherche</title>
+
+		<!-- Nous chargeons les fichiers CDN de Leaflet. Le CSS AVANT le JS -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="" />
+        <style type="text/css">
+            #map{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+                height:600px;
+            }
+        </style>
+
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+		<script src="semantic/dist/semantic.min.js"></script>
+	</head>
+	<body>
+		<!-- header -->
+		<div class="ui inverted stackable sticky menu">
+			<div class="ui container">
+				<a class="item"><h1 class="ui inverted header"><i class="fingerprint icon"></i><div class="content">Portail numérique pour la langue bretonne<div class="ui sub header">Office public de la langue bretonne</div></div></h1></a>
+				<div class="right menu">
+					<div class="ui dropdown item">
+						<i class="globe icon"></i>
+						français
+						<i class="dropdown icon"></i>
+						<div class="menu">
+							<a href="#" class="item">brezhoneg</a>
+						</div>
+					</div>
+					<a href="www.brezhoneg.bzh" class="ui right item"><i class="external alternate icon"></i><div class="content">Accéder au site de l'OPLB</div></a>
+				</div>
+			</div>
+		</div>
+		<div class="ui doubling stackable grid container">
+			<div class="four wide column">
+
+
+				<!-- side menu -->
+				<div class="ui fluid vertical accordion text big menu">
+					<div class="header item">Outils numériques</div>
+					<div class="item">
+						<a class="active title"><i class="atlas icon"></i>Ressources<i class="dropdown icon"></i></a>
+						<div class="active content">
+							<div class="menu">
+								<a href="#" class="item"><i class="history icon"></i>Meurgorf</a>
+								<a href="#" class="active item">Kerofis</a>
+								<a href="#" class="item">TermOfis</a>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="title">
+							<i class="globe europe icon"></i>Traduction<i class="dropdown icon"></i>
+						</div>
+						<div class="content">
+							<div class="menu">
+								<a class="item">Apertium</a>
+								<a class="item">Autre</a>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="title">
+							<i class="microphone icon"></i>Parole<i class="dropdown icon"></i>
+						</div>
+						<div class="content">
+							<div class="menu">
+								<a href="#" class="item">Synthèse vocale</a>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="title"><i class="server icon"></i>Données<i class="dropdown icon"></i></div>
+						<div class="content">
+							<div class="menu">
+								<a class="item"><i class="file alternate outline icon"></i>Corpus</a>
+							</div>
+						</div>
+					</div>
+					<div class="ui hidden divider"></div>
+					<div class="header item">Les technologies de la langue</div>
+					<a href="#" class="item"><i class="newspaper outline icon"></i>Actualités</a>
+					<a href="#" class="item"><i class="info icon"></i>A propos</a>
+					<a href="#" class="item"><i class="external alternate icon"></i>Lien utiles</a>
+					<div class="ui hidden divider"></div>
+					<div class="item">
+						<button class="ui fluid labeled icon button"><i class="envelope icon"></i>Nous contacter</button>
+					</div>
+					<div class="ui fluid basic icon buttons">
+						<button class="ui button"><i class="facebook icon"></i></button>
+						<button class="ui button"><i class="twitter icon"></i></button>
+					</div>
+				</div>
+		</div>
+
+
+			<div class="twelve wide column">
+
+				<!-- SUB MENU -->
+	      <div class="ui three item pointing menu">
+	        <a class="item active" href="kerofis.html">
+	          Rechercher
+	        </a>
+	        <a class="item" href="kerofis-presentation.html">
+	          Présentation
+	        </a>
+					<a class="item" href="kerofis-savoir.html">
+	          En savoir plus
+	        </a>
+	      </div>
+
+				<div class="ui segment">
+					<h1 class="ui header"><i class="map marked alternate icon"></i><div class="content">KerOfis<div class="sub header">Base de données toponymiques</div></div></h1>
+					<div class="ui fluid form">
+						<p>Je recherche un nom de lieu (commune, département, rue...)</p>
+						<div class="ui fluid action input">
+							<input type="text" placeholder="Rechercher un nom..." value="Saint-Caradec">
+							<select class="ui compact selection dropdown">
+								<option value="me">partie du nom</option>
+								<option value="pm">nom entier</option>
+								<option value="dm">début du nom</option>
+								<option value="fm">fin du nom</option>
+							</select>
+							<div class="ui pink icon button">
+								<i class="search icon"></i>
+							</div>
+						</div>
+						<div class="ui accordion field">
+							<div class="title">
+								<i class="icon dropdown"></i>
+								Plus d'options
+							</div>
+							<div class="content">
+								<div class="field">
+									<label>Commune</label>
+									<div class="two fields">
+										<div class="field">
+											<select class="ui search dropdown">
+												<option value="">Selectionner une commune</option>
+												<option value="22046">Le Mené</option>
+												<option value="22050">Dinan</option>
+												<option value="22055">Binic-Etables-sur-Mer</option>
+											</select>
+										</div>
+										<div class="field">
+										<div class="ui checkbox">
+											<input type="checkbox">
+											<label>Nom de lieu en dehors de Bretagne</label>
+										</div>
+									</div>
+									</div>
+									<div class="two fields">
+										<div class="field">
+											<label>Catégorie</label>
+											<select multiple="" class="ui dropdown">
+												<option value="tout">toutes</option>
+												<option value="verb">Commune</option>
+												<option value="nom">Rue</option>
+												<option value="adj">Lieu-dit</option>
+												<option value="adv">Rivière</option>
+											</select>
+										</div>
+										<div class="field">
+											<label>Département</label>
+											<select multiple="" class="ui dropdown">
+												<option value="tout">Ille-et-Vilaine</option>
+												<option value="ABER">Loire-Atlantique</option>
+												<option value="ABKE">Morbihan</option>
+												<option value="ADGL">Finistère</option>
+												<option value="ADGL">Côte-d'Armor</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="ui segment">
+
+					<h2 class="ui header">La recherche a renvoyé<span class="ui horizontal big label">38</span>résultats</h2>
+
+					<div id="map"></div>
+
+					<div class="ui divider"></div>
+					<p>Cliquez sur le signe <i class="plus circle icon"></i>pour accéder à plus d'information sur le nom.</p>
+					<table class="ui celled table">
+						<thead>
+							<tr><th>Générique</th>
+							<th>Spécifique</th>
+							<th>Forme bretonne correcte</th>
+							<th>Commune</th>
+							<th>Catégorie</th>
+							<th></th>
+						</tr></thead>
+						<tbody>
+							<tr>
+								<td>Eglise</td>
+								<td>Saint-Caradec</td>
+								<td>Iliz Sant Karadeg</td>
+								<td>Hennebont</td>
+								<td>Monument</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Saint-Caradec</td>
+								<td>Sant-Karadeg</td>
+								<td>Hennebont</td>
+								<td>Quartier</td>
+								<td><button class="ui disabled fluid primary icon button" data-content="Voir la notice"><i class="plus circle icon"></i></button></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Saint-Caradec</td>
+								<td>Sant-Karadeg</td>
+								<td>Saint-Caradec</td>
+								<td>Commune</td>
+								<td><a class="ui fluid primary icon button" data-content="Voir la notice" href="sant-karadeg.html"><i class="plus circle icon"></i></a></td>
+							</tr>
+						</tbody>
+						<tfoot>
+						<tr><th colspan="6">
+							<div class="ui right floated pagination menu">
+								<a class="disabled icon item">
+									<i class="left chevron icon"></i>
+								</a>
+								<a class="active item">1</a>
+								<a class="item">2</a>
+								<a class="item">3</a>
+								<a class="item">4</a>
+								<a class="icon item">
+									<i class="right chevron icon"></i>
+								</a>
+							</div>
+						</th>
+					</tr></tfoot>
+				</table>
+			</div>
+		</div>
+
+
+
+
+		<!-- Fichiers Javascript -->
+        <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin=""></script>
+	<script type="text/javascript">
+            // On initialise la latitude et la longitude de Paris (centre de la carte)
+            var lat = 47.8838756;
+            var lon = -2.9563372;
+            var macarte = null;
+
+            var villes = {
+				"01": { "lat": 48.1918434, "lon": -2.8599641 },
+				"02": { "lat": 47.8058492, "lon": -3.2859881 }
+			}
+
+            // Fonction d'initialisation de la carte
+            function initMap() {
+                // Créer l'objet "macarte" et l'insèrer dans l'élément HTML qui a l'ID "map"
+                macarte = L.map('map').setView([lat, lon], 8);
+                // Leaflet ne récupère pas les cartes (tiles) sur un serveur par défaut. Nous devons lui préciser où nous souhaitons les récupérer. Ici, openstreetmap.fr
+                L.tileLayer('https://tile.openstreetmap.bzh/br/{z}/{x}/{y}.png', {
+                    // Il est toujours bien de laisser le lien vers la source des données
+                    attribution: 'données © <a href="//osm.org/copyright">OpenStreetMap</a>/ODbL - rendu <a href="//openstreetmap.fr">OSM France</a>',
+                    minZoom: 1,
+                    maxZoom: 20
+                }).addTo(macarte);
+
+                for (ville in villes) {
+					var marker = L.marker([villes[ville].lat, villes[ville].lon]).addTo(macarte);
+				}
+
+            }
+            window.onload = function(){
+		// Fonction d'initialisation qui s'exécute lorsque le DOM est chargé
+		initMap();
+            };
+        </script>
+		<script>
+		$('.ui.accordion')
+		.accordion()
+		;
+		</script>
+		<script>
+		$('.ui.dropdown')
+		.dropdown()
+		;
+		</script>
+		<script>
+		$('.menu .item')
+		.tab()
+		;
+		</script>
+		<script>
+		$('.label')
+		.popup()
+		;
+		$('.ui.sticky')
+		.sticky()
+		;
+		$('.button')
+  		.popup()
+		;
+		</script>
+	</body>
+</html>
