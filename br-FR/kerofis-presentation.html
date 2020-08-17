@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Kerofis</title>
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+		<script src="semantic/dist/semantic.min.js"></script>
+
+		<!-- Nous chargeons les fichiers CDN de Leaflet. Le CSS AVANT le JS -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="" />
+        <style type="text/css">
+            #map{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+                height:400px;
+            }
+        </style>
+
+	</head>
+	<body>
+		<!-- header -->
+		<div class="ui inverted stackable sticky menu">
+			<div class="ui container">
+				<a class="item" href="index.html"><h1 class="ui inverted header"><i class="fingerprint icon"></i><div class="content">Portail numérique pour la langue bretonne<div class="ui sub header">Office public de la langue bretonne</div></div></h1></a>
+				<div class="right menu">
+					<div class="ui dropdown item">
+						<i class="globe icon"></i>
+						français
+						<i class="dropdown icon"></i>
+						<div class="menu">
+							<a href="#" class="item">brezhoneg</a>
+						</div>
+					</div>
+					<a href="www.brezhoneg.bzh" class="ui right item"><i class="external alternate icon"></i><div class="content">Accéder au site de l'OPLB</div></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="ui doubling stackable grid container">
+
+			<div class="four wide column">
+				<!-- side menu -->
+				<div class="ui fluid vertical accordion text big menu">
+					<div class="header item">Outils numériques</div>
+					<div class="item">
+						<div class="active title"><i class="atlas icon"></i>Ressources<i class="dropdown icon"></i></div>
+						<div class="active content">
+							<div class="menu">
+								<a href="meurgorf.html" class="item"><i class="history icon"></i>Meurgorf</a>
+								<a href="kerofis.html" class="active item">Kerofis</a>
+								<a href="http://www.fr.brezhoneg.bzh/36-termofis.htm" class="item">TermOfis</a>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="title">
+							<i class="globe europe icon"></i>Traduction<i class="dropdown icon"></i>
+						</div>
+						<div class="content">
+							<div class="menu">
+								<a class="item">Apertium</a>
+								<a class="item">Autre</a>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="title">
+							<i class="microphone icon"></i>Parole<i class="dropdown icon"></i>
+						</div>
+						<div class="content">
+							<div class="menu">
+								<a href="#" class="item">Synthèse vocale</a>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="title"><i class="server icon"></i>Données<i class="dropdown icon"></i></div>
+						<div class="content">
+							<div class="menu">
+								<a class="item"><i class="file alternate outline icon"></i>Corpus</a>
+							</div>
+						</div>
+					</div>
+					<div class="ui hidden divider"></div>
+					<div class="header item">Les technologies de la langue</div>
+					<a href="#" class="item"><i class="newspaper outline icon"></i>Actualités</a>
+					<a href="#" class="item"><i class="info icon"></i>A propos</a>
+					<a href="#" class="item"><i class="external alternate icon"></i>Lien utiles</a>
+					<div class="ui hidden divider"></div>
+					<div class="item">
+						<button class="ui fluid labeled icon button"><i class="envelope icon"></i>Nous contacter</button>
+					</div>
+					<div class="ui fluid basic icon buttons">
+						<button class="ui button"><i class="facebook icon"></i></button>
+						<button class="ui button"><i class="twitter icon"></i></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="twelve wide column">
+
+				<!-- SUB MENU -->
+	      <div class="ui three item pointing menu">
+	        <a class="item" href="kerofis.html">
+	          Rechercher
+	        </a>
+	        <a class="item active" href="kerofis-presentation.html">
+	          Présentation
+	        </a>
+					<a class="item" href="kerofis-savoir.html">
+	          En savoir plus
+	        </a>
+	      </div>
+
+				<div class="ui segment">
+					<h1 class="ui header"><i class="map marked alternate icon"></i><div class="content">KerOfis<div class="sub header">Base de données toponymiques</div></div></h1>
+					<p>KerOfis est la base de données du service Patrimoine linguistique et signalisation de l'Office public. Elle permet de consulter la forme bretonne des toponymes bretons et d'obtenir des informations de type étymologique sur ces toponymes.</p>
+
+<p>Vous trouverez également dans KerOfis les formes bretonnes de noms de lieux étrangers (l'Europe, la Corse, les Andes, le Nil, etc.), ainsi que les noms administratifs de Bretagne (noms de Pays, de Communautés de communes, etc.).</p>
+
+<p>Les formes correctes des topoynmes figurant dans KerOfis sont rassemblées dans un fichier libre de droits que l'on peut télécharger ici : Données libres de droits</p>
+<p>La liste des communes de Bretagne est accessible ici.</p>
+
+<p>Contactez le Service Patrimoine linguistique et signalisation pour plus d'informations.</p>
+
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- JAVASCRIPT -->
+	<script>
+		$('.ui.accordion')
+		.accordion()
+		;
+	</script>
+	<script>
+	$('.ui.dropdown')
+	.dropdown()
+	;
+	</script>
+	<script>
+	$('.menu .item')
+	.tab()
+	;
+	</script>
+	<script>
+	$('.label')
+	.popup()
+	;
+	$('.ui.sticky')
+	.sticky()
+	;
+	</script>
+
+	<script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin=""></script>
+	<script type="text/javascript">
+	// On initialise la latitude et la longitude de Paris (centre de la carte)
+	var lat = 47.65;
+	var lon = -2.0667;
+	var macarte = null;
+	// Fonction d'initialisation de la carte
+	function initMap() {
+	// Créer l'objet "macarte" et l'insèrer dans l'élément HTML qui a l'ID "map"
+	macarte = L.map('map').setView([lat, lon], 10);
+	// Leaflet ne récupère pas les cartes (tiles) sur un serveur par défaut. Nous devons lui préciser où nous souhaitons les récupérer. Ici, openstreetmap.fr
+	L.tileLayer('https://tile.openstreetmap.bzh/br/{z}/{x}/{y}.png', {
+	// Il est toujours bien de laisser le lien vers la source des données
+	attribution: 'données © <a href="//osm.org/copyright">OpenStreetMap</a>/ODbL - rendu <a href="//openstreetmap.fr">OSM France</a>',
+	minZoom: 1,
+	maxZoom: 20
+	}).addTo(macarte);
+	}
+	window.onload = function(){
+		// Fonction d'initialisation qui s'exécute lorsque le DOM est chargé
+		initMap();
+	};
+	</script>
+</body>
+</html>
