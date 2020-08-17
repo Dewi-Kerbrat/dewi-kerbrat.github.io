@@ -1,0 +1,6 @@
+files:
+  - source: '*.html'
+    ignore:
+      - node_modules
+      - semantic
+    translation: br/%original_file_name%
