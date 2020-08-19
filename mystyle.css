@@ -2,4 +2,7 @@ body {
   background-color: #F3F4F5;
 }
 
-#mapid { height: 500px; z-index: 0;}
+div#mapid {
+  height: 500px;
+  z-index: 0;
+}
