@@ -17,7 +17,7 @@
 </head>
 <body>
 	<!-- header -->
-	<div class="ui inverted stackable sticky menu">
+	<div class="ui inverted stackable sticky menu topbar">
 		<div class="ui container">
 			<a class="item" href="../index.html"><h1 class="ui inverted header"><i class="fingerprint icon"></i><div class="content">Portail numérique pour la langue bretonne<div class="ui sub header">Office public de la langue bretonne</div></div></h1></a>
 			<div class="right menu">
@@ -33,6 +33,7 @@
 			</div>
 		</div>
 	</div>
+
 
 	<div class="ui doubling stackable grid container">
 
@@ -142,7 +143,7 @@
 
 			<div class="ui segment">
 				<h1 class="ui header"><i class="map marked alternate icon"></i><div class="content">KerOfis<div class="sub header">Base de données toponymiques</div></div></h1>
-				<a class="ui right labeled icon button" href="https://kartenn.openstreetmap.bzh/#map=8/48.1/-2.3">
+				<a class="ui right labeled icon secondary button" href="https://kartenn.openstreetmap.bzh/#map=8/48.1/-2.3">
 					<i class="right arrow icon"></i>
 					Voir la carte sur OpenStreetMap.bzh
 				</a>
@@ -163,9 +164,11 @@
 									<option value="dm">début du nom</option>
 									<option value="fm">fin du nom</option>
 								</select>
-								<a class="ui pink icon button" href="search.html">
+								<a class="ui pink icon button" href="search.html" data-content="klikit amañ">
 									<i class="search icon"></i>
+
 								</a>
+
 							</div>
 							<div class="ui accordion field">
 								<div class="title">
@@ -287,7 +290,11 @@ $('.label')
 $('.ui.sticky')
 .sticky()
 ;
+$('.ui.button')
+  .popup()
+;
 </script>
+
 
 <script type="text/javascript">
 var mymap = L.map('mapid').setView([47.65,-2.0667], 12);
