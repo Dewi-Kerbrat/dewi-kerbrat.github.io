@@ -11,11 +11,12 @@
 </head>
 <body>
   <!-- header -->
-  <div class="ui inverted stackable sticky menu topbar">
+  <div class="ui inverted stackable sticky borderless menu topbar">
     <div class="ui container">
-      <a class="item" href="../index.html"><h1 class="ui inverted header"><i class="fingerprint icon"></i><div class="content">Portail numérique pour la langue bretonne<div class="ui sub header">Office public de la langue bretonne</div></div></h1></a>
+      <a class="item" href="../index.html"><h1 class="ui inverted header"><img src="../images/LogoOPLB.svg"><div class="content">Portail numérique pour la langue bretonne<div class="ui sub header">Office public de la langue bretonne</div></div></h1></a>
       <div class="right menu">
-        <div class="ui dropdown item">
+        <div class="ui item">
+          <div class="ui dropdown inverted button">
           <i class="globe icon"></i>
           français
           <i class="dropdown icon"></i>
@@ -23,11 +24,11 @@
             <a href="#" class="item">brezhoneg</a>
           </div>
         </div>
-        <a href="http://www.brezhoneg.bzh" class="ui right item"><i class="external alternate icon"></i><div class="content">Accéder au site de l'OPLB</div></a>
+        </div>
       </div>
     </div>
   </div>
-  <div class="ui doubling stackable grid container">
+  <div class="ui doubling stackable grid container" style="min-height: 900px;">
     <div class="four wide column">
 
 
@@ -121,7 +122,7 @@
 
 
 
-    <div class="twelve wide column">
+    <div class="eight wide column">
       <div class="ui four item pointing menu">
         <a class="item active" href="meurgorf.html">
           Rechercher
@@ -138,10 +139,10 @@
       </div>
       <div class="ui segment">
         <h1 class="ui header"><i class="history icon"></i><div class="content">MeurGorf<div class="sub header">dictionnaire historique du breton</div></div></h1>
-        <div class="ui fluid form">
+        <div class="ui form">
           <div class="ui fluid action input">
-            <input type="text" placeholder="Rechercher un terme..." value="dalc'h">
-            <select class="ui compact selection dropdown">
+            <input type="text" placeholder="Rechercher...">
+            <select class="ui selection dropdown">
               <option value="me">mot entier</option>
               <option value="pm">partie de mot</option>
               <option value="dm">début de mot</option>
@@ -185,6 +186,42 @@
 
     </div>
 
+    <div class="ui four wide column">
+      <div class="ui segment">
+        <h2 class="ui header">Historique</h2>
+        <div class="ui link list">
+          <a href="#" class="item">kador</a>
+          <a href="#" class="item">taol</a>
+          <a href="#" class="item">taolenn</a>
+          <a href="#" class="item">maskl</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="footer">
+    <div class="ui container">
+      <div class="ui grid">
+        <div class="ui four wide column">
+          <h4 class="ui header">Office public de la langue bretonne</h4>
+          <div class="ui link list">
+            <a href="#" class="item">A propos</a>
+            <a href="#" class="item">Site internet</a>
+            <a href="#" class="item">Nous contacter</a>
+          </div>
+        </div>
+          <div class="ui four wide column">
+
+          </div>
+          <div class="ui four wide column">
+
+          </div>
+          <div class="ui four wide column">
+            © 2020 Office public de la langue bretonne - Ofis publik ar brezhoneg
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <script>
   $('.ui.accordion')
