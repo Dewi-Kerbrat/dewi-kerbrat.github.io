@@ -82,7 +82,7 @@
 
 .ui.modal > .header {
   display: block;
-  font-family: 'Rubik';
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   background: #FFFFFF;
   margin: 0;
   padding: 1.25rem 1.5rem;
@@ -94,7 +94,7 @@
 .ui.modal > .header:not(.ui) {
   font-size: 1.42857143rem;
   line-height: 1.28571429em;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 /*--------------
