@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Meurgorf</title>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="../mystyle.css">
+  <script src="../semantic/dist/semantic.min.js"></script>
+</head>
+<body>
+  <!-- header -->
+  <div class="ui inverted stackable sticky borderless menu topbar">
+    <div class="ui container">
+      <a class="item" href="../index.html"><h1 class="ui inverted header"><img src="../images/LogoOPLB.svg"><div class="content">Portail numérique pour la langue bretonne<div class="ui sub header">Office public de la langue bretonne</div></div></h1></a>
+      <div class="right menu">
+        <div class="ui item">
+          <div class="ui dropdown inverted button">
+          <i class="globe icon"></i>
+          français
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <a href="#" class="disabled item">brezhoneg</a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui doubling stackable grid container" style="min-height: 900px;">
+    <div class="four wide column">
+
+
+      <!-- side menu -->
+
+      <div class="ui fluid vertical secondary big menu">
+
+        <div class="item">
+          <div class="ui icon input">
+            <input type="text" placeholder="Rechercher sur le site...">
+            <i class="search icon"></i>
+          </div>
+        </div>
+
+        <div class="header item">
+          <div class="ui sub header">Outils numériques</div>
+        </div>
+        <div class="ui left pointing dropdown item">
+          <i class="atlas icon"></i>
+          Ressources
+          <i class="ui dropdown icon"></i>
+          <div class="menu">
+            <div class="header">Bases de données</div>
+            <a class="item" href="kerofis.html"><i class="map marked alternate icon"></i>KerOfis</a>
+            <a class="item" href="http://www.fr.brezhoneg.bzh/36-termofis.htm"><i class="search icon"></i>TermOfis</a>
+            <div class="header">Dictionnaires</div>
+            <a class="active item" href="meurgorf.html"><i class="history icon"></i>MeurGorf</a>
+
+          </div>
+        </div>
+        <div class="ui left pointing dropdown item">
+          <i class="globe europe icon"></i>Traduction
+          <i class="ui dropdown icon"></i>
+          <div class="menu">
+            <div class="header">Traduction automatique à base de règles</div>
+              <a class="item" href="http://www.fr.brezhoneg.bzh/42-traducteur-automatique.htm"><i class="language icon"></i>Apertium</a>
+          </div>
+        </div>
+        <div class="ui left pointing dropdown item">
+          <i class="microphone icon"></i>
+          Parole
+          <i class="ui dropdown icon"></i>
+          <div class="menu">
+            <div class="header">Synthèse vocale</div>
+            <a class="item" href="#"><i class="comment icon"></i>Sintezenn ar vouezh</a>
+          </div>
+        </div>
+        <div class="ui left pointing dropdown item">
+          <i class="desktop icon"></i>Applications
+          <i class="ui dropdown icon"></i>
+          <div class="menu">
+            <div class="item" href="#"><i class="spell check icon"></i>Correcteurs orthographiques</div>
+          </div>
+        </div>
+        <div class="ui left pointing dropdown item">
+          <i class="database icon"></i>Données
+          <i class="ui dropdown icon"></i>
+          <div class="menu">
+            <div class="header">Corpus</div>
+            <a href="#" class="item"><i class="file alternate icon"></i>Corpus textuel</a>
+            <a href="#" class="item"><i class="file audio icon"></i>Corpus audio</a>
+          </div>
+        </div>
+        <div class="ui divider"></div>
+        <div class="header item">
+          <div class="ui sub header">Les technologies de la langue</div>
+        </div>
+        <a class="item">
+          <i class="newspaper icon"></i>Actualités
+        </a>
+        <a class="item">
+          <i class="question icon"></i>A propos
+        </a>
+        <a class="item">
+          <i class="external alternate icon"></i>Liens utiles
+        </a>
+        <div class="ui divider"></div>
+        <div class="item">
+          <button class="ui fluid labeled icon button"><i class="envelope icon"></i>Nous contacter</button>
+        </div>
+        <div class="item">
+          <div class="ui compact icon buttons">
+            <button class="ui facebook button"><i class="facebook icon"></i></button>
+            <button class="ui twitter button"><i class="twitter icon"></i></button>
+          </div>
+        </div>
+
+      </div>
+      <!-- end side menu -->
+    </div>
+
+
+
+    <div class="eight wide column">
+      <div class="ui breadcrumb">
+        <a class="section" href="accueil.html">Accueil</a>
+        <i class="right angle icon divider"></i>
+        <div class="section">Ressources</div>
+        <i class="right angle icon divider"></i>
+        <div class="active section">Meurgorf</div>
+      </div>
+      <div class="ui four item pointing menu">
+        <a class="item active" href="meurgorf.html">
+          Rechercher
+        </a>
+        <a class="item" href="meurgorf-presentation.html">
+          Présentation
+        </a>
+        <a class="item" href="meurgorf-sources.html">
+          Sources
+        </a>
+        <a class="ui item" href="meurgorf-abrev.html">
+          Abréviations
+        </a>
+      </div>
+      <div class="ui segment">
+        <h1 class="ui header"><i class="history icon"></i><div class="content">MeurGorf<div class="sub header">dictionnaire historique du breton</div></div></h1>
+        <div class="ui form">
+          <div class="ui fluid action input">
+            <input type="text" placeholder="Rechercher..." value="dalc'h">
+            <select class="ui selection dropdown">
+              <option value="pm">partie de mot</option>
+              <option value="me">mot entier</option>
+              <option value="dm">début de mot</option>
+              <option value="fm">fin de mot</option>
+            </select>
+            <a class="ui pink icon button" href="dalch.html">
+              <i class="search icon"></i>
+            </a>
+          </div>
+          <div class="ui accordion field">
+            <div class="title">
+              <i class="icon dropdown"></i>
+              Plus d'options
+            </div>
+            <div class="content">
+              <div class="two fields">
+                <div class="field">
+                  <label>Catégorie grammaticale</label>
+                  <select multiple="" class="ui dropdown">
+                    <option value="tout">toutes</option>
+                    <option value="verb">verbe</option>
+                    <option value="nom">nom</option>
+                    <option value="adj">adjectif</option>
+                    <option value="adv">adverbe</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label>Source</label>
+                  <select multiple="" class="ui dropdown">
+                    <option value="tout">toutes</option>
+                    <option value="ABER">ABER</option>
+                    <option value="ABKE">ABKE</option>
+                    <option value="ADGL">ADGL</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ui segment">
+        <h2 class="ui header">La recherche a renvoyé<span class="ui horizontal big label">38</span>résultats</h2>
+        <table class="ui selectable celled striped table">
+          <thead>
+            <tr><th>Entrée</th>
+            <th>Catégorie grammaticale</th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <td class="selectable" data-label="Entrée">
+                <a href="dalch.html">Dalc'h</a>
+                </td>
+              <td data-label="Catégorie grammaticale">Nom commun</td>
+            </tr>
+            <tr>
+              <td class="selectable" data-label="Entrée">
+                <a>Dalc'had</a>
+              </td>
+              <td data-label="Catégorie grammaticale">Nom commun</td>
+            </tr>
+            <tr>
+              <td class="selectable" data-label="Entrée">
+                <a>Dalc'hadur</a>
+                </td>
+              <td data-label="Catégorie grammaticale">Nom commun</td>
+            </tr>
+            <tr>
+              <td class="selectable" data-label="Entrée">
+                <a>Dalc'hmat</a>
+              </td>
+              <td data-label="Catégorie grammaticale">Adverbe</td>
+            </tr>
+            <tr>
+              <td class="selectable" data-label="Entrée">
+                <a>Dalc'helezh</a>
+              </td>
+              <td data-label="Catégorie grammaticale">Nom commun</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr><th colspan="5">
+              <div class="ui right floated pagination menu">
+                <a class="icon item">
+                  <i class="left chevron icon"></i>
+                </a>
+                <a class="active item">1</a>
+                <a class="item">2</a>
+                <a class="item">3</a>
+                <a class="item">4</a>
+                <a class="icon item">
+                  <i class="right chevron icon"></i>
+                </a>
+              </div>
+            </th>
+          </tr></tfoot>
+        </table>
+      </div>
+
+    </div>
+
+    <div class="ui four wide column">
+      <div class="ui segment">
+        <h2 class="ui header">Historique</h2>
+        <div class="ui link list">
+          <a href="#" class="item">kador</a>
+          <a href="#" class="item">taol</a>
+          <a href="#" class="item">taolenn</a>
+          <a href="#" class="item">maskl</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="footer">
+    <div class="ui container">
+      <div class="ui grid">
+        <div class="ui four wide column">
+          <h4 class="ui header">Office public de la langue bretonne</h4>
+          <div class="ui link list">
+            <a href="#" class="item">A propos</a>
+            <a href="#" class="item">Site internet</a>
+            <a href="#" class="item">Nous contacter</a>
+          </div>
+        </div>
+          <div class="ui four wide column">
+
+          </div>
+          <div class="ui four wide column">
+
+          </div>
+          <div class="ui four wide column">
+            © 2020 Office public de la langue bretonne - Ofis publik ar brezhoneg
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+  $('.ui.accordion')
+  .accordion()
+  ;
+  </script>
+  <script>
+  $('.ui.dropdown')
+  .dropdown()
+  ;
+  </script>
+  <script>
+  $('.menu .item')
+  .tab()
+  ;
+  </script>
+  <script>
+  $('.label')
+  .popup()
+  ;
+  $('.rating')
+  .popup()
+  ;
+  $('.ui.sticky')
+  .sticky()
+  ;
+  $('.ui.rating')
+  .rating()
+  ;
+  </script>
+</body>
+</html>
