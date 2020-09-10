@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Porched ar brezhoneg</title>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="../mystyle.css">
+  <script src="../semantic/dist/semantic.min.js"></script>
+</head>
+<body>
+  <!-- header -->
+  <div class="ui inverted stackable sticky borderless menu topbar">
+    <div class="ui container">
+      <a class="item" href="../index.html"><h1 class="ui inverted header"><img src="../images/LogoOPLB.svg"><div class="content">Portail numérique pour la langue bretonne<div class="ui sub header">Office public de la langue bretonne</div></div></h1></a>
+      <div class="right menu">
+        <div class="ui item">
+          <div class="ui dropdown inverted button">
+            <i class="globe icon"></i>
+            français
+            <i class="dropdown icon"></i>
+            <div class="menu">
+              <a href="#" class="item">brezhoneg</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui doubling stackable grid container">
+    <div class="four wide column">
+      <!-- side menu -->
+      <div class="ui fluid vertical secondary big menu">
+
+        <div class="item">
+          <div class="ui icon input">
+            <input type="text" placeholder="Rechercher sur le site...">
+            <i class="search icon"></i>
+          </div>
+        </div>
+
+        <div class="header item">
+          <div class="ui sub header">Outils numériques</div>
+        </div>
+        <div class="ui left pointing dropdown item">
+          <i class="atlas icon"></i>
+          Ressources
+          <i class="ui dropdown icon"></i>
+          <div class="menu">
+            <div class="header">Bases de données</div>
+            <a class="item" href="kerofis.html"><i class="map marked alternate icon"></i>KerOfis</a>
+            <a class="item" href="http://www.fr.brezhoneg.bzh/36-termofis.htm"><i class="search icon"></i>TermOfis</a>
+            <div class="header">Dictionnaires</div>
+            <a class="active item" href="meurgorf.html"><i class="history icon"></i>MeurGorf</a>
+
+          </div>
+        </div>
+        <div class="ui left pointing dropdown item">
+          <i class="globe europe icon"></i>Traduction
+          <i class="ui dropdown icon"></i>
+          <div class="menu">
+            <div class="header">Traduction automatique à base de règles</div>
+            <a class="item" href="http://www.fr.brezhoneg.bzh/42-traducteur-automatique.htm"><i class="language icon"></i>Apertium</a>
+          </div>
+        </div>
+        <div class="ui left pointing dropdown item">
+          <i class="microphone icon"></i>
+          Parole
+          <i class="ui dropdown icon"></i>
+          <div class="menu">
+            <div class="header">Synthèse vocale</div>
+            <a class="item" href="#"><i class="comment icon"></i>Sintezenn ar vouezh</a>
+          </div>
+        </div>
+        <div class="ui left pointing dropdown item">
+          <i class="desktop icon"></i>Applications
+          <i class="ui dropdown icon"></i>
+          <div class="menu">
+            <div class="item" href="#"><i class="spell check icon"></i>Correcteurs orthographiques</div>
+          </div>
+        </div>
+        <div class="ui left pointing dropdown item">
+          <i class="database icon"></i>Données
+          <i class="ui dropdown icon"></i>
+          <div class="menu">
+            <div class="header">Corpus</div>
+            <a href="#" class="item"><i class="file alternate icon"></i>Corpus textuel</a>
+            <a href="#" class="item"><i class="file audio icon"></i>Corpus audio</a>
+          </div>
+        </div>
+        <div class="ui divider"></div>
+        <div class="header item">
+          <div class="ui sub header">Les technologies de la langue</div>
+        </div>
+        <a class="item">
+          <i class="newspaper icon"></i>Actualités
+        </a>
+        <a class="item">
+          <i class="question icon"></i>A propos
+        </a>
+        <a class="item">
+          <i class="external alternate icon"></i>Liens utiles
+        </a>
+        <div class="ui divider"></div>
+        <div class="item">
+          <button class="ui fluid labeled icon button"><i class="envelope icon"></i>Nous contacter</button>
+        </div>
+        <div class="item">
+          <div class="ui compact icon buttons">
+            <button class="ui facebook button"><i class="facebook icon"></i></button>
+            <button class="ui twitter button"><i class="twitter icon"></i></button>
+          </div>
+        </div>
+
+      </div>
+      <!-- end side menu -->
+    </div>
+
+    <div class="twelve wide column">
+      <div class="ui compact grid">
+        <div class="row">
+          <div class="ui sixteen wide column">
+            <div class="ui breadcrumb">
+              <a class="section" href="accueil.html">Accueil</a>
+              <i class="right angle icon divider"></i>
+              <div class="section">Ressources</div>
+              <i class="right angle icon divider"></i>
+              <div class="active section">Meurgorf</div>
+            </div>
+            <div class="ui four item pointing menu">
+              <a class="item active" href="meurgorf.html">
+                Rechercher
+              </a>
+              <a class="item" href="meurgorf-presentation.html">
+                Présentation
+              </a>
+              <a class="item" href="meurgorf-sources.html">
+                Sources
+              </a>
+              <a class="ui item" href="meurgorf-abrev.html">
+                Abréviations
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="ui ten wide column">
+            <div class="ui segment">
+              <h1 class="ui header"><i class="history icon"></i><div class="content">MeurGorf<div class="sub header">dictionnaire historique du breton</div></div></h1>
+              <div class="ui fluid form">
+                <div class="ui fluid action input">
+                  <input type="text" placeholder="Rechercher un terme..." value="kement">
+                  <select class="ui compact selection dropdown">
+                    <option value="me">mot entier</option>
+                    <option value="pm">partie de mot</option>
+                    <option value="dm">début de mot</option>
+                    <option value="fm">fin de mot</option>
+                  </select>
+                  <div class="ui pink icon button">
+                    <i class="search icon"></i>
+                  </div>
+                </div>
+                <div class="ui accordion field">
+                  <div class="title">
+                    <i class="icon dropdown"></i>
+                    Plus d'options
+                  </div>
+                  <div class="content">
+                    <div class="two fields">
+                      <div class="field">
+                        <label>Catégorie grammaticale</label>
+                        <select multiple="" class="ui dropdown">
+                          <option value="tout">toutes</option>
+                          <option value="verb">verbe</option>
+                          <option value="nom">nom</option>
+                          <option value="adj">adjectif</option>
+                          <option value="adv">adverbe</option>
+                        </select>
+                      </div>
+                      <div class="field">
+                        <label>Source</label>
+                        <select multiple="" class="ui dropdown">
+                          <option value="tout">toutes</option>
+                          <option value="ABER">ABER</option>
+                          <option value="ABKE">ABKE</option>
+                          <option value="ADGL">ADGL</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ui six wide column">
+            <div class="ui segment">
+              <h3 class="ui header">Historique de recherche</h3>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="ui sixteen wide column">
+            <div class="ui top attached tabular menu">
+              <a class="item active" data-tab="first">
+                <h4 class="ui header">kement
+                  <div class="sub header">
+                    adverbe
+                  </div>
+                </h4>
+              </a>
+              <a class="item" data-tab="2">
+                <h4 class="ui header">kement
+                  <div class="sub header">
+                    substantif masculin
+                  </div>
+                </h4>
+              </a>
+              <a class="item" data-tab="3">
+                <h4 class="ui header">kement
+                  <div class="sub header">
+                    pronom indéfini
+                  </div>
+                </h4>
+              </a>
+              <a class="item" data-tab="4">
+                <h4 class="ui header">kement
+                  <div class="sub header">
+                    adjectif
+                  </div>
+                </h4>
+              </a>
+              <a class="item" data-tab="5">
+                <h4 class="ui header">kement
+                  <div class="sub header">
+                    adjectif indéfini
+                  </div>
+                </h4>
+              </a>
+            </div>
+            <div class="ui bottom attached tab segment active" data-tab="first">
+              <div class="ui list">
+                <a class="item">
+                  <i class="play circle outline icon"></i>
+                  <div class="content">/kemɜn/</div>
+                </a>
+              </div>
+              <p>
+                Fréquence d'emploi : <span class="ui pink disabled rating" data-rating="3" data-max-rating="3" data-icon="comment" data-content="très courant"></span>
+              </p>
+              <p>
+                Présent dans :
+                <span class="ui button label" data-content="Nouveau dictionnaire breton-français Roparz Hemon">
+                  <i class="book icon"></i> NDBF
+                </span>
+                <span class="ui button label" data-content="Geriadur brezhoneg An Here">
+                  <i class="book icon"></i> GBAHE
+                </span>
+              </p>
+              <div class="ui styled fluid accordion">
+
+                <div class="title"><i class="icon dropdown"></i>Mots parents <div class="ui label">0</div></div>
+                <div class="content"></div>
+                <div class="title"><i class="icon dropdown"></i>Variantes historiques ou dialectales attestées <div class="ui label">0</div></div>
+                <div class="content">Aucune</div>
+                <div class="active title"><i class="icon dropdown"></i>Définition</div>
+                <div class="active content">
+                  <pre wrap="white-space" style="font-family: 'Lato', Sans Serif">
+I.
+1. Tr. stl. (dirak un ak., ur rag., un islav.)
+KEMENT HA : termen a dalvez da c'heriañ ur geñveriadenn etre daou ober, daou fed, h.a., a lakaer da gevatal.
+Ober a rin kement ha ma c'hallin. Labourat kement ha daou zen. N'hoc'h eus ket labouret kement hag em eus-me.
+2. (hep ar stl. ha)
+Termen a dalvez da c'heriañ kevatalder un dra a veneger hag unan all na zispleger ket.
+Ne santez ket kement ar yenijenn bremañ.
+&
+Trl.
+Kement-se, kement all. Ne zebr ket kement-se. Ne gounnarit ket kement all ! Da ober petra krenañ kement all ?
+3. Tr. stl. (gant an ar. a heuliet gant un anv hollek, stroll pelies)
+KEMENT A... HA : troienn a dalvez da c'heriañ ur geñveriadenn etre daou zen, daou dra, daou stroll elfennoù, h.a., a lakaer da bar a-fet ment, niver pe gementad.
+Bez' e oa kement a saout hag a gezeg. Ne ra ket kement a c'hlav e miz Eost ha ma ra e miz Du.
+4. (hep ar stl. ha)
+Ger a dalvez da c'heriañ kevatalder un dra a veneger hag unan all ne zispleger ket.
+Biskoazh n'en doa gwelet kement anezho. Hiziv n'eus ket kement a boan.
+&
+Trl.
+Kement-se, kement all. Un troatad hanter a ledander, kement all a hed. N'eus ket kement-se a dud.
+II.
+(en ur bennlav. heuliet gant un islav. degaset gant ar stagelloù ma pe ken, a dalvez da c'heriañ un heuliad)
+1. (e-unan)
+Ger a dalvez da c'heriañ e tizher un derez uhel-kenañ war ur skeul talvoudegezhioù a denn d'ar vent, d'ar c'hementad.
+Kement en deus labouret ken eo skuizh bremañ. Kement ho kar ma ne c'hall ket bevañ hepdoc'h.
+&
+Trl.
+Kement ha ken bihan, kement ha ken brav : troiennoù a dalvez da greñvaat an heuliad.
+Dispign a rae e arc'hant kement ha ken bihan ken e tebras e holl stal. E bediñ a reas kement ha ken brav ma asantas erfin.
+2. (gant ar v. ober dirak ar m. v. o pe ouzh)
+Ger a dalvez da c'heriañ e tizher ul live uhel-kenañ war ur skeul talvoudegezhioù a denn d'un ober, d'un argerzh.
+Kement a ris o klask ma erruis warnezho. Kement a ra o vont, hep sellet nag ouzh e dreid na ouzh e hent !
+3. (dirak an ar. "a" heuliet gant un ak. hollek, stroll pe lies)
+Ger a dalvez da c'heriañ e tizher un niver pe ur c'hementad bras-tre.
+Kement a c'hlav a oa bet en hañv-se ma oa bet breinet an eost er parkeier. Kement a stered zo en oabl ma n'omp ket evit anavezout an niver anezho. Kement a gaozioù a glevez ken ne rez ken a van.
+III.
+Trl. (dirak un av.)
+KEMENT HA.
+1. Evit, war-zigarez.
+Kement hag ober evel ar re all.
+Anavezout a ran honnezh kement ha gwelet anezhi : diwar welet hepken.
+2. Tra-walc'h evit.
+N'eus ket graet kalz a c'hlav met kement ha lazhañ ar boultrenn.
+                  </pre>
+                </div>
+                <div class="title"><i class="icon dropdown"></i>Formes fléchies <div class="ui label">1</div></div>
+                <div class="content">
+                  <a class="ui labeled icon button"><i class="download icon"></i>Télécharger les formes fléchies</a>
+                  <div class="ui list">
+                    <div class="item">gement</div>
+                  </div>
+                </div>
+                <div class="title"><i class="icon dropdown"></i>Exemples historiques <div class="ui label">89</div></div>
+                <div class="content">
+                  <a class="ui labeled icon button"><i class="download icon"></i>Télécharger les exemples</a>
+                  <div class="ui compact segment">
+                    <div class="floating ui yellow label">
+                      1499
+                    </div>
+                    <p>quement</p>
+                    <p></p>
+                    <p>Référence : <span class="ui button label" data-content="Le vocabulaire breton du Catholicon">
+                      <i class="book icon"></i> LVBCA
+                    </span>, p112</p>
+                  </div>
+                  <div class="ui compact segment">
+                    <div class="floating ui yellow label">
+                      1622
+                    </div>
+                    <p>Hon tadou santel Pius pempet é hanno ha Gregorius trizecuet, ho deues pep heny àneze roet quant bloaz ha quant daou-uguent dez à indulgançou da quement à assisto en Catechismou hac en Doctrin an Christenyen, confirmet bet gand an Tat santell Clement eizuet à hano</p>
+                    <p>Hon tadoù santel Pius pempet e anv ha Gregorius trizekvet, o deus pep hini anezhe roet kant vloaz ha kant daou-ugent deiz a induljansoù da gement a asisto en Katekismoù hag en Doktrin ar Gristenien, koñfirmet bet gant an Tad santel Klemañ eizhvet a anv</p>
+                    <p>Référence : <span class="ui button label" data-content="Doctrin an Christenien. Texte de 1622 en moyen-breton accompagné de la version française et du texte en breton moderne de 1677 avec préface et notes de Roparz Hemon. The Dublin Institute. 1977">
+                      <i class="book icon"></i> Do.
+                    </span>, p2</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ui bottom attached tab segment" data-tab="2">
+              Second
+            </div>
+            <div class="ui bottom attached tab segment" data-tab="3">
+              Third
+            </div>
+            <div class="ui bottom attached tab segment" data-tab="4">
+
+            </div>
+            <div class="ui bottom attached tab segment" data-tab="5">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+<script>
+$('.ui.accordion')
+.accordion()
+;
+</script>
+<script>
+$('.ui.dropdown')
+.dropdown()
+;
+</script>
+<script>
+$('.menu .item')
+.tab()
+;
+</script>
+<script>
+$('.label')
+.popup()
+;
+$('.rating')
+.popup()
+;
+$('.ui.sticky')
+.sticky()
+;
+$('.ui.rating')
+.rating()
+;
+</script>
+</body>
+</html>
