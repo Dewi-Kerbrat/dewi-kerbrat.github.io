@@ -17,90 +17,146 @@
 			</style>
 
 			<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
-			<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-			<link rel="stylesheet" type="text/css" href="mystyle.css">
+			<link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css">
+			<link rel="stylesheet" type="text/css" href="../mystyle.css">
 
-			<script src="semantic/dist/semantic.min.js"></script>
+			<script src="../semantic/dist/semantic.min.js"></script>
 		</head>
 		<body>
 			<!-- header -->
-			<div class="ui inverted stackable sticky menu">
-				<div class="ui container">
-					<a class="item"><h1 class="ui inverted header"><i class="fingerprint icon"></i><div class="content">Portail numérique pour la langue bretonne<div class="ui sub header">Office public de la langue bretonne</div></div></h1></a>
-					<div class="right menu">
-						<div class="ui dropdown item">
-							<i class="globe icon"></i>
-							français
-							<i class="dropdown icon"></i>
-							<div class="menu">
-								<a href="#" class="item">brezhoneg</a>
-							</div>
-						</div>
-						<a href="http://brezhoneg.bzh" class="ui right item"><i class="external alternate icon"></i><div class="content">Accéder au site de l'OPLB</div></a>
-					</div>
-				</div>
-			</div>
+		  <div class="ui inverted stackable sticky borderless menu topbar">
+		    <div class="ui container">
+		      <a class="item" href="../index.html"><h1 class="ui inverted header"><img src="../images/LogoOPLB.svg"><div class="content">Portail numérique pour la langue bretonne<div class="ui sub header">Office public de la langue bretonne</div></div></h1></a>
+		      <div class="right menu">
+		        <div class="ui item">
+		          <div class="ui dropdown inverted button">
+		          <i class="globe icon"></i>
+		          français
+		          <i class="dropdown icon"></i>
+		          <div class="menu">
+		            <a href="#" class="item">brezhoneg</a>
+		          </div>
+		        </div>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+
+
 			<div class="ui doubling stackable grid container">
-				<!-- side menu -->
 				<div class="four wide column">
 					<!-- side menu -->
-					<div class="ui fluid vertical accordion text big menu">
-						<div class="header item">Outils numériques</div>
-						<div class="item">
-							<a class="active title"><i class="atlas icon"></i>Ressources<i class="dropdown icon"></i></a>
-							<div class="active content">
-								<div class="menu">
-									<a href="meurgorf.html" class="item"><i class="history icon"></i>Meurgorf</a>
-									<a href="kerofis.html" class="active item">Kerofis</a>
-									<a href="http://www.fr.brezhoneg.bzh/36-termofis.htm" class="item">TermOfis</a>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="title">
-								<i class="globe europe icon"></i>Traduction<i class="dropdown icon"></i>
-							</div>
-							<div class="content">
-								<div class="menu">
-									<a class="item">Apertium</a>
-									<a class="item">Autre</a>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="title">
-								<i class="microphone icon"></i>Parole<i class="dropdown icon"></i>
-							</div>
-							<div class="content">
-								<div class="menu">
-									<a href="#" class="item">Synthèse vocale</a>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="title"><i class="server icon"></i>Données<i class="dropdown icon"></i></div>
-							<div class="content">
-								<div class="menu">
-									<a class="item"><i class="file alternate outline icon"></i>Corpus</a>
-								</div>
-							</div>
-						</div>
-						<div class="ui hidden divider"></div>
-						<div class="header item">Les technologies de la langue</div>
-						<a href="#" class="item"><i class="newspaper outline icon"></i>Actualités</a>
-						<a href="#" class="item"><i class="info icon"></i>A propos</a>
-						<a href="#" class="item"><i class="external alternate icon"></i>Lien utiles</a>
-						<div class="ui hidden divider"></div>
-						<div class="item">
-							<button class="ui fluid labeled icon button"><i class="envelope icon"></i>Nous contacter</button>
-						</div>
-						<div class="ui fluid basic icon buttons">
-							<button class="ui button"><i class="facebook icon"></i></button>
-							<button class="ui button"><i class="twitter icon"></i></button>
-						</div>
-					</div>
+
+	        <div class="ui fluid vertical secondary big menu">
+
+	          <div class="item">
+	            <div class="ui icon input">
+	              <input type="text" placeholder="Rechercher sur le site...">
+	              <i class="search icon"></i>
+	            </div>
+	          </div>
+
+	          <div class="header item">
+	            <div class="ui sub header">Outils numériques</div>
+	          </div>
+	          <div class="ui left pointing dropdown item">
+	            <i class="atlas icon"></i>
+	            Ressources
+	            <i class="ui dropdown icon"></i>
+	            <div class="menu">
+	              <div class="header">Bases de données</div>
+	              <a class="active item" href="kerofis.html"><i class="map marked alternate icon"></i>KerOfis</a>
+	              <a class="item" href="http://www.fr.brezhoneg.bzh/36-termofis.htm"><i class="search icon"></i>TermOfis</a>
+	              <div class="header">Dictionnaires</div>
+	              <a class="item" href="meurgorf.html"><i class="history icon"></i>MeurGorf</a>
+
+	            </div>
+	          </div>
+	          <div class="ui left pointing dropdown item">
+	            <i class="globe europe icon"></i>Traduction
+	            <i class="ui dropdown icon"></i>
+	            <div class="menu">
+	              <div class="header">Traduction automatique à base de règles</div>
+	                <a class="item" href="http://www.fr.brezhoneg.bzh/42-traducteur-automatique.htm"><i class="language icon"></i>Apertium</a>
+	            </div>
+	          </div>
+	          <div class="ui left pointing dropdown item">
+	            <i class="microphone icon"></i>
+	            Parole
+	            <i class="ui dropdown icon"></i>
+	            <div class="menu">
+	              <div class="header">Synthèse vocale</div>
+	              <a class="item" href="#"><i class="comment icon"></i>Sintezenn ar vouezh</a>
+	            </div>
+	          </div>
+	          <div class="ui left pointing dropdown item">
+	            <i class="desktop icon"></i>Applications
+	            <i class="ui dropdown icon"></i>
+	            <div class="menu">
+	              <div class="item" href="#"><i class="spell check icon"></i>Correcteurs orthographiques</div>
+	            </div>
+	          </div>
+	          <div class="ui left pointing dropdown item">
+	            <i class="database icon"></i>Données
+	            <i class="ui dropdown icon"></i>
+	            <div class="menu">
+	              <div class="header">Corpus</div>
+	              <a href="#" class="item"><i class="file alternate icon"></i>Corpus textuel</a>
+	              <a href="#" class="item"><i class="file audio icon"></i>Corpus audio</a>
+	            </div>
+	          </div>
+	          <div class="ui divider"></div>
+	          <div class="header item">
+	            <div class="ui sub header">Les technologies de la langue</div>
+	          </div>
+	          <a class="item">
+	            <i class="newspaper icon"></i>Actualités
+	          </a>
+	          <a class="item">
+	            <i class="question icon"></i>A propos
+	          </a>
+	          <a class="item">
+	            <i class="external alternate icon"></i>Liens utiles
+	          </a>
+	          <div class="ui divider"></div>
+	          <div class="item">
+	            <button class="ui fluid labeled icon button"><i class="envelope icon"></i>Nous contacter</button>
+	          </div>
+	          <div class="item">
+	            <div class="ui compact icon buttons">
+	              <button class="ui facebook button"><i class="facebook icon"></i></button>
+	              <button class="ui twitter button"><i class="twitter icon"></i></button>
+	            </div>
+	          </div>
+
+	        </div>
+	        <!-- end side menu -->
 				</div>
+
+
 				<div class="twelve wide column">
+
+					<div class="ui breadcrumb">
+		        <a class="section" href="accueil.html">Accueil</a>
+		        <i class="right angle icon divider"></i>
+		        <div class="section">Ressources</div>
+		        <i class="right angle icon divider"></i>
+		        <div class="active section">KerOfis</div>
+		      </div>
+
+					<!-- SUB MENU -->
+					<div class="ui three item pointing menu">
+						<a class="item active" href="kerofis.html">
+							Rechercher
+						</a>
+						<a class="item" href="kerofis-presentation.html">
+							Présentation
+						</a>
+						<a class="item" href="kerofis-savoir.html">
+							En savoir plus
+						</a>
+					</div>
+
 					<div class="ui segment">
 						<h1 class="ui header"><i class="map marked alternate icon"></i><div class="content">KerOfis<div class="sub header">Base de données toponymiques</div></div></h1>
 						<div class="ui fluid form">
@@ -167,9 +223,9 @@
 							</div>
 						</div>
 					</div>
-					<div class="ui piled segment">
-						<h1 class="ui header"><div class="content">Sant Karadeg</div><div class="ui horizontal label">forme bretonne normalisée</div></h1>
-						<h2 class="ui header">Saint Caradec</h2>
+					<div class="ui segment">
+						<h1 class="ui header"><div class="content">Sant-Karadeg</div><div class="ui horizontal label">forme bretonne normalisée</div></h1>
+						<h2 class="ui header">Saint-Caradec</h2>
 						<div class="ui top attached tabular menu">
 							<a class="item active" data-tab="hollek">Informations générales</a>
 							<a class="item" data-tab="yezh">Informations linguistiques</a>
@@ -178,15 +234,21 @@
 							<div class="ui grid">
 								<div class="eight wide column">
 									<h4 class="ui header">Prononciation normalisée</h4>
-									<div class="ui list">
-										<a class="item">
+									<div class="ui labels">
+										<a class="ui label">
 											<i class="play circle outline icon"></i>
-											<div class="content">sɑ̃nkarɑːdɛk</div>
+											sɑ̃nkarɑːdɛk
 										</a>
-										<a class="item">
+										<a href="#" class="ui icon label" data-content="copier dans le presse-papier">
+	                    <i class="ui copy icon"></i>
+	                  </a>
+										<a class="ui label">
 											<i class="play circle outline icon"></i>
-											<div class="content">sɑ̃karɑːdək</div>
+											sɑ̃karɑːdək
 										</a>
+										<a href="#" class="ui icon label" data-content="copier dans le presse-papier">
+	                    <i class="ui copy icon"></i>
+	                  </a>
 									</div>
 									<h4 class="ui header">Autres formes actuelles</h4>
 									<div class="ui list">
@@ -196,21 +258,14 @@
 									<div class="ui label">Quartier</div>
 									<h4 class="ui header">Commune</h4>
 									<p>
-										<a href="">Hennebont</a></p>
+										<a href="" class="ui pink label">Hennebont</a></p>
 										<h4 class="ui header">Département</h4>
 										<p>Morbihan</p>
-										<div class="ui fluid segment">
-											<div class="ui top attached label">Département</div>
-											<p>Morbihan</p>
-
-										</div>
-										<div class="ui fluid action input">
-											<input type="text" value="http://ww.short.url/c0opq">
+										<div class="ui divider"></div>
 											<button class="ui pink right labeled icon button">
 											<i class="copy icon"></i>
-											Copier le lien
+											Copier le lien vers la fiche
 											</button>
-										</div>
 									</div>
 									<div class="eight wide column">
 										<div id="map"></div>
@@ -218,13 +273,88 @@
 								</div>
 							</div>
 							<div class="ui bottom attached tab segment" data-tab="yezh">
-								<h3 class="ui header"><div class="content">Formes anciennes</div><div class="ui label">22</div></h3>
+								<h4 class="ui header"><div class="content">Formes anciennes</div><div class="ui label">22</div></h4>
+								<div class="ui list">
+									<div class="item">
+										<div class="ui horizontal basic label">1264</div>
+										Saeint Karadec
+									</div>
+									<div class="item">
+										<div class="ui horizontal basic label">1273</div>
+										Sanctus Caradocus
+									</div>
+									<div class="item">
+										<div class="ui horizontal basic label">1278</div>
+										Sancto Caradoco de Henbont
+									</div>
+									<a href="#" class="item">Plus...</a>
+
+								</div>
+								<h4 class="ui header">Formes bretonnes attestées<div class="ui label">3</div></h4>
+								<div class="ui list">
+									<div class="item">
+										S.-Karadek-Hennebont (1902)
+									</div>
+								</div>
+								<h4 class="ui header">Autres informations sur le toponyme</h4>
+								<p>Nom d'un quartier actuellement, qui a été l'une des paroisses constitutives d'Hennebont. La création de celle-ci serait antérieure au XIIIe siècle, mais postérieure à la présence des seigneurs du Kemenet-Heboe sur la rive droite du Blavet. Elle est présentée comme issue d'un démembrement de la paroisse primitive de Caudan. Voir à l'entrée Iliz Sant Karadeg, pour plus de renseignements sur le nom du saint proprement dit. Outre pour l'église, l'hagionyme apparaît aussi dans celui d'une rue, d'une résidence et d'un quai de la ville. On peut rencontrer dans la production écrite de langue bretonne la forme pleine Sant-Karadeg-Henbont, à laquelle fait écho la forme ancienne "Saint-Caradec-près-Hennebont". Ainsi, la distinction est permise entre le nom qui nous occupe et Saint-Caradec-Trégomel, Sant-Karadeg-Tregonvael en breton, situé à l'extrémité nord de l'ancien Kemenet-Heboe.</p>
 							</div>
 						</div>
 
 
 					</div>
 				</div>
+			</div>
+			<div class="ui basic segment">
+			<p></p>
+			</div>
+			<div class="footer">
+			  <div class="ui container">
+			  <div class="ui grid">
+			    <div class="ui four wide column">
+			      <p></p>
+			      <h4 class="ui inverted header">Réseaux sociaux</h4>
+			      <div class="ui inverted link list">
+			        <a class="item">
+			          <i class="twitter icon"></i>
+			          <div class="content">Twitter</div>
+			        </a>
+			        <a class="item">
+			          <i class="facebook icon"></i>
+			          <div class="content">Facebook</div>
+			        </a>
+			      </div>
+			    </div>
+			    <div class="eight wide column">
+			      <p></p>
+			      <h4 class="ui inverted header">L'Office public de la langue bretonne</h4>
+			      <div class="ui inverted link list">
+			        <a href="#" class="item">
+			          <i class="external alternate icon"></i>
+			          <div class="content">Site internet</div>
+			        </a>
+			        <a class="item">
+			          <i class="envelope icon"></i>
+			          <div class="content">Contact</div>
+			        </a>
+			      </div>
+			    </div>
+			    <div class="ui four wide inverted column">
+			      <p></p>
+			      <h4></h4>
+			      <div class="ui inverted link list">
+			        <a class="item">
+			          Mentions légales
+			        </a>
+			        <a href="#" class="item">
+			          Crédit
+			        </a>
+			      </div>
+			      <div class="ui inverted basic segment">Copyright 2020</div>
+			    </div>
+
+			  </div>
+			</div>
 			</div>
 			<!-- JAVASCRIPT -->
 			<script>

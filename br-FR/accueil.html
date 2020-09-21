@@ -1,38 +1,39 @@
-<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>MeurGorf</title>
+  <title>Porched niverel ar brezhoneg</title>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css">
   <link rel="stylesheet" type="text/css" href="../mystyle.css">
   <script src="../semantic/dist/semantic.min.js"></script>
 </head>
 <body>
+
   <!-- header -->
-  <div class="ui inverted stackable sticky borderless menu topbar">
+  <div class="ui inverted stackable borderless menu topbar">
     <div class="ui container">
       <a class="item" href="../index.html"><h1 class="ui inverted header"><img src="../images/LogoOPLB.svg"><div class="content">Portail numérique pour la langue bretonne<div class="ui sub header">Office public de la langue bretonne</div></div></h1></a>
       <div class="right menu">
         <div class="ui item">
           <div class="ui dropdown inverted button">
-            <i class="globe icon"></i>
-            français
-            <i class="dropdown icon"></i>
-            <div class="menu">
-              <a href="#" class="disabled item">brezhoneg</a>
-            </div>
+          <i class="globe icon"></i>
+          français
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <a href="#" class="disabled item">brezhoneg</a>
           </div>
+        </div>
         </div>
       </div>
     </div>
   </div>
+
+
   <div class="ui doubling stackable grid container main">
     <div class="four wide column">
       <!-- side menu -->
       <div class="ui fluid vertical secondary big menu">
-
         <div class="item">
           <div class="ui icon input">
             <input type="text" placeholder="Rechercher sur le site...">
@@ -48,11 +49,12 @@
           Ressources
           <i class="ui dropdown icon"></i>
           <div class="menu">
-            <div class="header">Bases de données</div>
+            <div class="header">Base de données toponymique</div>
             <a class="item" href="kerofis.html"><i class="map marked alternate icon"></i>KerOfis</a>
+            <div class="header">Base de données terminologique</div>
             <a class="item" href="http://www.fr.brezhoneg.bzh/36-termofis.htm"><i class="search icon"></i>TermOfis</a>
-            <div class="header">Dictionnaires</div>
-            <a class="active item" href="meurgorf.html"><i class="history icon"></i>MeurGorf</a>
+            <div class="header">Dictionnaire historique</div>
+            <a class="item" href="meurgorf.html"><i class="history icon"></i>MeurGorf</a>
 
           </div>
         </div>
@@ -61,7 +63,7 @@
           <i class="ui dropdown icon"></i>
           <div class="menu">
             <div class="header">Traduction automatique à base de règles</div>
-            <a class="item" href="http://www.fr.brezhoneg.bzh/42-traducteur-automatique.htm"><i class="language icon"></i>Apertium</a>
+              <a class="item" href="http://www.fr.brezhoneg.bzh/42-traducteur-automatique.htm"><i class="language icon"></i>Apertium</a>
           </div>
         </div>
         <div class="ui left pointing dropdown item">
@@ -115,121 +117,87 @@
 
       </div>
       <!-- end side menu -->
+
+</div>
+
+
+<div class="twelve wide column">
+
+  <div class="ui segment">
+    <h1 class="ui center aligned header">Donemat !<div class="ui sub header">Bienvenue !</div></h1>
+    <div class="ui warning message">
+      <div class="header">
+        Attention !
+      </div>
+      Ce site est une maquette non fonctionnelle
     </div>
+    <h2 class="ui header">Accès rapide</h2>
+    <h3 class="ui header">Ressources</h3>
+    <div class="ui cards">
 
-    <div class="twelve wide column">
-      <div class="ui compact grid">
-        <div class="row">
-          <div class="ui sixteen wide column">
-            <div class="ui breadcrumb">
-              <a class="section" href="accueil.html">Accueil</a>
-              <i class="right angle icon divider"></i>
-              <div class="section">Ressources</div>
-              <i class="right angle icon divider"></i>
-              <div class="active section">Meurgorf</div>
-            </div>
-            <div class="ui four item pointing menu">
-              <a class="item active" href="meurgorf.html">
-                Rechercher
-              </a>
-              <a class="item" href="meurgorf-presentation.html">
-                Présentation
-              </a>
-              <a class="item" href="meurgorf-sources.html">
-                Sources
-              </a>
-              <a class="ui item" href="meurgorf-abrev.html">
-                Abréviations
-              </a>
-            </div>
+
+      <div class="ui card">
+        <div class="content">
+          <i class="ui search right floated big icon"></i>
+          <div class="header">
+            TermOfis
+          </div>
+          <div class="meta">
+            Base de données terminologique
+          </div>
+          <div class="description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </div>
         </div>
-        <div class="row">
-          <div class="ui ten wide column">
-            <div class="ui yellow segment">
-              <h1 class="ui header"><i class="history icon"></i><div class="content">MeurGorf<div class="sub header">dictionnaire historique du breton</div></div></h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <div class="ui fluid form">
-                <div class="ui fluid action input">
-                  <input type="text" placeholder="Rechercher un terme..." value="kement">
-                  <select class="ui compact selection dropdown">
-                    <option value="me">mot entier</option>
-                    <option value="pm">partie de mot</option>
-                    <option value="dm">début de mot</option>
-                    <option value="fm">fin de mot</option>
-                  </select>
-                  <a href="kement.html" class="ui pink icon button">
-                    <i class="search icon"></i>
-                  </a>
-                </div>
-                <div class="ui accordion field">
-                  <div class="title">
-                    <i class="icon dropdown"></i>
-                    Plus d'options
-                  </div>
-                  <div class="content">
-                    <div class="two fields">
-                      <div class="field">
-                        <label>Catégorie grammaticale</label>
-                        <select multiple="" class="ui dropdown">
-                          <option value="tout">toutes</option>
-                          <option value="verb">verbe</option>
-                          <option value="nom">nom</option>
-                          <option value="adj">adjectif</option>
-                          <option value="adv">adverbe</option>
-                        </select>
-                      </div>
-                      <div class="field">
-                        <label>Source</label>
-                        <select multiple="" class="ui dropdown">
-                          <option value="tout">toutes</option>
-                          <option value="ABER">ABER</option>
-                          <option value="ABKE">ABKE</option>
-                          <option value="ADGL">ADGL</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="extra content">
+          <a class="ui fluid button" href="http://www.fr.brezhoneg.bzh/36-termofis.htm">Accéder</a>
+        </div>
+      </div>
+      <div class="ui card">
+        <div class="content">
+          <i class="ui map marked alternate right floated big icon"></i>
+          <div class="header">
+            KerOfis
           </div>
-          <div class="ui six wide column">
-            <div class="ui segment">
-              <h3 class="ui header">Historique de recherche</h3>
-              <div class="ui horizontal list">
-                <a class="item">lenn</a>
-                <a class="item">daol</a>
-                <a class="item">kador</a>
-                <a class="item">debriñ</a>
-              </div>
-            </div>
-
-
+          <div class="meta">
+            Base de données toponymique
+          </div>
+          <div class="description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </div>
         </div>
-        <div class="row">
-          <div class="ui column">
-            <div class="ui compact segment">
-  						<div class="ui statistic">
-  							<div class="label">
-  								le dictionnaire contient
-  							</div>
-  							<div class="value">
-  								80 000
-  							</div>
-  							<div class="label">
-  								entrées
-  							</div>
-  						</div>
-  					</div>
+        <div class="extra content">
+          <a class="ui fluid button" href="kerofis.html">Accéder</a>
+        </div>
+      </div>
+
+      <div class="ui card">
+        <div class="content">
+          <i class="history right floated big icon"></i>
+          <div class="header">
+            Meurgorf
           </div>
+          <div class="meta">
+            Dictionnaire historique
+          </div>
+          <div class="description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </div>
+        </div>
+        <div class="extra content">
+          <a class="ui fluid button" href="meurgorf.html">Accéder</a>
         </div>
       </div>
     </div>
+
+    <h3 class="ui header">Données</h3>
+    <div class="ui text container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porttitor odio et magna convallis, vel hendrerit nisi pretium. Sed vehicula arcu tortor, ut dapibus risus consectetur non. Nullam fermentum risus nec nulla condimentum faucibus. Pellentesque a libero mattis, semper metus at, tincidunt nisl. Ut porta nisi quis orci porta, et mollis magna malesuada. Sed mollis, lacus et viverra placerat, nisl quam elementum elit, ut efficitur orci ligula nec libero. Vivamus dui augue, hendrerit ac ligula volutpat, imperdiet pretium ligula. Maecenas elementum diam sed porttitor rutrum. Vestibulum suscipit tristique nibh a rhoncus. Sed ornare neque a nibh laoreet dignissim. Integer feugiat, sem id elementum viverra, purus orci porttitor lorem, non scelerisque ligula lorem nec nulla. Cras mollis eget nulla quis luctus. In bibendum lectus vitae tellus interdum, vel condimentum nisl gravida. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam vel lacus dui. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+
+    </div>
   </div>
-
-
+<p></p>
+</div>
 </div>
 <div class="ui basic segment">
   <p></p>
@@ -276,40 +244,38 @@
           Crédit
         </a>
       </div>
-      <div class="ui inverted basic segment">Copyright 2020</div>
+      <div class="ui white text">
+        <p>Ofis publik ar brezhoneg - Office public de la langue bretonne</p>
+        <p>Copyright 2020</p></div>
     </div>
 
   </div>
 </div>
 </div>
+
+
+<!-- JAVASCRIPT -->
 <script>
 $('.ui.accordion')
 .accordion()
 ;
-</script>
-<script>
+
 $('.ui.dropdown')
 .dropdown()
 ;
-</script>
-<script>
+
 $('.menu .item')
 .tab()
 ;
-</script>
-<script>
+
 $('.label')
-.popup()
-;
-$('.rating')
 .popup()
 ;
 $('.ui.sticky')
 .sticky()
 ;
-$('.ui.rating')
-.rating()
-;
 </script>
+
+
 </body>
 </html>
