@@ -40,6 +40,10 @@ body {
     width: 400px;
 }
 
+.image-200 {
+  width: 200px;
+}
+
 @media only screen and (min-width: 1024px) {
   .center {
     width: 60%;

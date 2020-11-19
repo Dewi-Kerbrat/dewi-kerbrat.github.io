@@ -119,7 +119,7 @@
         "invalid": "Dibabit un abeg mar plij",
         "paragraph": "A desteni eo liammet ma dilec’hiadenn ouzh an abeg da-heul (askañ al logell) aotreet diouzh ar reolennoù  hollek rekis evit talañ ouzh epidemiezh ar C’hovid 19 e stern ar stad a zifrae yec’hedel.",
         "travail": "Dilec’hiadennoù etre an ti-annez hag al lec’h labour pe ul lec’h kelenn pe  stummañ, dilec’hiadennoù micherel na c’hallont ket bezañ ampellet, dilec’hiadennoù evit ur genstrivadeg pe un arnodenn ;",
-        "achats": "Dilec’hiadennoù evit prenañ dafar ret d’an obererezh micherel, prenañ traoù a zo ezhomm groñs anezho3 er stalioù a chom aotreet o obererezh, mont da gerc’hat urzhiadoù hag an degasadennoù e ti an dud ;",
+        "achats": "Dilec’hiadennoù evit prenañ dafar ret d’an obererezh micherel, prenañ traoù a zo ezhomm groñs anezho er stalioù a chom aotreet o obererezh, mont da gerc’hat urzhiadoù hag an degasadennoù e ti an dud ;",
         "sante": "Kuzuliadennoù, imbourc’hioù ha prederioù na c’hallont ket bezañ graet a-bell na bezañ ampellet ha prenañ louzeier ;",
         "famille": "Dilec’hiadennoù evit abegoù familh ret-groñs, evit harpañ tud klañvus ha bresk pe evit diwall bugale ;",
         "handicap": "Dilec’hiadennoù an dud nammet hag o ambrouger ;",
