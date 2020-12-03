@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteCond %{HTTP:Accept-Language} (fr) [NC]
+RewriteRule .* /fr/index.html [L]
+RewriteCond %{HTTP:Accept-Language} (br) [NC]
+RewriteRule .* /br/index.html [L]
