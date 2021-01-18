@@ -6,61 +6,60 @@
   <title>fichenn heñvel</title>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <link rel="stylesheet" href="mystyle.css">
   <script src="semantic/dist/semantic.min.js"></script>
+
+  </script>
 </head>
 
 <body>
-  <div class="ui container">
-    <p></p>
-    <h1 class="ui top attached block header">
-      heñvel
-    </h1>
-    <div class="ui bottom attached labeled icon buttons">
-      <button class="ui blue button" name="button">
+  <p></p>
+  <div class="ui container" id="fichenn">
+    <div class="ui clearing top attached segment">
+      <div class="ui secondary right floated segment">
+        <p>Fichenn savet gant XXX</br>
+          <i class="calendar icon"></i>01/02/2019
+        </p>
+      </div>
+      <div class="ui floated left basic segment">
+      <h1 class="ui header">
+        heñvel
+      </h1>
+    </div>
+
+    </div>
+
+    <div class="ui clearing bottom attached segment">
+      <button class="ui left floated blue labeled icon button" name="button">
         <i class="save icon"></i>Enrollañ
       </button>
-      <button class="ui negative button" name="button">
+      <button class="ui right floated negative labeled icon button" name="button">
         <i class="delete icon"></i>Dilemel
       </button>
     </div>
+
     <p></p>
-    <div class="ui fluid buttons">
-      <button class="ui labeled icon button">
-        <i class="left arrow icon"></i>
-        Ger a-raok
-      </button>
-      <button class="ui button">
-        Krouiñ ur ger nevez
-      </button>
-      <button class="ui right labeled icon button">
-        <i class="right arrow icon"></i>
-        Ger da heul
-      </button>
-    </div>
-
-
-    <div class="ui basic segment form">
+    <div class="ui form" id="formulaire">
       <div class="ui right close rail">
-        <div class="ui vertical menu">
-          <a class="item" href="#pennger">Pennger</a>
-          <a class="item" href="#adpennger">Adpennger</a>
-          <a class="item" href="#distagadur">Distagadur</a>
-          <a class="item" href="#deveret">Stummoù deveret</a>
-          <a class="item" href="#termenadur">Termenadur</a>
-          <a class="item" href="#istorel">Stummoù istorel</a>
-          <a class="item" href="#pennger">Penngerioù kar</a>
-          <a class="item" href="#gardarzh">Gerdarzh</a>
-          <a class="item" href="#notennou">Notennoù</a>
+        <div class="ui sticky" style="width: 272px !important; height: 262.683px !important; left: 164px;">
+          <div class="ui vertical left menu">
+            <a class="item" href="#pennger">Pennger</a>
+            <a class="item" href="#adpennger">Adpenngerioù</a>
+            <a class="item" href="#kar">Penngerioù kar</a>
+            <a class="item" href="#distagadur">Distagadur</a>
+            <a class="item" href="#deveret">Stummoù deveret</a>
+            <a class="item" href="#termenadur">Termenadur</a>
+            <a class="item" href="#istorel">Stummoù istorel</a>
+            <a class="item" href="#gardarzh">Gerdarzh</a>
+            <a class="item" href="#notennou">Notennoù</a>
+          </div>
         </div>
-
-
       </div>
 
       <div class="ui stackable grid">
 
         <div class="sixteen wide column">
           <div class="ui top attached blue segment" id="pennger">
-            <h4 class="ui header">Pennger</h4>
             <div class="three fields">
               <div class="field">
                 <label>Pennger</label>
@@ -83,7 +82,7 @@
             </div>
             <div class="two fields">
               <div class="field">
-                <label>Est présent dans</label>
+                <label>A gaver e-barzh :</label>
                 <div class="two fields">
                   <div class=field>
                     <div class="ui checkbox">
@@ -102,23 +101,21 @@
               <div class="field">
                 <label>Stankted</label>
                 <select class="" name="">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
+                  <option value="peu courant">Distank</option>
+                  <option value="courant">Stank</option>
+                  <option value="très courant">Stank-tre</option>
                 </select>
               </div>
             </div>
           </div>
-          <div class="ui secondary bottom attached segment">
-            <p>Fichenn savet gant XXX</p>
-            <p><i class="calendar icon"></i>01/02/2019</p>
-          </div>
+
         </div>
 
         <div class="eight wide column">
           <div class="ui top attached blue segment" id="adpennger">
             <h4 class="ui header">Adpenngerioù</h4>
           </div>
+          <div style="max-height:300px;overflow-y: scroll;overflow-x: hidden";>
           <table class="ui bottom attached table">
             <thead>
               <th>
@@ -145,17 +142,19 @@
             </tbody>
           </table>
         </div>
+        </div>
 
         <div class="eight wide column">
-          <div class="ui top attached blue segment">
+          <div class="ui top attached blue segment" id="kar">
             <h4 class="ui header">Penngerioù kar</h4>
           </div>
+          <div style="max-height:300px;overflow-y: scroll;overflow-x: hidden";>
           <table class="ui bottom attached table">
             <thead>
               <th>
                 <div class="field">
-                <input type="text" name="" value="" placeholder="Penneger">
-              </div>
+                  <input type="text" name="" value="" placeholder="Penneger">
+                </div>
               </th>
               <th class="">
                 <select class="" name="">
@@ -185,6 +184,165 @@
               </tr>
             </tbody>
           </table>
+        </div>
+        </div>
+
+        <div class="eight wide column">
+          <div class="ui top attached blue segment" id="distagadur">
+            <h4 class="ui header">Distagadur</h4>
+          </div>
+          <div style="max-height:300px;overflow-y: scroll;overflow-x: hidden";>
+          <table class="ui bottom attached table">
+            <thead>
+              <th>
+                <input type="text" name="" value="" placeholder="Distagadur fonetik">
+              </th>
+              <th class="collapsing">
+                <button class="ui icon button" name="button">
+                  <i class="upload icon"></i>
+                </button>
+                <button class="ui blue icon button" name="button">
+                  <i class="add icon"></i>
+                </button>
+              </th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ɛ̃vɛl</td>
+                <td>
+                  <button class="ui icon button" name="button">
+                    <i class="edit icon"></i>
+                  </button>
+                  <button class="ui icon button" name="button">
+                    <i class="delete icon"></i>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        </div>
+
+        <div class="eight wide column">
+          <div class="ui top attached blue segment" id="deveret">
+            <h4 class="ui header">Stummoù deveret</h4>
+          </div>
+          <div style="max-height:300px;overflow-y: scroll;overflow-x: hidden";>
+          <table class="ui bottom attached table">
+            <thead>
+              <th>
+                <input type="text" name="" value="" placeholder="Stumm deveret">
+              </th>
+              <th>
+                <button class="ui blue icon button" name="button">
+                  <i class="add icon"></i>
+                </button>
+              </th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>heñvelañ</td>
+                <td class="collapsing">
+                  <button class="ui icon button" name="button">
+                    <i class="edit icon"></i>
+                  </button>
+                  <button class="ui icon button" name="button">
+                    <i class="delete icon"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>heñvelat</td>
+                <td class="collapsing">
+                  <button class="ui icon button" name="button">
+                    <i class="edit icon"></i>
+                  </button>
+                  <button class="ui icon button" name="button">
+                    <i class="delete icon"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>heñveloc'h</td>
+                <td class="collapsing">
+                  <button class="ui icon button" name="button">
+                    <i class="edit icon"></i>
+                  </button>
+                  <button class="ui icon button" name="button">
+                    <i class="delete icon"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>heñvelañ</td>
+                <td class="collapsing">
+                  <button class="ui icon button" name="button">
+                    <i class="edit icon"></i>
+                  </button>
+                  <button class="ui icon button" name="button">
+                    <i class="delete icon"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>heñvelañ</td>
+                <td class="collapsing">
+                  <button class="ui icon button" name="button">
+                    <i class="edit icon"></i>
+                  </button>
+                  <button class="ui icon button" name="button">
+                    <i class="delete icon"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>heñvelañ</td>
+                <td class="collapsing">
+                  <button class="ui icon button" name="button">
+                    <i class="edit icon"></i>
+                  </button>
+                  <button class="ui icon button" name="button">
+                    <i class="delete icon"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>heñvelañ</td>
+                <td class="collapsing">
+                  <button class="ui icon button" name="button">
+                    <i class="edit icon"></i>
+                  </button>
+                  <button class="ui icon button" name="button">
+                    <i class="delete icon"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>heñvelañ</td>
+                <td class="collapsing">
+                  <button class="ui icon button" name="button">
+                    <i class="edit icon"></i>
+                  </button>
+                  <button class="ui icon button" name="button">
+                    <i class="delete icon"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>heñvelañ</td>
+                <td class="collapsing">
+                  <button class="ui icon button" name="button">
+                    <i class="edit icon"></i>
+                  </button>
+                  <button class="ui icon button" name="button">
+                    <i class="delete icon"></i>
+                  </button>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
         </div>
 
         <div class="sixteen wide column">
@@ -242,96 +400,24 @@ HS. hañval.
           </div>
         </div>
 
-        <div class="eight wide column">
-          <div class="ui top attached blue segment">
-            <h4 class="ui header">Distagadur</h4>
-          </div>
-          <table class="ui bottom attached table">
-            <thead>
-              <th>
-                <input type="text" name="" value="" placeholder="Distagadur fonetik">
-              </th>
-              <th class="collapsing">
-                <button class="ui icon button" name="button">
-                  <i class="upload icon"></i>
-                </button>
-                <button class="ui blue icon button" name="button">
-                  <i class="add icon"></i>
-                </button>
-              </th>
-            </thead>
-            <tbody>
-              <tr>
-                <td>ɛ̃vɛl</td>
-                <td>
-                  <button class="ui icon button" name="button">
-                    <i class="edit icon"></i>
-                  </button>
-                  <button class="ui icon button" name="button">
-                    <i class="delete icon"></i>
-                  </button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
 
-        <div class="eight wide column">
-          <div class="ui top attached blue segment" id="deveret">
-            <h4 class="ui header">Stummoù deveret</h4>
-          </div>
-          <table class="ui bottom attached table">
-            <thead>
-              <th>
-                <input type="text" name="" value="" placeholder="Stumm deveret">
-              </th>
-              <th>
-                <button class="ui blue icon button" name="button">
-                  <i class="add icon"></i>
-                </button>
-              </th>
-            </thead>
-            <tbody>
-              <tr>
-                <td>heñvelañ</td>
-                <td class="collapsing">
-                  <button class="ui icon button" name="button">
-                    <i class="edit icon"></i>
-                  </button>
-                  <button class="ui icon button" name="button">
-                    <i class="delete icon"></i>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>heñvelat</td>
-                <td class="collapsing">
-                  <button class="ui icon button" name="button">
-                    <i class="edit icon"></i>
-                  </button>
-                  <button class="ui icon button" name="button">
-                    <i class="delete icon"></i>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>heñveloc'h</td>
-                <td class="collapsing">
-                  <button class="ui icon button" name="button">
-                    <i class="edit icon"></i>
-                  </button>
-                  <button class="ui icon button" name="button">
-                    <i class="delete icon"></i>
-                  </button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
         <div class="sixteen wide column">
           <div class="ui clearing top attached blue segment" id="istorel">
             <h4 class="ui header">Stummoù istorel testeniekaet</h4>
-            <div class="four fields">
+
+            <div class="field">
+              <label>Stumm</label>
+              <textarea rows=4></textarea>
+            </div>
+            <div class="field">
+              <label>Stumm peurunvan</label>
+              <textarea rows=4></textarea>
+            </div>
+            <button class="ui labeled icon blue bottom right floated button" name="button">
+              <i class="add icon"></i>
+              Ouzhpennañ
+            </button>
+            <div class="five fields">
               <div class="field">
                 <label>Bloavezh niv.</label>
                 <input type="text" name="" value="">
@@ -352,29 +438,19 @@ HS. hañval.
                   <option value="">AAB</option>
                 </select>
               </div>
+
+
             </div>
-            <div class="two fields">
-              <div class="field">
-                <label>Stumm</label>
-                <textarea rows=2></textarea>
-              </div>
-              <div class="field">
-                <label>Stumm peurunvan</label>
-                <textarea rows=2></textarea>
-              </div>
-            </div>
-            <button class="ui right floated labeled icon blue button" name="button">
-              <i class="add icon"></i>
-              Ouzhpennañ
-            </button>
+
+
             <p class="ui left floated"></p>
           </div>
-          <table class="ui celled striped bottom attached table">
+          <div style="max-height:600px;overflow-y: scroll;overflow-x: hidden";>
+          <table class="ui striped celled bottom attached structured table">
             <thead>
               <tr>
                 <th>Bloavezh</th>
                 <th>Stumm</th>
-                <th>Stumm peurunvan</th>
                 <th>Daveen</th>
                 <th>Berradur</th>
                 <th>
@@ -383,29 +459,32 @@ HS. hañval.
             </thead>
             <tbody>
               <tr>
-                <td>1890</td>
+                <td rowspan="2">1890</td>
                 <td></td>
+
+                <td rowspan="2">p29</td>
+                <td rowspan="2">AGH</td>
+                <td rowspan="2" class="collapsing">
+                  <button class="ui icon button" name="button">
+                    <i class="edit icon"></i>
+                  </button>
+                  <button class="ui icon button" name="button">
+                    <i class="delete icon"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="rowspanned"></td>
                 <td>N'eo ket heñvel-krenn an div draonienn-se -ha traoniennoù all niverus a-walc'h e-lec'h ma 'z eo ledan Gourvazenn an Douar-Bras -ouzh an traoniennoù bet studiet uheloc'h. N'int ket dirann: bazennoù a zo etre ar
-                  fozioù.
-                </td>
-                <td>p29</td>
-                <td>AGH</td>
-                <td class="collapsing">
-                  <button class="ui icon button" name="button">
-                    <i class="edit icon"></i>
-                  </button>
-                  <button class="ui icon button" name="button">
-                    <i class="delete icon"></i>
-                  </button>
-                </td>
+                  fozioù.</td>
               </tr>
+
               <tr>
-                <td>1670</td>
+                <td rowspan="2">1670</td>
                 <td>qen hêvel eo ouc'h e dad, evel pa véz eñ a véz </td>
-                <td>Ken heñvel eo ouzh e dad, evel pa vez eñ a vez</td>
-                <td>p12</td>
-                <td>BHG</td>
-                <td class="collapsing">
+                <td rowspan="2">p12</td>
+                <td rowspan="2">BHG</td>
+                <td rowspan="2" class="collapsing">
                   <button class="ui icon button" name="button">
                     <i class="edit icon"></i>
                   </button>
@@ -415,12 +494,16 @@ HS. hañval.
                 </td>
               </tr>
               <tr>
-                <td>1568</td>
+                <td class="rowspanned"></td>
+                <td>Ken heñvel eo ouzh e dad, evel pa vez eñ a vez</td>
+              </tr>
+
+              <tr>
+                <td rowspan="2">1568</td>
                 <td>hânval</td>
-                <td></td>
-                <td>pg ressembler</td>
-                <td>BGH</td>
-                <td class="collapsing">
+                <td rowspan="2">pg ressembler</td>
+                <td rowspan="2">BGH</td>
+                <td rowspan="2" class="collapsing">
                   <button class="ui icon button" name="button">
                     <i class="edit icon"></i>
                   </button>
@@ -428,10 +511,15 @@ HS. hañval.
                     <i class="delete icon"></i>
                   </button>
                 </td>
+              </tr>
+              <tr>
+                <td class="rowspanned"></td>
+                <td></td>
               </tr>
 
             </tbody>
           </table>
+        </div>
         </div>
 
         <div class="eight wide column">
@@ -447,14 +535,20 @@ HS. hañval.
             <textarea name="name" rows="8"></textarea>
           </div>
         </div>
-<div class="sixteen wide column">
+        <div class="sixteen wide column">
 
-      </div>
+        </div>
       </div>
 
     </div>
   </div>
 
+  <script type="text/javascript">
+    $('.ui.sticky')
+      .sticky({
+        context: '#formulaire'
+      });
+  </script>
 </body>
 
 </html>
