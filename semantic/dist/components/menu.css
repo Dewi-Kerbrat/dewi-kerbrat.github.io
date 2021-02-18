@@ -24,7 +24,7 @@
   display: -ms-flexbox;
   display: flex;
   margin: 1rem 0;
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background: #FFFFFF;
   font-weight: normal;
   border: 1px solid rgba(34, 36, 38, 0.15);
@@ -263,7 +263,8 @@
 .ui.menu .ui.dropdown.item .menu .item:not(.filtered) {
   display: block;
 }
-.ui.menu .ui.dropdown .menu > .item .icon:not(.dropdown) {
+.ui.menu .ui.dropdown .menu > .item > .icons,
+.ui.menu .ui.dropdown .menu > .item > i.icon:not(.dropdown) {
   display: inline-block;
   font-size: 1em !important;
   float: none;
@@ -289,7 +290,7 @@
 }
 
 /* Vertical */
-.ui.vertical.menu .dropdown.item > .icon {
+.ui.vertical.menu .dropdown.item > i.icon {
   float: right;
   content: "\f0da";
   margin-left: 1em;
@@ -1244,24 +1245,24 @@ Floated Menu / Item
 }
 
 /* Icon */
-.ui.icon.menu .item > .icon:not(.dropdown) {
+.ui.icon.menu .item > i.icon:not(.dropdown) {
   margin: 0;
   opacity: 1;
 }
 
 /* Icon Gylph */
-.ui.icon.menu .icon:before {
+.ui.icon.menu i.icon:before {
   opacity: 1;
 }
 
 /* (x) Item Icon */
-.ui.menu .icon.item > .icon {
+.ui.menu .icon.item > i.icon {
   width: auto;
   margin: 0 auto;
 }
 
 /* Vertical Icon */
-.ui.vertical.icon.menu .item > .icon:not(.dropdown) {
+.ui.vertical.icon.menu .item > i.icon:not(.dropdown) {
   display: block;
   opacity: 1;
   margin: 0 auto;
@@ -1293,7 +1294,7 @@ Floated Menu / Item
 }
 
 /* Icon */
-.ui.labeled.icon.menu > .item > .icon:not(.dropdown) {
+.ui.labeled.icon.menu > .item > i.icon:not(.dropdown) {
   height: 1em;
   display: block;
   font-size: 1.71428571em !important;
@@ -1365,7 +1366,7 @@ Floated Menu / Item
 .ui.ui.ui.menu .primary.active.item,
 .ui.ui.primary.menu .active.item:hover,
 .ui.ui.primary.menu .active.item {
-  color: #E03997;
+  color: #2185D0;
 }
 .ui.ui.ui.menu .red.active.item,
 .ui.ui.red.menu .active.item:hover,
@@ -1555,7 +1556,7 @@ Floated Menu / Item
 
 .ui.ui.ui.inverted.menu .primary.active.item,
 .ui.ui.inverted.primary.menu {
-  background-color: #E03997;
+  background-color: #2185D0;
 }
 .ui.inverted.primary.menu .item:before {
   background-color: rgba(34, 36, 38, 0.1);
@@ -1564,7 +1565,7 @@ Floated Menu / Item
   background-color: rgba(0, 0, 0, 0.1);
 }
 .ui.inverted.pointing.primary.menu .active.item {
-  background-color: #e61a8d;
+  background-color: #1678c2;
 }
 .ui.ui.ui.inverted.menu .red.active.item,
 .ui.ui.inverted.red.menu {
@@ -2005,7 +2006,7 @@ Floated Menu / Item
   background-color: #FFFFFF;
 }
 .ui.inverted.pointing.menu .primary.active.item:after {
-  background-color: #E03997;
+  background-color: #2185D0;
 }
 .ui.inverted.pointing.menu .secondary.active.item:after {
   background-color: #1B1C1D;

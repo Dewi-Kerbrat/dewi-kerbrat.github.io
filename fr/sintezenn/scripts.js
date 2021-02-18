@@ -8,6 +8,7 @@ fileInput.onchange = () => {
 
 var myHeaders = new Headers();
 myHeaders.append("Authorization", "Token token=leQXX6fy3aOWMjb7IaKOEeJRqPwXcxpp");
+myHeaders.append('content-type', 'application/json');
 
 var formdata = new FormData();
 formdata.append("job[webapp_id]", "1054");
