@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="frp">
+    <head>
+        <meta name="theme-color" content="#2196F3" />
+        <title data-text="title">Apertium | Una plataforma libra/a codo-sôrsa uvèrt de traduccion ôtomatica</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="description" data-textattr="content" data-text="description" content="Apertium est una plataforma de traduccion ôtomatica fondâye sur des règlles. O est una programerie libra distribuâye d'aprés los tèrmenos de la licence GNU GPL.">
+        <link rel="shortcut icon" href="./img/favicon.ico">
+
+        <!-- Selectivzr bug requires this being in <link> rather than @import -->
+        <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+
+        <link type="text/css" rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
+            crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            if (!window.jQuery) {
+                document.write('<script src="./js/jquery.min.js"><\/script>');
+                console.warn('jQuery from CDN not available - reverting to local copy');
+            }
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            if (!(typeof $().modal == 'function')) {
+                document.write('<script src="./js/bootstrap.min.js"><\/script>');
+                console.warn('Bootstrap JS from CDN not available - reverting to local copy');
+            }
+        </script>
+
+        <!--[if lt IE 9]> <script type="text/javascript" src="./js/compat.js"></script> <![endif]-->
+        <link type="text/css" rel="stylesheet" href="./css/min.css?1615215430">
+        <script type="text/javascript" src="./js/min.js?1615215430"></script>
+<link rel="alternate" hreflang="ar" href="index.ara.html">
+<link rel="alternate" hreflang="an" href="index.arg.html">
+<link rel="alternate" hreflang="av" href="index.ava.html">
+<link rel="alternate" hreflang="ca" href="index.cat.html">
+<link rel="alternate" hreflang="de" href="index.deu.html">
+<link rel="alternate" hreflang="en" href="index.eng.html">
+<link rel="alternate" hreflang="eu" href="index.eus.html">
+<link rel="alternate" hreflang="fi" href="index.fin.html">
+<link rel="alternate" hreflang="fr" href="index.fra.html">
+<link rel="alternate" hreflang="frp" href="index.frp.html">
+<link rel="alternate" hreflang="gl" href="index.glg.html">
+<link rel="alternate" hreflang="he" href="index.heb.html">
+<link rel="alternate" hreflang="kaa" href="index.kaa.html">
+<link rel="alternate" hreflang="kk" href="index.kaz.html">
+<link rel="alternate" hreflang="ky" href="index.kir.html">
+<link rel="alternate" hreflang="mr" href="index.mar.html">
+<link rel="alternate" hreflang="nn" href="index.nno.html">
+<link rel="alternate" hreflang="nb" href="index.nob.html">
+<link rel="alternate" hreflang="oc" href="index.oci.html">
+<link rel="alternate" hreflang="pt" href="index.por.html">
+<link rel="alternate" hreflang="ro" href="index.ron.html">
+<link rel="alternate" hreflang="ru" href="index.rus.html">
+<link rel="alternate" hreflang="se" href="index.sme.html">
+<link rel="alternate" hreflang="es" href="index.spa.html">
+<link rel="alternate" hreflang="sc" href="index.srd.html">
+<link rel="alternate" hreflang="sv" href="index.swe.html">
+<link rel="alternate" hreflang="szl" href="index.szl.html">
+<link rel="alternate" hreflang="tt" href="index.tat.html">
+<link rel="alternate" hreflang="tr" href="index.tur.html">
+<link rel="alternate" hreflang="ug" href="index.uig.html">
+<link rel="alternate" hreflang="uz" href="index.uzb.html">
+<link rel="alternate" hreflang="zh" href="index.zho.html">
+
+        <!--[if lt IE 9]>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+            <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script type="text/javascript">
+            var $buoop = {};
+            $buoop.ol = window.onload;
+            window.onload = function () {
+                try {
+                    if ($buoop.ol) $buoop.ol();
+                } catch (e) {}
+                var e = document.createElement("script");
+                e.setAttribute("type", "text/javascript");
+                e.setAttribute("src", "https://browser-update.org/update.js");
+                document.body.appendChild(e);
+            };
+        </script>
+
+        <!-- [if lt IE 10]>
+            <style type="text/css">
+                button#translateDoc { display: none; }
+            </style>
+        <![endif]-->
+
+        <noscript>
+            <style type="text/css">
+                body {
+                    margin-top: 4em;
+                }
+            </style>
+        </noscript>
+
+        <link rel="manifest" href="./manifest.json">
+        <script type="text/javascript">config.LANGNAMES['frp']={'af': 'afrikâns', 'an': 'aragonês', 'ar': 'arabo', 'arp': 'arpitan', 'ast': 'asturien', 'av': 'avaro', 'aym': 'aymara', 'az': 'azèri', 'ba': 'bachkir', 'be': 'bièlorusso', 'bg': 'bulgaro', 'bn': 'bengali', 'br': 'breton', 'bs': 'bosnien', 'bua': 'bouriato', 'ca': 'catalan', 'cat_valencia': 'valencien', 'ckb': 'kurdo sorani', 'co': 'corso', 'cs': 'tchèco', 'csb': 'cachoubo', 'cv': 'tchouvache', 'cy': 'galouès', 'da': 'danouès', 'de': 'alemand', 'dsb': 'bâs sorabo', 'el': 'grèco', 'en': 'angllês', 'eng_GB': 'angllês britanico', 'eng_US': 'angllês amèriquen', 'eo': 'èsperanto', 'es': 'èspagnol', 'et': 'èstonien', 'eu': 'bâsco', 'fa': 'pèrso', 'fi': 'finouès', 'fo': 'fèroyen', 'fr': 'francês', 'fra_eco': 'francês quèbècouès', 'frp': 'arpitan', 'fy': 'frison orientâl', 'ga': 'irlandês', 'gd': 'gaèlico ècossês', 'gl': 'galicien', 'gn': 'goarani', 'gv': 'manouès', 'hbs_BS': 'bosnien', 'hbs_HR': 'croato', 'hbs_SR': 'sèrbo', 'hbs_SRcyr': 'sèrbo (cirilico)', 'he': 'hèbrô', 'hi': 'hindi', 'hr': 'croato', 'hsb': 'hôt sorabo', 'ht': 'hayicien', 'hu': 'hongrouès', 'hy': 'armènien', 'ia': 'interlingua', 'id': 'indonèsien', 'is': 'islandês', 'it': 'italien', 'kaa': 'karakalpak', 'kk': 'kazakh', 'kmr': 'kurdo de la bise', 'ko': 'corèen', 'ku': 'kurdo', 'kum': 'koumyk', 'kv': 'komi', 'ky': 'kirghize', 'la': 'latin', 'lb': 'luxemborjouès', 'lo': 'laocien', 'lt': 'lituanien', 'lv': 'lèton', 'mk': 'macèdonien', 'ml': 'malayalam', 'mlt_translit': 'maltês translitèrâ', 'mr': 'marati', 'ms': 'malês', 'mt': 'maltês', 'myv': 'mordvo erziâ', 'nb': 'norvègien bokmål', 'ne': 'nèpalês', 'nl': 'nêrlandês', 'nn': 'norvègien nynorsk', 'nno_e': 'norvègien orientâl', 'no': 'norvègien', 'oc': 'occitan', 'oci_aran': 'aranês', 'oci_gascon': 'gascon', 'os': 'ossèto', 'pan_Arab': 'pendjabi (arabo)', 'pan_Guru': 'pendjabi (gurmukhi)', 'pl': 'polonês', 'por_BR': 'português brèsilien', 'por_PTpre1990': 'port. européen (ort. trad.)', 'pt': 'português', 'qve': 'quèchoua', 'rm': 'roumancho', 'ro': 'roumen', 'ru': 'russo', 'rup': 'aroumen', 'sa': 'sanscrit', 'sah': 'yakouto', 'sc': 'sârdo', 'sco': 'ècossês', 'se': 'samo de la bise', 'sh': 'sèrbocroato', 'sk': 'slovaco', 'sl': 'slovèno', 'sma': 'samo miéjornâl', 'smj': 'samo de Lule', 'sq': 'albanês', 'sr': 'sèrbo', 'sv': 'suèdouès', 'sw': 'souahili', 'szl': 'silèsien', 'ta': 'tamoul', 'te': 'tèlougou', 'tet': 'tètoum', 'tg': 'tadjik', 'tgk_translit': 'tadjik translitèrâ', 'th': 'taylandês', 'tk': 'turkmèno', 'tl': 'tagalog', 'tr': 'turco', 'tt': 'tataro', 'tyv': 'touven', 'udm': 'oudmourto', 'uk': 'ukrênien', 'ur': 'ourdou', 'uz': 'ouzbèk', 'vi': 'viètnamien', 'xh': 'xhosa', 'zh': 'chinouès', 'zu': 'zoulou'}</script>
+    </head>
+    <body>
+        <span class="fa d-none" id="faChecker"></span>
+        <script type="text/javascript">
+            if ($('#faChecker').css('fontFamily') !== 'FontAwesome') {
+                $('<link type="text/css" rel="stylesheet" href="./css/font-awesome.min.css">').appendTo('head');
+                console.warn('FontAwesome CSS from CDN not available - reverting to local copy');
+            }
+        </script>
+
+        <div id="wrap">
+            <nav class="navbar navbar-dark bg-dark navbarDefault navbar-expand-md mb-4 pt-0" role="navigation">
+                <div class="container position-relative">
+                    <div>
+                        <div>
+                            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Apertium Box" class="apertiumBox">
+                            <span class="apertiumSubLogo"></span>
+                            <span class="apertiumLogo" id="apertiumLogo">Apertium</span>
+                        </div>
+                        <p data-text="tagline" class="tagline">Una plataforma libra/a codo-sôrsa uvèrt de traduccion ôtomatica</p>
+                    </div>
+                    <div class="float-right d-none d-md-block align-self-start" id="localeSelectContainer">
+                        <!-- <i class="icon-globe localeGlobe float-right"></i> -->
+                        <i class="fa fa-globe fa-2x fa-inverse float-right localeGlobe pt-2 pr-1" id="primaryLocaleGlobe"></i>
+                        <select class="localeSelect float-right mt-2">
+                            <option></option>
+                        </select>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars navbarBars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarToggler">
+                        <ul class="nav navbar-nav mt-1 ml-auto">
+                            <li class="nav-item p-1">
+                                <a href="#translation" data-mode="translation" data-text="Translation" class="nav-link" data-toggle="tab" style="display: none;">Traduccion</a>
+                            </li>
+                            <li class="nav-item p-1">
+                                <a href="#analyzation" data-mode="analyzation" data-text="Morphological_Analysis" class="nav-link" data-toggle="tab" style="display: none;">Analise morfologica</a>
+                            </li>
+                            <li class="nav-item p-1">
+                                <a href="#generation" data-mode="generation" data-text="Morphological_Generation" class="nav-link" data-toggle="tab" style="display: none;">Gènèracion morfologica</a>
+                            </li>
+                            <li class="nav-item p-1">
+                                <a href="#sandbox" data-mode="sandbox" data-text="APy_Sandbox" class="nav-link" data-toggle="tab" style="display: none;">Bachèt a sabla APy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
+                <!-- Not found warning -->
+                <div class="position-absolute d-none" id="loadingIndicator">
+                    <i class="fa fa-spinner fa-spin fa-4x"></i>
+                </div>
+                <div class="tab-content">
+                    <div class="modeContainer tab-pane fade" id="translation">
+                        <h2 class="d-block d-md-none" data-text="Translation">Traduccion</h2>
+                        <form id="translationForm">
+                            <fieldset>
+                                <div class="form-group d-flex d-md-none flex-column">
+                                    <div class="d-flex flex-wrap langSelectGroup">
+                                        <select class="langSelect d-inline-block" id="srcLangSelect" aria-label="Select Original Language" class="col">
+                                            <option data-text="Detect_Language" value="detect">Dètèctar la lengoua</option>
+                                        </select>
+                                        <button type="button" class="btn btn-dark btn-sm swapLangBtn" aria-label="Swap Languages" class="col">
+                                            <i class="fa fa-exchange"></i>
+                                        </button>
+                                        <select class="langSelect d-inline-block" id="dstLangSelect" aria-label="Select New Language" class="col">
+                                            <option> </option>
+                                        </select>
+                                        <button type="button" class="btn btn-primary btn-sm translateBtn ml-auto" data-text="Translate">Traduire</button>
+                                    </div>
+                                </div>
+                                <div class="form-group row d-none d-md-block">
+                                    <div class="col-6 d-inline-flex align-items-start justify-content-between">
+                                        <button type="button" class="btn btn-sm btn-secondary float-left" id="cancelTranslateWebpage" style="display: none">
+                                            <i class="fa fa-arrow-left"></i>
+                                            <span data-text="Cancel">Anular</span>
+                                        </button>
+                                        <div class="btn-group d-flex flex-wrap pl-0" id="srcLangSelectors">
+                                            <button type="button" class="btn btn-secondary btn-sm srcLang active" id="srcLang1"></button>
+                                            <button type="button" class="btn btn-secondary btn-sm srcLang" id="srcLang2"></button>
+                                            <button type="button" class="btn btn-secondary btn-sm srcLang" id="srcLang3"></button>
+                                            <button type="button" class="btn btn-secondary btn-sm srcLang" id="detect">
+                                                <span data-text="Detect_Language" id="detectText">Dètèctar la lengoua</span>
+                                                <span id="detectedText"></span>
+                                            </button>
+                                            <button type="button" id="srcLanguagesDropdownTrigger" class="btn btn-secondary dropdown-toggle btn-sm" data-toggle="dropdown">
+                                                <span class="sr-only">Toggle Dropdown</span>
+                                            </button>
+                                            <div class="dropdown-menu" id="srcLanguages" role="menu">
+                                                <div class="row d-flex"></div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-secondary btn-sm swapLangBtn">
+                                            <i class="fa fa-exchange"></i>
+                                        </button>
+                                    </div>
+                                    <div class="col-6 d-inline-flex align-items-start justify-content-between dstLangParent">
+                                        <div class="btn-group d-flex flex-wrap" id="dstLangSelectors">
+                                            <button type="button" class="btn btn-secondary btn-sm dstLang active" id="dstLang1"></button>
+                                            <button type="button" class="btn btn-secondary btn-sm dstLang" id="dstLang2"></button>
+                                            <button type="button" class="btn btn-secondary btn-sm dstLang" id="dstLang3"></button>
+                                            <button type="button" id="dstLanguagesDropdownTrigger" class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown">
+                                                <span class="caret"></span>
+                                                <span class="sr-only">Toggle Dropdown</span>
+                                            </button>
+                                            <div class="dropdown-menu" id="dstLanguages" role="menu">
+                                                <div class="row d-flex"></div>
+                                            </div>
+                                        </div>
+                                        <button type="button" id="translate" class="btn btn-blue btn-sm translateBtn" data-text="Translate">Traduire</button>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div id="translateText">
+                                        <div class="row">
+                                            <div class="col-12 col-md-6">
+                                                <textarea class="form-control" id="originalText" rows="15" spellcheck="false" aria-label="Original Text"
+                                                    data-textattr="placeholder" data-text="Translation_Help"></textarea>
+                                                <button class="btn clearButton position-absolute" aria-label="Clear Text">
+                                                    <i class="fa fa-times"></i>
+                                                </button>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <textarea class="form-control bg-light" id="translatedText" rows="15" spellcheck="false" aria-label="Translated Text"
+                                                    readonly></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-2">
+                                            <div class="col-12 col-md-6 d-flex d-sm-block flex-wrap otherTranslationOptions">
+                                                <button id="translateDoc" class="btn btn-secondary mt-3">
+                                                    <i class="fa fa-file-text"></i>
+                                                    <span data-text="Translate_Document">Traduire un document</span>
+                                                </button>
+                                                <button id="showTranslateWebpage" class="btn btn-secondary mt-3">
+                                                    <i class="fa fa-link"></i>
+                                                    <span data-text="Translate_Webpage">Traduire un sito</span>
+                                                </button>
+                                            </div>
+                                            <div class="col-12 col-md-6 form-check d-flex flex-column align-items-end justify-content-end w-auto mt-2" id="translateOptions">
+                                                <label>
+                                                    <input type="checkbox" id="markUnknown" checked>
+                                                    <span data-text="Mark_Unknown_Words">Mârcar los mots encognus</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" id="instantTranslation" checked>
+                                                    <span data-text="Instant_Translation">Traduccion enstantanâye</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" id="chainedTranslation" class="chaining">
+                                                    <span data-text="Multi_Step_Translation" class="chaining"><a href='https://en.wikipedia.org/wiki/Pivot_language' target='_blank' rel='noopener'>Traduccion multi-ètapa</a> (èxpèrimentala)</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-backdrop" id="fileDropBackdrop" style="display: none">
+                                        <div class="card card-body bg-light text-center position-absolute" id="dropDocumentContainer">
+                                            <h1 class="font-weight-bold" data-text="Drop_Document">Èliminar un document</h1>
+                                        </div>
+                                        <div class="modal-backdrop" id="fileDropMask"></div>
+                                    </div>
+
+                                    <div id="docTranslation" class="row" style="display: none">
+                                        <div class="col-md-6">
+                                            <div class="card card-body bg-light">
+                                                <input type="file" id="fileInput" accept="text/plain,text/html,text/rtf,application/rtf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.openxmlformats-officedocument.presentationml.presentation,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.oasis.opendocument.text,application/x-latex,application/x-tex">
+                                                <div class="lead" id="fileName" style="display: none"></div>
+                                                <div class="mt-3" id="uploadErrorContainer">
+                                                    <span id="uploadError" class="text-danger lead" style="display: none"></span>
+                                                    <div class="progress mb-0 d-none" id="progressContainer">
+                                                        <div id="fileUploadProgress" class="progress-bar progress-bar-striped progress-bar-animated w-0" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    <span data-text="Supported_Formats">Formats suportâs: .txt, .rtf, .odp, .ods, .odt (LibreOffice/OpenOffice), .xlsx, .pptx, .docx (Microsoft Office 2003 et més tot frès). <br/><i>Los fichiérs .doc (Word 97) et los pdf sont pas suportâs.</i></span>
+                                                </p>
+                                                <button class="btn btn-sm btn-secondary position-absolute" id="cancelDocTranslate">
+                                                    <i class="fa fa-arrow-left"></i>
+                                                    <span data-text="Cancel">Anular</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div id="fileLoading" class="text-center position-absolute" style="display: none">
+                                                <i class="fa fa-spinner fa-spin fa-4x"></i>
+                                            </div>
+                                            <h1>
+                                                <a id="fileDownload" href="#" class="text-center lead" style="display: none">
+                                                    <i class="fa fa-download"></i>
+                                                    <span id="fileDownloadText"></span>
+                                                </a>
+                                            </h1>
+                                        </div>
+                                    </div>
+
+                                    <div class="overflow-hidden" id="translateWebpage">
+                                        <div class="col-sm-12 row">
+                                            <div class="input-group mb-2 w-100">
+                                                <div class="input-group-prepend">
+                                                    <i class="fa fa-link input-group-text"></i>
+                                                </div>
+                                                <input id="webpage" placeholder="URL ⏎" class="form-control" autocomplete="url">
+                                            </div>
+                                            <iframe class="w-100" id="translatedWebpage" src="about:blank">
+                                            </iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="modeContainer tab-pane fade" id="analyzation">
+                        <h2 class="d-block d-md-none" data-text="Morphological_Analysis">Analise morfologica</h2>
+                        <form role="form" id="analysisForm">
+                            <fieldset>
+                                <div class="form-group row">
+                                    <label for="primaryAnalyzerMode" class="col-md-2 col-lg-1 col-form-label text-md-right" data-text="Language">Lengoua</label>
+                                    <div class="col-md-3">
+                                        <select class="form-control analyzerMode" id="primaryAnalyzerMode" name="primaryAnalyzerMode" required>
+                                            <option> </option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <select class="form-control analyzerMode" id="secondaryAnalyzerMode" name="secondaryAnalyzerMode" required>
+                                            <option> </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="morphAnalyzerInput" class="col-md-2 col-lg-1 col-form-label text-md-right" data-text="Input_Text">Tèxto d’entrâ</label>
+                                    <div class="col-md-10">
+                                        <textarea class="form-control" rows="5" id="morphAnalyzerInput" name="morphAnalyzerInput" spellcheck="false" data-textattr="placeholder"
+                                            data-text="Morphological_Analysis_Help" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="offset-md-2 col-md-10 offset-lg-1">
+                                        <button type="submit" class="btn btn-primary" id="analyze" data-text="Analyze">Analisar</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+
+                        <table class="table table-hover outputContainer" id="morphAnalyzerOutput"></table>
+                    </div>
+                    <div class="modeContainer tab-pane fade" id="generation">
+                        <h2 class="d-block d-md-none" data-text="Morphological_Generation">Gènèracion morfologica</h2>
+                        <form role="form" id="generateForm">
+                            <fieldset>
+                                <div class="form-group row">
+                                    <label for="primaryGeneratorMode" class="col-md-2 col-lg-1 col-form-label text-md-right" data-text="Language">Lengoua</label>
+                                    <div class="col-md-3">
+                                        <select class="form-control generatorMode" id="primaryGeneratorMode" name="primaryGeneratorMode" required>
+                                            <option> </option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <select class="form-control generatorMode" id="secondaryGeneratorMode" name="secondaryGeneratorMode" required>
+                                            <option> </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="morphGeneratorInput" class="col-md-2 col-lg-1 col-form-label text-md-right" data-text="Input_Text">Tèxto d’entrâ</label>
+                                    <div class="col-md-10">
+                                        <textarea class="form-control" rows="5" id="morphGeneratorInput" name="morphGeneratorInput" spellcheck="false" data-textattr="placeholder"
+                                            data-text="Morphological_Generation_Help" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="offset-md-2 col-md-10 offset-lg-1">
+                                        <button type="submit" class="btn btn-primary" id="generate" data-text="Generate">Gènèrar</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <div id="morphGenOutput" class="outputContainer"></div>
+                    </div>
+                    <div class="modeContainer tab-pane fade" id="sandbox">
+                        <h2 class="d-block d-md-none" data-text="APy_Sandbox">Bachèt a sabla APy</h2>
+                        <form role="form" id="sandboxForm">
+                            <fieldset>
+                                <legend>
+                                    <span data-text="APy_Sandbox_Help">Mandâd una requéta arbitrèra</span>
+                                    <a href="http://wiki.apertium.org/wiki/Apertium-apy" target="_blank" class="float-right" rel="noopener">
+                                        <abbr title="Apertium API in Python">APy</abbr>
+                                        <i class="fa fa-question-circle"></i>
+                                    </a>
+                                </legend>
+                                <div class="form-group row">
+                                    <label for="sandboxInput" class="col-md-2 col-form-label text-md-right">
+                                        <label data-text="APy_Request">Requéta APy</label>
+                                        <i id="endpoint" class="fa fa-info-circle" data-toggle="tooltip"></i>
+                                    </label>
+                                    <div class="col-md-10">
+                                        <textarea class="form-control" rows="3" id="sandboxInput" name="sandboxInput" spellcheck="false" required></textarea>
+                                        <div class="form-text text-muted">e.g. /perWord?lang=en-es&amp;modes=morph+translate+biltrans&amp;q=let+there+be+light</div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="offset-md-2 col-md-10">
+                                        <button type="submit" class="btn btn-primary" id="request" data-text="Request">Requéta</button>
+                                        <code id="time" class="float-right"></code>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <pre id="sandboxOutput" class="outputContainer small"></pre>
+                    </div>
+                </div>
+
+                <div class="d-block d-sm-none">
+                    <select class="localeSelect float-left my-2" aria-label="Select Language">
+                        <option> </option>
+                    </select>
+                    <i class="fa fa-globe fa-2x float-left localeGlobe pt-1 pl-1" id="secondaryLocaleGlobe"></i>
+                    <!-- <i class="fa fa-globe localeGlobe float-left"></i> -->
+                </div>
+            </div>
+            <div id="push"></div>
+        </div>
+
+        <div id="footer" class="d-flex flex-column container">
+            <div class="d-none d-md-flex flex-wrap flex-row justify-content-between position-relative row">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a data-toggle="modal" data-target="#aboutModal" data-keyboard="true" class="nav-link" tabindex="0">
+                            <i class="fa fa-question-circle"></i>
+                            <span data-text="About">A propôs</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-toggle="modal" data-target="#downloadModal" data-keyboard="true" class="nav-link" tabindex="0">
+                            <i class="fa fa-download"></i>
+                            <span data-text="Download">Tèlèchargiér</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-toggle="modal" data-target="#docModal" data-keyboard="true" class="nav-link" tabindex="0">
+                            <i class="fa fa-book"></i>
+                            <span data-text="Documentation">Documentacion</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-toggle="modal" data-target="#contactModal" data-keyboard="true" class="nav-link" tabindex="0">
+                            <i class="fa fa-envelope"></i>
+                            <span data-text="Contact">Contacto</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="card d-inline-block bg-light helpMessage mr-3 mb-4 ml-3 p-2">
+                    <span data-text="Notice_Mistake">Éd-vos trovâ una èrror ?</span>
+                    <a tabindex="0"data-toggle="modal" data-target="#aboutModal" data-text="Help_Improve" data-keyboard="true" id="aboutModalTrigger">Édiéd-nos a mèlyorar Apertium !</a>
+                </div>
+                <a id="version" class="text-muted d-none d-lg-block" href="https://github.com/apertium/apertium-html-tools" target="_blank"
+                    rel="noopener">
+                    <small>
+                        v4.0.0-7-ge6226cc
+                    </small>
+                </a>
+            </div>
+
+            <div class="align-self-end card card-body d-block bg-light d-md-none helpMessage mt-2 mr-0 mb-0 p-2" id="xsHelpMessageContainer">
+                <span data-text="Notice_Mistake">Éd-vos trovâ una èrror ?</span>
+                <a tabindex="0"data-toggle="modal" data-target="#infoModal" data-text="Help_Improve" data-keyboard="true">Édiéd-nos a mèlyorar Apertium !</a>
+            </div>
+        </div>
+
+        <div class="modal fade" id="aboutModal" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" data-text="About_Apertium">A propôs d'Apertium</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div data-text="What_Is_Apertium"><p>Apertium est <b>una plataforma de traduccion ôtomatica libra/a codo-sôrsa uvèrt</b>, conçua a l'origina por des cobles de lengoues vesenes, pués s'est ètèrsa a des cobles de lengoues més luentênes coment la cobla anglês-catalan. La plataforma balye : </p> <ol> <li>un motor de traduccion ôtomatica que dèpend pas d'una cèrtêna lengoua</li> <li>des outils lengouisticos por maneyér les donâs nècèssères a la rèalisacion d'un sistèmo de traduccion ôtomatica por una cobla de lengoues donâye</li> <li>des donâs lengouistiques por un nombro crèssent de cobles de lengoues.</li> </ol> <p>Apertium aprèciye l'arrevâ de novéls dèvelopors : se vos trovâd que vous pouede mèlyorar lo motor, los outils ou les donâs lengouistiques, fôt pas margalyér a <a data-toggle='modal' data-target='#contactModal' data-text='Help_Improve' data-keyboard='true' data-dismiss='modal' style='cursor: pointer'>nos contactar</a>.</p></div>
+                        <div data-text="Maintainer" id="aboutModalMaintainer">Sito maintegnu per <a href='http://wiki.apertium.org/wiki/Apertium' target='_blank' rel='noopener'>Apertium</a>.</div>
+
+                        <div class="row lead">
+                            <div class="col-md-6">
+                                <div class="mx-auto">
+                                    <a href="https://developers.google.com/open-source/soc/" target="_blank" id="gsocLogoContainer" rel="noopener">
+                                        <img alt="Google Summer of Code" data-src="https://summerofcode.withgoogle.com/static/img/summer-of-code-logo.svg" id="gsocLogo">
+                                    </a>
+                                    <a href="https://developers.google.com/open-source/gci/" target="_blank" id="codeInLogoContainer" rel="noopener">
+                                        <img alt="Google Code-In" data-src="https://developers.google.com/open-source/gci/images/logo-icon.png" id="codeInLogo">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 text-center">
+                                <a href="http://www.bytemark.co.uk/" target="_blank" rel="noopener">
+                                    <img alt="Bytemark" class="w-100" data-src="./img/logo_bytemark.gif" id="bytemarkLogo">
+                                </a>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <a href="https://www.github.com/apertium" target="_blank" rel="noopener">
+                                    <img alt="GitHub" data-src="./img/github.png" id="githubLogo">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="row lead">
+                            <div class="col-md-6 text-center">
+                                <a href="http://www.minetur.gob.es/" target="_blank" rel="noopener">
+                                    <img alt="Ministry of Industry, Energy and Tourism" data-src="./img/logomitc120.jpg">
+                                </a>
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <a href="http://www.ua.es/" target="_blank" rel="noopener">
+                                    <img alt="Universidad de Alicante" data-src="./img/logouapp.gif">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4 text-center">
+                                <a href="http://www.prompsit.com/" target="_blank" rel="noopener">
+                                    <img alt="Prompsit Language Engineering S.L." data-src="./img/prompsit150x52.png">
+                                </a>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <a href="http://www10.gencat.net" target="_blank" rel="noopener">
+                                    <img alt="Generalitat de Catalunya" data-src="./img/stsi.gif">
+                                </a>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <a href="http://www.mae.ro/" target="_blank" rel="noopener">
+                                    <img alt="ROMÂNIA  Ministerul Afacerilor Externe" data-src="./img/logo_mae_ro_75pc.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="d-inline-block my-o" id="creativeCommonsLicence">
+                                <a href="http://creativecommons.org/licenses/by-sa/3.0/">
+                                    <img alt="Creative Commons licence" data-src="./img/cc-by-sa-3.0-88x31.png">
+                                </a>
+                            </div>
+
+                            <div class="d-inline-block my-0" id="gnuGplLicence">
+                                <a href="https://www.gnu.org/licenses/gpl.html">
+                                    <img alt="GNU GPL License" data-src="./img/gplv3-88x31.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="docModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" data-text="Apertium_Documentation">Apertium Documentation</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p data-text="Documentation_Para">On trôve la documentacion sur <a href='http://wiki.apertium.org/'>le Wiki</a> dens la sèccion <a href='http://wiki.apertium.org/wiki/Documentation' target='_blank' rel='noopener'>Documentation</a>. Nos ens publeyê plusiors articllos de confèrences et de revues, vos troveréd una lista sur la Wiki dens la sèccion <a href='http://wiki.apertium.org/wiki/Publications' target='_blank' rel='noopener'>Publications</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="downloadModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" data-text="Apertium_Downloads">Tèlèchargements Apertium</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p data-text="Downloads_Para">Les dèrriéres vèrsions de <b>la bouèta a outils Apertium </b> et pués <b>les donâs por les cobles de lengoues</b> sont disponibles sur <a href='https://github.com/apertium' target='_blank' rel='noopener'>lo sito de GitHub</a>. On trôve les enstruccions por enstalar Apertium sur les principâles plataformes sur <a href='http://wiki.apertium.org/wiki/Installation' target='_blank' rel='noopener'>la page enstalacion du Wiki</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="contactModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" data-text="Contact">Contacto</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p data-text="Contact_Us">Contactâd-nos se vos trovâd una èrror, se vos vêde un projèt sur loquint vos amerâd que nos travalyens, ou se vos voléd nos balyér la man.</p>
+                        <div data-text="Contact_Para"><h4>Lo canâl IRC</h4> <p>La façon més rapida por nos contactar. Por cen fâre, fôt alar sur <a href='http://wiki.apertium.org/wiki/IRC' target='_blank' rel='noopener'><abbr title='Internet Relay Chat'>IRC</abbr> noutron canâl #apertium</a> sur lo sèrvor irc.freenode.net, yô vos troveréd los usagiérs et dèvelopors d'Apertium.</p> <h4>La lista de difusion</h4> <p>Por cen fôt vos enscrire a <a href='https://lists.sourceforge.net/lists/listinfo/apertium-stuff' target='_blank' rel='noopener'> la lista de difusion d'Apertium</a>, yô vos pouede postar des mèssâjos més longs avouéc des proposicions ou que trètont de problèmos et pués discutar d'Apertium de façon gènèrâla.</p> <h4>Contact</h4> <p> Vos pouede nos contactar avouéc <a href='mailto:apertium-contact@lists.sourceforge.net' target='_blank' rel='noopener'>la lista de difusion d'Apertium</a> se vous trovâd una èrror, se vos vêde un projèt sur loquint vous amerâd que nous travalyens ou se vos voléd nos balyér la man.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="infoModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" data-text="About_Title">A propôs du sito de malyâjo</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            <span data-text="Maintainer">Sito maintegnu per <a href='http://wiki.apertium.org/wiki/Apertium' target='_blank' rel='noopener'>Apertium</a>.</span>
+                            <span class="float-right">
+                                <a href="mailto:apertium-contact@lists.sourceforge.net">
+                                    <i class="fa fa-envelope"></i>
+                                    apertium-contact@lists.sourceforge.net
+                                </a>
+                            </span>
+                        </p>
+                        <p data-text="Contact_Us">Contactâd-nos se vos trovâd una èrror, se vos vêde un projèt sur loquint vos amerâd que nos travalyens, ou se vos voléd nos balyér la man.</p>
+
+                        <div class="center-block" id="infoModalApertiumLogoContainer">
+                            <a href="http://www.apertium.org/" target="_blank" rel="noopener">
+                                <img alt="Apertium" data-src="./img/Apertium.png" class="center-block mw-100" id="infoModalApertiumLogo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <noscript id="noscript">
+            <div class="lead text-warning well well-sm" data-text="Enable_JS_Warning">Lo sito fonccione ren qu'avouéc Javascript activâ, se vos pouede pas <a href='http://www.enable-javascript.com/' target='_blank' rel='noopener'>activar Javascript</a>, provâd los <a href='http://traductor.prompsit.com' target='_blank' rel='noopener'>outils de traduccion de Prompsit</a></div>
+            <img src="None/piwik.php?idsite=None" class="border-0" alt="">
+        </noscript>
+        <button class="btn btn-secondary" id="backToTop" style="display: none;">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </button>
+        <div id="installationNotice" class="alert alert-warning alert-dismissible m-2 p-2" style="display: none;">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="m-0 pb-2" id="installationNoticeTitle" data-text="Install_Apertium">Enstalar Apertium</h4>
+            <p class="mb-0" data-text="Install_Apertium_Para">Se vos èprovâd des rèponses lentes ? Noutros sèrvors pôvont étre surchargiês. Aprendre coment <a href='http://wiki.apertium.org/wiki/Installation' target='_blank' rel='noopener'>enstalar Apertium dens lo cârro</a>.</p>
+        </div>
+    </body>
+</html>
