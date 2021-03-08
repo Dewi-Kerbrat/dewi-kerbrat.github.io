@@ -9,8 +9,8 @@ var config = {
     "SUBTITLE": null,
     "SUBTITLE_COLOR": null,
     "ALLOWED_LANGS": [
-        "br",
-        "fr"
+        "bre",
+        "fra"
     ],
     "ALLOWED_VARIANTS": null,
     "ALLOWED_PAIRS": null,
