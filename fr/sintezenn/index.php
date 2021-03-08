@@ -29,6 +29,7 @@
 
     <div class="page">
       <div class="ui one column grid container main">
+
         <div class="column">
           <div class="ui breadcrumb">
             <a class="section" href="/porched/fr/">Accueil</a>
