@@ -1,0 +1,325 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Portail numérique pour la langue bretonne</title>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/porched/semantic/dist/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="/porched/style.css">
+
+  <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+  <script src="/porched/semantic/dist/semantic.min.js"></script>
+
+</head>
+
+<body>
+
+
+  <!-- header -->
+  <div class="ui inverted stackable borderless top fixed menu topbar">
+  <div class="ui container">
+    <a class="item" href="/porched/fr/">
+      <h1 class="ui inverted header"><img src="/porched/images/LogoOPLB.svg">
+        <div class="content">Portail numérique de la langue bretonne<div class="ui sub header">Office public de la langue bretonne</div>
+        </div>
+      </h1>
+    </a>
+    <div class="right menu">
+      <div class="ui item">
+        <div class="ui dropdown inverted button">
+          <i class="globe icon"></i>
+          français
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <a href="/porched/br/" class="item">brezhoneg</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="full height">
+
+    <!-- side menu -->
+    <div class="toc">
+  <div class="ui vertical secondary big menu">
+    <div class="header item">
+      <div class="ui sub header">Ressources numériques</div>
+    </div>
+    <div class="ui left pointing dropdown item">
+      Dictionnaires
+      <i class="book icon"></i>
+      <i class="ui dropdown icon"></i>
+      <div class="menu">
+        <a class="item" href="/porched/fr/meurgorf/"><i class="history icon"></i>MeurGorf - Dictionnaire historique du breton</a>
+      </div>
+    </div>
+    <div class="ui left pointing dropdown item">
+      Bases de données
+      <i class="database icon"></i>
+      <i class="ui dropdown icon"></i>
+      <div class="menu">
+        <a class="item" href="/porched/fr/kerofis/"><i class="map marked alternate icon"></i>KerOfis - Base de donnée toponymique</a>
+        <a class="item" href="http://www.fr.brezhoneg.bzh/36-termofis.htm"><i class="search icon"></i>TermOfis - Base de donnée terminologique</a>
+      </div>
+    </div>
+    <div class="ui left pointing dropdown item">
+      <i class="folder icon"></i>
+      Corpus
+      <i class="ui dropdown icon"></i>
+      <div class="menu">
+        <a href="/porched/fr/corpus/text/" class="item"><i class="file alternate icon"></i>Corpus textuel</a>
+        <a href="/porched/fr/corpus/audio/" class="item"><i class="file audio icon"></i>Corpus audio</a>
+      </div>
+    </div>
+    <div class="ui left pointing dropdown item">
+      <i class="user icon"></i>
+      Utiliser le breton
+      <i class="dropdown icon"></i>
+      <div class="menu">
+        <a href="/porched/fr/utiliser/" class="item">
+          <i class="users icon"></i>
+          Sur les réseaux sociaux
+        </a>
+        <a href="#" class="item">
+          <i class="desktop icon"></i>
+          Sur son site internet
+        </a>
+
+      </div>
+    </div>
+    <div class="ui divider">
+    </div>
+    <div class="header item">
+      <div class="ui sub header">Outils numériques</div>
+    </div>
+    <div class="ui left pointing dropdown item">
+      <i class="globe europe icon"></i>Traduction
+      <i class="ui dropdown icon"></i>
+      <div class="menu">
+        <a class="item" href="/porched/fr/apertium/index.fra.html"><i class="language icon"></i>Apertium - Traducteur automatique</a>
+      </div>
+    </div>
+    <div class="ui left pointing dropdown item">
+      <i class="microphone icon"></i>
+      Parole
+      <i class="ui dropdown icon"></i>
+      <div class="menu">
+        <a class="item" href="/porched/fr/sintezenn/"><i class="comment icon"></i>MouezhOfis - Synthèse de la parole</a>
+      </div>
+    </div>
+    <div class="ui left pointing dropdown item">
+      <i class="tools icon"></i>
+      Autres outils
+      <i class="ui dropdown icon"></i>
+      <div class="menu">
+        <a href="#" class="item"><i class="spell check icon"></i>Correcteurs orthographiques</a>
+      </div>
+    </div>
+    <div class="ui divider"></div>
+    <div class="header item">
+      <div class="ui sub header">Les technologies de la langue</div>
+    </div>
+    <a class="item" href="/porched/fr/strategie/">
+      <i class="tasks icon"></i>Stratégie numérique
+    </a>
+    <a class="item">
+      <i class="question icon"></i>A propos
+    </a>
+    <div class="ui divider"></div>
+  </div>
+</div>
+
+    <!-- end side menu -->
+
+
+
+    <div class="page">
+      <div class="ui one column doubling stackable grid container main">
+        <div class="column">
+
+          <div class="ui two item pointing menu">
+            <a class="item" href="/porched/fr/strategie/">
+              Présentation
+            </a>
+            <a class="item active" href="/porched/fr/strategie/inventaire.php">
+              Inventaire des ressources et outils disponibles
+            </a>
+          </div>
+
+          <div class="ui very padded segment">
+            <h1 class="ui header">
+              <i class="search icon"></i>
+              <div class="content">
+                Inventaire des ressources et outils
+              </div>
+            </h1>
+
+            <h2 class="ui header">Ressources numériques</h2>
+            <h3 class="ui header">Ressources lexicales</h3>
+
+            <p>
+              Les ressources lexicales regroupent toutes les données relatives aux mots et au vocabulaire du breton. Elles comprennent des dictionnaires, lexiques, bases terminologiques, toponimiques...
+            </p>
+
+            <h4 class="ui header">Dictionnaires monolingues</h4>
+            <div class="ui very relaxed list">
+
+              <a href="" target="_blank" class="item">
+                <i class="external big pink icon"></i>
+                <div class="content">
+                  <div class="header">
+                    Meurgorf
+                  </div>
+                  <div class="meta">
+                    Dictionnaire historique
+                  </div>
+                  <div class="description">
+                    Meurgorf est un dictionnaire historique du breton. Conçu et alimenté par l'OPLB, il présente les définitions de près de 60 000 mots accompagnées d'exemple historiques.
+                  </div>
+                  <div class="extra">
+                    Libre de droits
+                  </div>
+                </div>
+              </a>
+
+              <h4 class="ui header">Dictionnaires bilingues et multilingues</h4>
+
+              <a href="http://www.devri.bzh" target="_blank" class="item">
+                <i class="external big pink icon"></i>
+                <div class="content">
+                  <div class="header">
+                    Devri
+                  </div>
+                  <div class="meta">
+                    Dictionnaire diachronique
+                  </div>
+                  <div class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </div>
+                  <div class="extra">
+                    <i class="creative commons icon"></i>Licence Creative Commons
+                  </div>
+                </div>
+              </a>
+              <a class="item">
+                <i class="external big pink icon"></i>
+                <div class="content">
+                  <div class="header">
+                    Favreau
+                  </div>
+                  <div class="meta">
+                    Dictionnaire bilingue
+                  </div>
+                  <div class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </div>
+                  <div class="extra">
+                    <i class="creative commons icon"></i>Licence Creative Commons
+                  </div>
+                </div>
+              </a>
+            </div>
+            <h3 class="ui header">Ressources grammaticales</h3>
+            <h3 class="ui header">Corpus de texte</h3>
+            <h3 class="ui header">Corpus audios</h3>
+
+            <h2 class="ui header">Outils linguistiques</h2>
+            <h3 class="ui header">Etiquetteur morphosyntaxique</h3>
+            <h3 class="ui header"></h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+              in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+              sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum.
+            </p>
+
+
+
+
+          </div>
+          <p></p>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="footer">
+  <div class="ui three column grid container ">
+    <div class="column">
+      <div class="ui basic segment">
+        <p></p>
+        <h4 class="ui inverted header">L'Office public de la langue bretonne</h4>
+        <div class="ui inverted link list">
+          <a href="#" class="item">
+            <i class="external alternate icon"></i>
+            <div class="content">Site internet</div>
+          </a>
+          <a class="item">
+            <i class="envelope icon"></i>
+            <div class="content">Contact</div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="ui basic segment">
+        <p></p>
+        <h4 class="ui inverted header">Réseaux sociaux</h4>
+        <div class="ui inverted link list">
+          <a class="item">
+            <i class="twitter icon"></i>
+            <div class="content">Twitter</div>
+          </a>
+          <a class="item">
+            <i class="facebook icon"></i>
+            <div class="content">Facebook</div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+    <div class="column">
+      <div class="ui basic segment">
+        <p></p>
+        <h4 class="ui inverted header">Copyright © 2021 - Ofis publik ar brezhoneg</h4>
+        <div class="ui inverted link list">
+          <a href="#" class="item">Politique de confidentialité</a>
+          <div class="item">Ce site n'utilise pas de cookies</div>
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+      $('.ui.accordion')
+        .accordion();
+
+      $('.ui.dropdown')
+        .dropdown();
+
+      $('.menu .item')
+        .tab();
+
+      $('.label')
+        .popup();
+      $('.ui.sticky')
+        .sticky();
+    </script>
+
+
+</body>
+
+</html>

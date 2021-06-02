@@ -1,0 +1,276 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Corpus de texte</title>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/porched/semantic/dist/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="/porched/style.css">
+
+  <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+  <script src="/porched/semantic/dist/semantic.min.js"></script>
+
+</head>
+
+<body>
+
+
+  <!-- header -->
+  <?php require("../../includes/header.html") ?>
+
+  <div class="full height">
+
+    <!-- side menu -->
+    <?php require("../../includes/menu.html") ?>
+    <!-- end side menu -->
+
+
+
+    <div class="page">
+      <div class="ui doubling stackable grid container main">
+        <div class="sixteen wide column">
+
+          <div class="ui very padded segment">
+              <h1 class="ui header"><em data-emoji="books"></em> Corpus de texte</h1>
+
+              <p>
+                Sur cette page, vous pourrez trouver les corpus de textes consitués par l'Office public de la langue bretonne, ainsi que d'autres corpus disponibles librement sur Internet.
+              </p>
+
+              <div class="ui icon message">
+                <i class="question icon"></i>
+                <div class="content">
+                  <a href="https://fr.wikipedia.org/wiki/Corpus" class="ui labeled icon right floated button">
+                    <i class="wikipedia icon"></i>
+                    En savoir plus</a>
+                  <div class="header">
+                    Qu'est ce qu'un corpus ?
+                  </div>
+
+                  <p>Un corpus est un ensemble de documents (textes, images, vidéos, etc.) regroupées dans le but d'effectuer des traitements informatiques. Ils représentent un échantillon de la langue, qui peut être général ou spécifique à un domaine, une époque, un registre de langue...</p>
+
+                </div>
+              </div>
+
+              <h2 class="ui header">Corpus monolingues</h2>
+
+              <div class="ui pink cards">
+
+                <div class="card">
+                  <div class="content">
+                    <div class="header">
+                      Corpus Leipzig breton
+                    </div>
+                    <div class="meta">
+                      2016
+                    </div>
+                    <div class="description">
+                      <p>Corpus monolingue, non annoté, extrait à partir du Wikipédia breton.</p>
+                      <p>10 000, 30 000 et 100 000 phrases</p>
+
+                    </div>
+                  </div>
+                  <div class="extra content">
+                    <a href="https://wortschatz.uni-leipzig.de/en/download/Breton" class="ui labeled icon basic small fluid button">
+                      <i class="external link icon"></i>
+                      Corpus Leipzig breton
+                    </a>
+                    <p></p>
+                    <p>Disponible sous licence
+                      <a href="https://opendatacommons.org/licenses/odbl/1-0/">Open Database</a>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="content">
+                    <div class="header">
+                      Corpus Universal Dependencies Breton KEB
+                    </div>
+                    <div class="meta">
+                      2018
+                    </div>
+                    <div class="description">
+                      <p>Corpus arboré (TreeBank) du breton, comportant des annotations
+                        morpho-grammaticales et syntaxiques. Ce corpus fait partie
+                        du projet Universal Dependencies.
+                      </p>
+
+                      <p>888 phrases
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="extra content">
+                    <a href="#" class="ui labeled icon small basic fluid button">
+                      <i class="external link icon"></i>
+                       Corpus UD breton KEB
+                    </a>
+                    <p></p>
+                    <p>Licence Creative Commons BY-SA 4.0</p>
+                    <p><i class="creative commons icon"></i><i class="creative commons by icon"></i><i class="creative commons sa icon"></i></p>
+                  </div>
+                </div>
+
+              </div>
+
+
+              <h2 class="ui header">Corpus multilingues</h2>
+
+              <p>Un corpus multilingue est un corpus qui présente des documents
+                identitques ou semblables dans au moins deux langues différentes.</p>
+              <div class="ui cards">
+
+                <div class="pink card">
+                  <div class="content">
+                    <div class="header">
+                      Corpus bilingue de l'OPLB
+                    </div>
+                    <div class="meta">
+                      octobre 2018
+                    </div>
+                    <div class="description">
+                      <p>Il s'agit d'un corpus blingue français-breton, constitué
+                        de XX phrases alignées. Les données sont issues de mémoires
+                        de traduction de l'Office public de la langue bretonne.
+                      </p>
+                      <p>20 000 phrases</p>
+                    </div>
+                  </div>
+                  <div class="extra content">
+                    <div class="ui vertical labeled icon fluid basic buttons">
+                      <button class="ui button">
+                        <i class="download icon"></i>
+                        corpus français
+                      </button>
+                      <button class="ui button">
+                        <i class="download icon"></i>
+                        corpus breton
+                      </button>
+                      <a href="#" class="ui button">
+                        <i class="download icon"></i>
+                        corpus français-breton
+                      </a>
+                    </div>
+                    <p></p>
+                    <p>Disponible sous licence <a href="https://opendatacommons.org/licenses/odbl/1-0/">Open Database</a></p>
+                  </div>
+                </div>
+
+                <div class="pink card">
+                  <div class="content">
+                    <div class="header">
+                      Corpus bilingues OPUS
+                    </div>
+                    <div class="meta">
+                      février 2021
+                    </div>
+                    <div class="description">
+                      <p>
+                        OPUS est une collection de corpus bilingues alignés issus de mémoires de traduction de l'OPLB, de sous-titres, de traductions de différents logiciels, etc.
+                      </p>
+                      <p>900 000 phrases
+                      </p>
+                      <div class="ui message">
+                        Pour plusieurs corpus, l'alignement est à revoir
+                      </div>
+                    </div>
+                  </div>
+                  <div class="extra content">
+                    <p>
+                      <a href="https://opus.nlpl.eu/" class="ui labeled icon basic small fluid button">
+                        <i class="external link icon"></i>
+                        corpus OPUS
+                      </a>
+                    </p>
+                    <p>Licences OpenSource</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="ui hidden divider"></div>
+
+            </div>
+            </div>
+
+          </div>
+
+      </div>
+
+    </div>
+    <div class="footer">
+  <div class="ui three column grid container ">
+    <div class="column">
+      <div class="ui basic segment">
+        <p></p>
+        <h4 class="ui inverted header">L'Office public de la langue bretonne</h4>
+        <div class="ui inverted link list">
+          <a href="#" class="item">
+            <i class="external alternate icon"></i>
+            <div class="content">Site internet</div>
+          </a>
+          <a class="item">
+            <i class="envelope icon"></i>
+            <div class="content">Contact</div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="ui basic segment">
+        <p></p>
+        <h4 class="ui inverted header">Réseaux sociaux</h4>
+        <div class="ui inverted link list">
+          <a class="item">
+            <i class="twitter icon"></i>
+            <div class="content">Twitter</div>
+          </a>
+          <a class="item">
+            <i class="facebook icon"></i>
+            <div class="content">Facebook</div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+    <div class="column">
+      <div class="ui basic segment">
+        <p></p>
+        <h4 class="ui inverted header">Copyright © 2021 - Ofis publik ar brezhoneg</h4>
+        <div class="ui inverted link list">
+          <a href="#" class="item">Politique de confidentialité</a>
+          <div class="item">Ce site n'utilise pas de cookies</div>
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+        <!-- JAVASCRIPT -->
+        <script>
+          $('.ui.accordion')
+            .accordion();
+
+          $('.ui.dropdown')
+            .dropdown();
+
+          $('.menu .item')
+            .tab();
+
+          $('.label')
+            .popup();
+          $('.ui.sticky')
+            .sticky();
+        </script>
+
+
+</body>
+
+</html>

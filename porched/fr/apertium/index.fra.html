@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title data-text="title">PNLB - Traducteur automatique</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" data-textattr="content" data-text="description" content="Apertium est une plateforme de traduction automatique basée sur des règles. C'est un logiciel libre distribué selon les termes de la licence GNU GPL.">
+    <link rel="shortcut icon" href="/porched/images/logo_new.png">
+    <!-- Selectivzr bug requires this being in <link> rather than @import -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    if (!window.jQuery) {
+    document.write('<script src="./js/jquery.min.js"><\/script>');
+    console.warn('jQuery from CDN not available - reverting to local copy');
+    }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    if (!(typeof $().modal == 'function')) {
+    document.write('<script src="./js/bootstrap.min.js"><\/script>');
+    console.warn('Bootstrap JS from CDN not available - reverting to local copy');
+    }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/porched/semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="/porched/style.css">
+    <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    <script src="/porched/semantic/dist/semantic.min.js"></script>
+    <script type="text/javascript" src="./js/min.js?1615217753"></script>
+    <link rel="alternate" hreflang="ar" href="index.ara.html">
+    <link rel="alternate" hreflang="an" href="index.arg.html">
+    <link rel="alternate" hreflang="av" href="index.ava.html">
+    <link rel="alternate" hreflang="ca" href="index.cat.html">
+    <link rel="alternate" hreflang="de" href="index.deu.html">
+    <link rel="alternate" hreflang="en" href="index.eng.html">
+    <link rel="alternate" hreflang="eu" href="index.eus.html">
+    <link rel="alternate" hreflang="fi" href="index.fin.html">
+    <link rel="alternate" hreflang="fr" href="index.fra.html">
+    <link rel="alternate" hreflang="frp" href="index.frp.html">
+    <link rel="alternate" hreflang="gl" href="index.glg.html">
+    <link rel="alternate" hreflang="he" href="index.heb.html">
+    <link rel="alternate" hreflang="kaa" href="index.kaa.html">
+    <link rel="alternate" hreflang="kk" href="index.kaz.html">
+    <link rel="alternate" hreflang="ky" href="index.kir.html">
+    <link rel="alternate" hreflang="mr" href="index.mar.html">
+    <link rel="alternate" hreflang="nn" href="index.nno.html">
+    <link rel="alternate" hreflang="nb" href="index.nob.html">
+    <link rel="alternate" hreflang="oc" href="index.oci.html">
+    <link rel="alternate" hreflang="pt" href="index.por.html">
+    <link rel="alternate" hreflang="ro" href="index.ron.html">
+    <link rel="alternate" hreflang="ru" href="index.rus.html">
+    <link rel="alternate" hreflang="se" href="index.sme.html">
+    <link rel="alternate" hreflang="es" href="index.spa.html">
+    <link rel="alternate" hreflang="sc" href="index.srd.html">
+    <link rel="alternate" hreflang="sv" href="index.swe.html">
+    <link rel="alternate" hreflang="szl" href="index.szl.html">
+    <link rel="alternate" hreflang="tt" href="index.tat.html">
+    <link rel="alternate" hreflang="tr" href="index.tur.html">
+    <link rel="alternate" hreflang="ug" href="index.uig.html">
+    <link rel="alternate" hreflang="uz" href="index.uzb.html">
+    <link rel="alternate" hreflang="zh" href="index.zho.html">
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+    var $buoop = {};
+    $buoop.ol = window.onload;
+    window.onload = function() {
+    try {
+    if ($buoop.ol) $buoop.ol();
+    } catch (e) {}
+    var e = document.createElement("script");
+    e.setAttribute("type", "text/javascript");
+    e.setAttribute("src", "https://browser-update.org/update.js");
+    document.body.appendChild(e);
+    };
+    </script>
+    <!-- [if lt IE 10]>
+    <style type="text/css">
+    button#translateDoc { display: none; }
+    </style>
+    <![endif]-->
+    <noscript>
+    <style type="text/css">
+    body {
+    margin-top: 4em;
+    }
+    </style>
+    </noscript>
+    <link rel="manifest" href="./manifest.json">
+    <script type="text/javascript">
+    config.LANGNAMES['fra'] = {
+    'af': 'afrikaans',
+    'ain': 'aïnou',
+    'alt': 'altaï du Sud',
+    'an': 'aragonais',
+    'ar': 'arabe',
+    'as': 'assamais',
+    'ast': 'asturien',
+    'av': 'avar',
+    'az': 'azéri',
+    'ba': 'bachkir',
+    'bas': 'bassa',
+    'be': 'biélorusse',
+    'bg': 'bulgare',
+    'bi': 'bichelamar',
+    'bn': 'bengali',
+    'br': 'breton',
+    'bs': 'bosniaque',
+    'bua': 'bouriate',
+    'byv': 'médumba',
+    'ca': 'catalan',
+    'cat_valencia': 'valencien',
+    'ceb': 'cebuano',
+    'chm': 'mari',
+    'ckb': 'sorani',
+    'co': 'corse',
+    'crh': 'turc de Crimée',
+    'cs': 'tchèque',
+    'csb': 'kachoube',
+    'cu': 'slavon d’église',
+    'cv': 'tchouvache',
+    'cy': 'gallois',
+    'da': 'danois',
+    'dar': 'dargwa',
+    'de': 'allemand',
+    'dsb': 'bas-sorabe',
+    'el': 'grec',
+    'en': 'anglais',
+    'eng_GB': 'anglais britannique',
+    'eng_US': 'anglais américain',
+    'eo': 'espéranto',
+    'es': 'espagnol',
+    'et': 'estonien',
+    'eu': 'basque',
+    'fa': 'persan',
+    'fi': 'finnois',
+    'fo': 'féroïen',
+    'fr': 'français',
+    'fra_eco': 'français québécois',
+    'frp': 'francoprovençal',
+    'fy': 'frison occidental',
+    'ga': 'irlandais',
+    'gag': 'gagaouze',
+    'gd': 'gaélique écossais',
+    'gl': 'galicien',
+    'glk': 'gilaki',
+    'gn': 'guarani',
+    'gu': 'goudjerati',
+    'guc': 'wayuu',
+    'gv': 'mannois',
+    'ha': 'haoussa',
+    'haw': 'hawaïen',
+    'hbs_BS': 'bosnien',
+    'hbs_HR': 'croate',
+    'hbs_SR': 'serbe',
+    'hbs_SRcyr': 'serbe (cyrillique)',
+    'he': 'hébreu',
+    'hi': 'hindi',
+    'hr': 'croate',
+    'hsb': 'haut-sorabe',
+    'ht': 'créole haïtien',
+    'hu': 'hongrois',
+    'hy': 'arménien',
+    'ia': 'interlingua',
+    'id': 'indonésien',
+    'ig': 'igbo',
+    'is': 'islandais',
+    'it': 'italien',
+    'ja': 'japonais',
+    'ka': 'géorgien',
+    'kaa': 'karakalpak',
+    'kk': 'kazakh',
+    'kn': 'kannada',
+    'ko': 'coréen',
+    'krc': 'karatchaï balkar',
+    'krl': 'carélien',
+    'ks': 'cachemiri',
+    'kum': 'koumyk',
+    'kv': 'komi',
+    'ky': 'kirghize',
+    'la': 'latin',
+    'lb': 'luxembourgeois',
+    'lg': 'ganda',
+    'liv': 'livonien',
+    'ln': 'lingala',
+    'lo': 'lao',
+    'lt': 'lituanien',
+    'lv': 'letton',
+    'mdf': 'mokcha',
+    'mfe': 'créole mauricien',
+    'mk': 'macédonien',
+    'ml': 'malayalam',
+    'mr': 'marathi',
+    'mrj': 'mari occidental',
+    'ms': 'malais',
+    'mt': 'maltais',
+    'myv': 'erzya',
+    'nap': 'napolitain',
+    'nb': 'norvégien bokmål',
+    'ne': 'népalais',
+    'nl': 'néerlandais',
+    'nn': 'norvégien nynorsk',
+    'nno_e': 'norvégien oriental',
+    'no': 'norvégien',
+    'nog': 'nogaï',
+    'oc': 'occitan',
+    'oci_aran': 'aranais',
+    'oci_gascon': 'gascon',
+    'os': 'ossète',
+    'ota': 'turc ottoman',
+    'pa': 'pendjabi',
+    'pl': 'polonais',
+    'por_BR': 'portugais brésilien',
+    'por_PTpre1990': 'port. européen (orth. trad.)',
+    'pt': 'portugais',
+    'rm': 'romanche',
+    'rn': 'roundi',
+    'ro': 'roumain',
+    'ru': 'russe',
+    'rup': 'aroumain',
+    'sa': 'sanskrit',
+    'sah': 'iakoute',
+    'sc': 'sarde',
+    'scn': 'sicilien',
+    'sco': 'écossais',
+    'sd': 'sindhi',
+    'se': 'same du Nord',
+    'sh': 'serbo-croate',
+    'si': 'cingalais',
+    'sk': 'slovaque',
+    'sl': 'slovène',
+    'sma': 'same du Sud',
+    'smj': 'same de Lule',
+    'smn': 'same d’Inari',
+    'sq': 'albanais',
+    'sr': 'serbe',
+    'srn': 'sranan tongo',
+    'ss': 'swati',
+    'sv': 'suédois',
+    'sw': 'swahili',
+    'szl': 'silésien',
+    'ta': 'tamoul',
+    'te': 'télougou',
+    'tet': 'tétoum',
+    'tg': 'tadjik',
+    'th': 'thaï',
+    'tk': 'turkmène',
+    'tl': 'tagalog',
+    'tr': 'turc',
+    'tt': 'tatar',
+    'tyv': 'touvain',
+    'udm': 'oudmourte',
+    'ug': 'ouïgour',
+    'uk': 'ukrainien',
+    'ur': 'ourdou',
+    'uz': 'ouzbek',
+    'vi': 'vietnamien',
+    'vro': 'võro',
+    'wal': 'walamo',
+    'xh': 'xhosa',
+    'yi': 'yiddish',
+    'yo': 'yoruba',
+    'zh': 'chinois',
+    'zu': 'zoulou'
+    }
+    </script>
+  </head>
+  <body>
+    <div class="ui inverted stackable borderless top fixed menu topbar">
+      <div class="ui container">
+        <a class="item" href="/porched/fr/">
+          <h1 class="ui inverted header"><img src="/porched/images/LogoOPLB.svg">
+          <div class="content">Portail numérique pour la langue bretonne<div class="ui sub header">Office public de la langue bretonne</div>
+        </div>
+        </h1>
+      </a>
+      <div class="right menu">
+        <div class="ui item">
+          <div class="ui dropdown inverted button">
+            <i class="globe icon"></i>
+            français
+            <i class="dropdown icon"></i>
+            <div class="menu">
+              <a href="/porched/br/" class="item">brezhoneg</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="full height" id="wrap">
+    <div class="toc">
+      <div class="ui vertical secondary big menu">
+        <div class="header item">
+          <div class="ui sub header">Ressources numériques</div>
+        </div>
+        <div class="ui left pointing dropdown item">
+          <i class="database icon"></i>
+          Bases de données
+          <i class="ui dropdown icon"></i>
+          <div class="menu">
+            <a class="item" href="/porched/fr/kerofis/"><i class="map marked alternate icon"></i>KerOfis - Base de donnée toponymique</a>
+            <a class="item" href="http://www.fr.brezhoneg.bzh/36-termofis.htm"><i class="search icon"></i>TermOfis - Base de donnée terminologique</a>
+            <a class="item" href="/porched/fr/meurgorf/"><i class="history icon"></i>MeurGorf - Dictionnaire historique du breton</a>
+          </div>
+        </div>
+        <div class="ui left pointing dropdown item">
+          <i class="folder icon"></i>
+          Corpus
+          <i class="ui dropdown icon"></i>
+          <div class="menu">
+            <a href="#" class="item"><i class="file alternate icon"></i>Corpus textuel</a>
+            <a href="#" class="item"><i class="file audio icon"></i>Corpus audio</a>
+          </div>
+        </div>
+        <div class="ui left pointing dropdown item">
+          <i class="user icon"></i>
+          Utiliser le breton
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <a href="#" class="item">
+              <i class="users icon"></i>
+              Sur les réseaux sociaux
+            </a>
+            <a href="#" class="item">
+              <i class="desktop icon"></i>
+              Sur son site internet
+            </a>
+          </div>
+        </div>
+        <div class="ui divider">
+        </div>
+        <div class="header item">
+          <div class="ui sub header">Outils numériques</div>
+        </div>
+        <div class="ui left pointing dropdown item">
+          <i class="globe europe icon"></i>Traduction
+          <i class="ui dropdown icon"></i>
+          <div class="menu">
+            <a class="item" href="/porched/fr/apertium/index.fra.html"><i class="language icon"></i>Apertium - Traducteur automatique</a>
+          </div>
+        </div>
+        <div class="ui left pointing dropdown item">
+          <i class="microphone icon"></i>
+          Parole
+          <i class="ui dropdown icon"></i>
+          <div class="menu">
+            <a class="item" href="/porched/fr/sintezenn/"><i class="comment icon"></i>MouezhOfis - Synthèse de la parole</a>
+          </div>
+        </div>
+        <div class="ui left pointing dropdown item">
+          <i class="tools icon"></i>
+          Autres outils
+          <i class="ui dropdown icon"></i>
+          <div class="menu">
+            <a href="#" class="item"><i class="spell check icon"></i>Correcteurs orthographiques</a>
+          </div>
+        </div>
+        <div class="ui divider"></div>
+        <div class="header item">
+          <div class="ui sub header">Les technologies de la langue</div>
+        </div>
+        <a class="item" href="/porched/fr/strategie/">
+          <i class="tasks icon"></i>Stratégie numérique
+        </a>
+        <a class="item">
+          <i class="question icon"></i>A propos
+        </a>
+        <div class="ui divider"></div>
+      </div>
+    </div>
+    <div class="page">
+      <div class="ui one column grid container main">
+        <div class="column">
+          <div class="ui two item pointing menu">
+            <a class="item active" href="/porched/fr/apertium/index.fra.html">
+              Traducteur
+            </a>
+            <a class="item" href="/porched/fr/apertium/apropos.php">
+              A propos d'Apertium
+            </a>
+          </div>
+          <div class="ui very padded segment" id="translation">
+            <h1 class="ui header" data-text="Translation">
+            <i class="language icon"></i>
+            <div class="content">
+              Apertium
+              <div class="sub header">
+                Traducteur automatique breton - français
+              </div>
+            </div>
+            </h1>
+            <form id="translationForm">
+              <fieldset class="ui form" style="border-style: none;">
+                <div class="ui fields">
+                  <div class="field" id="srcLangSelectors">
+                    <button type="button" class="ui basic button srcLang active" id="srcLang1"></button>
+                    <button type="button" id="srcLanguagesDropdownTrigger" class="ui button dropdown-toggle btn-sm" data-toggle="dropdown" style="display: none;">
+                    <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                  </div>
+                  <div class="field">
+                    <button type="button" class="ui disabled icon basic button swapLangBtn">
+                    <i class="angle right icon"></i>
+                    </button>
+                  </div>
+                  <div class="field" id="dstLangSelectors">
+                    <button type="button" class="ui basic button dstLang active" id="dstLang1"></button>
+                    <button type="button" id="dstLanguagesDropdownTrigger" class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" style="display: none;">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                  </div>
+                </div>
+                
+                <div id="translateText">
+                  <div class="field">
+                    <textarea class="" id="originalText" rows="8" spellcheck="false" aria-label="Original Text" data-textattr="placeholder" data-text="Translation_Help"></textarea>
+                  </div>
+                  <div class="field">
+                    <button type="button" id="translate" class="ui pink button translateBtn" data-text="Translate">Traduire</button>
+                  </div>
+                  <div class="field">
+                    <textarea class="" id="translatedText" rows="8" spellcheck="false" aria-label="Translated Text" readonly></textarea>
+                  </div>
+                  <div class="inline fields" id="translateOptions">
+                    <div class="field">
+                      <div class="ui checkbox">
+                        <input type="checkbox" id="markUnknown" checked>
+                        <label data-text="Mark_Unknown_Words">Marquez les mots inconnus</label>
+                      </div>
+                    </div>
+                    <div class="field">
+                      <div class="ui checkbox">
+                        <input type="checkbox" id="instantTranslation" checked>
+                        <label data-text="Instant_Translation">Traduction instantanée</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="ui three column grid container ">
+        <div class="column">
+          <div class="ui basic segment">
+            <p></p>
+            <h4 class="ui inverted header">L'Office public de la langue bretonne</h4>
+            <div class="ui inverted link list">
+              <a href="#" class="item">
+                <i class="external alternate icon"></i>
+                <div class="content">Site internet</div>
+              </a>
+              <a class="item">
+                <i class="envelope icon"></i>
+                <div class="content">Contact</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui basic segment">
+            <p></p>
+            <h4 class="ui inverted header">Réseaux sociaux</h4>
+            <div class="ui inverted link list">
+              <a class="item">
+                <i class="twitter icon"></i>
+                <div class="content">Twitter</div>
+              </a>
+              <a class="item">
+                <i class="facebook icon"></i>
+                <div class="content">Facebook</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+        </div>
+      </div>
+    </div>
+    <noscript id="noscript">
+    <div class="lead text-warning well well-sm" data-text="Enable_JS_Warning">Le site ne fonctionne qu'avec Javascript activé, si vous ne pouvez pas <a href='http://www.enable-javascript.com/' target='_blank' rel='noopener'>activer Javascript</a>,
+    essayez les <a href='http://traductor.prompsit.com' target='_blank' rel='noopener'>outils de traduction de Prompsit</a></div>
+    <img src="None/piwik.php?idsite=None" class="border-0" alt="">
+    </noscript>
+    <script>
+    $('.ui.accordion')
+    .accordion();
+    $('.ui.dropdown')
+    .dropdown();
+    $('.menu .item')
+    .tab();
+    $('.label')
+    .popup();
+    $('.ui.sticky')
+    .sticky();
+    </script>
+  </body>
+</html>
