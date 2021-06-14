@@ -1,0 +1,7 @@
+/*******************************
+     User Global Variables
+*******************************/
+@fontName          : 'Open Sans';
+
+@headerFont        : 'Merriweather Sans', sans-serif;
+@pageFont          : @fontName, sans-serif;
