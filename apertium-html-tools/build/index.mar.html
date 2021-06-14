@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="mr">
+    <head>
+        <meta name="theme-color" content="#2196F3" />
+        <title data-text="title">अपर्टियम | मुक्त/ओपन-सोर्स संगणकीय भाषांतराच्या साधनांचा समूह</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="description" data-textattr="content" data-text="description" content="अपर्टियम हा नियमबद्ध संगणकीय भाषांतराच्या साधनांचा समूह आहे. ही मुक्त (फ्री) साधने 'ग्नू जेनरल पब्लिक लायसन्स' या परवान्यासहित पुरवली आहेत.">
+        <link rel="shortcut icon" href="./img/favicon.ico">
+
+        <!-- Selectivzr bug requires this being in <link> rather than @import -->
+        <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+
+        <link type="text/css" rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
+            crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            if (!window.jQuery) {
+                document.write('<script src="./js/jquery.min.js"><\/script>');
+                console.warn('jQuery from CDN not available - reverting to local copy');
+            }
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            if (!(typeof $().modal == 'function')) {
+                document.write('<script src="./js/bootstrap.min.js"><\/script>');
+                console.warn('Bootstrap JS from CDN not available - reverting to local copy');
+            }
+        </script>
+
+        <!--[if lt IE 9]> <script type="text/javascript" src="./js/compat.js"></script> <![endif]-->
+        <link type="text/css" rel="stylesheet" href="./css/min.css?1615217753">
+        <script type="text/javascript" src="./js/min.js?1615217753"></script>
+<link rel="alternate" hreflang="ar" href="index.ara.html">
+<link rel="alternate" hreflang="an" href="index.arg.html">
+<link rel="alternate" hreflang="av" href="index.ava.html">
+<link rel="alternate" hreflang="ca" href="index.cat.html">
+<link rel="alternate" hreflang="de" href="index.deu.html">
+<link rel="alternate" hreflang="en" href="index.eng.html">
+<link rel="alternate" hreflang="eu" href="index.eus.html">
+<link rel="alternate" hreflang="fi" href="index.fin.html">
+<link rel="alternate" hreflang="fr" href="index.fra.html">
+<link rel="alternate" hreflang="frp" href="index.frp.html">
+<link rel="alternate" hreflang="gl" href="index.glg.html">
+<link rel="alternate" hreflang="he" href="index.heb.html">
+<link rel="alternate" hreflang="kaa" href="index.kaa.html">
+<link rel="alternate" hreflang="kk" href="index.kaz.html">
+<link rel="alternate" hreflang="ky" href="index.kir.html">
+<link rel="alternate" hreflang="mr" href="index.mar.html">
+<link rel="alternate" hreflang="nn" href="index.nno.html">
+<link rel="alternate" hreflang="nb" href="index.nob.html">
+<link rel="alternate" hreflang="oc" href="index.oci.html">
+<link rel="alternate" hreflang="pt" href="index.por.html">
+<link rel="alternate" hreflang="ro" href="index.ron.html">
+<link rel="alternate" hreflang="ru" href="index.rus.html">
+<link rel="alternate" hreflang="se" href="index.sme.html">
+<link rel="alternate" hreflang="es" href="index.spa.html">
+<link rel="alternate" hreflang="sc" href="index.srd.html">
+<link rel="alternate" hreflang="sv" href="index.swe.html">
+<link rel="alternate" hreflang="szl" href="index.szl.html">
+<link rel="alternate" hreflang="tt" href="index.tat.html">
+<link rel="alternate" hreflang="tr" href="index.tur.html">
+<link rel="alternate" hreflang="ug" href="index.uig.html">
+<link rel="alternate" hreflang="uz" href="index.uzb.html">
+<link rel="alternate" hreflang="zh" href="index.zho.html">
+
+        <!--[if lt IE 9]>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+            <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script type="text/javascript">
+            var $buoop = {};
+            $buoop.ol = window.onload;
+            window.onload = function () {
+                try {
+                    if ($buoop.ol) $buoop.ol();
+                } catch (e) {}
+                var e = document.createElement("script");
+                e.setAttribute("type", "text/javascript");
+                e.setAttribute("src", "https://browser-update.org/update.js");
+                document.body.appendChild(e);
+            };
+        </script>
+
+        <!-- [if lt IE 10]>
+            <style type="text/css">
+                button#translateDoc { display: none; }
+            </style>
+        <![endif]-->
+
+        <noscript>
+            <style type="text/css">
+                body {
+                    margin-top: 4em;
+                }
+            </style>
+        </noscript>
+
+        <link rel="manifest" href="./manifest.json">
+        <script type="text/javascript">config.LANGNAMES['mar']={'af': 'अफ्रिकान्स', 'ain': 'ऐनू', 'alt': 'दक्षिणात्य अल्ताई', 'an': 'अर्गोनीज', 'ar': 'अरबी', 'as': 'आसामी', 'ast': 'अस्तुरियन', 'av': 'अ\u200dॅव्हेरिक', 'az': 'अझेरी', 'ba': 'बष्किर', 'bas': 'बसा', 'be': 'बेलारुशियन', 'bg': 'बल्गेरियन', 'bi': 'बिस्लामा', 'bn': 'बंगाली', 'br': 'ब्रेतॉन', 'bs': 'बोस्नियन', 'bua': 'बुरियात', 'ca': 'कातालान', 'ceb': 'सिबुआनो', 'chm': 'मारी', 'ckb': 'मध्य कुर्दिश', 'co': 'कॉर्सिकन', 'crh': 'क्राइमीन तुर्की', 'cs': 'झेक', 'csb': 'काशुबियन', 'cu': 'चर्च स्लाव्हिक', 'cv': 'चूवाश', 'cy': 'वेल्श', 'da': 'डॅनिश', 'dar': 'दार्गवा', 'de': 'जर्मन', 'dsb': 'लोअर सोर्बियन', 'el': 'ग्रीक', 'en': 'इंग्रजी', 'eo': 'एस्परान्टो', 'es': 'स्पॅनिश', 'et': 'इस्टोनियन', 'eu': 'बास्क', 'fa': 'फारसी', 'fi': 'फिन्निश', 'fo': 'फरोइज', 'fr': 'फ्रेंच', 'fy': 'पश्चिमी फ्रिशियन', 'ga': 'आयरिश', 'gag': 'गागाउझ', 'gd': 'स्कॉट्स गेलिक', 'gl': 'गॅलिशियन', 'gn': 'गुआरनी', 'gu': 'गुजराती', 'gv': 'मांक्स', 'ha': 'हौसा', 'haw': 'हवाईयन', 'he': 'हिब्रू', 'hi': 'हिंदी', 'hr': 'क्रोएशियन', 'hsb': 'अप्पर सॉर्बियन', 'ht': 'हैतीयन', 'hu': 'हंगेरियन', 'hy': 'आर्मेनियन', 'ia': 'इंटरलिंग्वा', 'id': 'इंडोनेशियन', 'ig': 'ईग्बो', 'is': 'आईसलँडिक', 'it': 'इटालियन', 'ja': 'जपानी', 'ka': 'जॉर्जियन', 'kaa': 'कारा-कल्पक', 'kk': 'कझाक', 'kn': 'कन्नड', 'ko': 'कोरियन', 'krc': 'कराचय-बाल्कर', 'krl': 'करेलियन', 'ks': 'काश्मीरी', 'kum': 'कुमीक', 'kv': 'कोमी', 'ky': 'किरगीझ', 'la': 'लॅटिन', 'lb': 'लक्झेंबर्गिश', 'lg': 'गांडा', 'ln': 'लिंगाला', 'lo': 'लाओ', 'lt': 'लिथुआनियन', 'lv': 'लात्व्हियन', 'mdf': 'मोक्ष', 'mfe': 'मोरिस्येन', 'mk': 'मॅसेडोनियन', 'ml': 'मल्याळम', 'mr': 'मराठी', 'ms': 'मलय', 'mt': 'माल्टिज्', 'myv': 'एर्झ्या', 'nap': 'नेपोलिटान', 'nb': 'नॉर्वेजियन बोकमाल', 'ne': 'नेपाळी', 'nl': 'डच', 'nn': 'नॉर्वेजियन न्योर्स्क', 'no': 'नोर्वेजियन', 'nog': 'नोगाई', 'oc': 'ऑक्सितान', 'os': 'ओस्सेटिक', 'ota': 'ओटोमान तुर्किश', 'pa': 'पंजाबी', 'pl': 'पोलिश', 'pt': 'पोर्तुगीज', 'rm': 'रोमान्श', 'rn': 'रुन्दी', 'ro': 'रोमानियन', 'ru': 'रशियन', 'rup': 'अरोमानियन', 'sa': 'संस्कृत', 'sah': 'साखा', 'sc': 'सर्दिनियन', 'scn': 'सिसिलियन', 'sco': 'स्कॉट्स', 'sd': 'सिंधी', 'se': 'उत्तरी सामी', 'sh': 'सर्बो-क्रोएशियन', 'si': 'सिंहला', 'sk': 'स्लोव्हाक', 'sl': 'स्लोव्हेनियन', 'sma': 'दक्षिणात्य सामी', 'smj': 'ल्युल सामी', 'smn': 'इनारी सामी', 'sq': 'अल्बानियन', 'sr': 'सर्बियन', 'srn': 'स्रानान टॉन्गो', 'ss': 'स्वाती', 'sv': 'स्वीडिश', 'sw': 'स्वाहिली', 'ta': 'तामिळ', 'te': 'तेलगू', 'tet': 'तेतुम', 'tg': 'ताजिक', 'th': 'थाई', 'tk': 'तुर्कमेन', 'tl': 'टागालोग', 'tr': 'तुर्की', 'tt': 'तातर', 'tyv': 'टुवीनियन', 'udm': 'उदमुर्त', 'ug': 'उइगुर', 'uk': 'युक्रेनियन', 'ur': 'उर्दू', 'uz': 'उझ्बेक', 'vi': 'व्हिएतनामी', 'wal': 'वोलायता', 'xh': 'खोसा', 'yi': 'यिद्दिश', 'yo': 'योरुबा', 'zh': 'चीनी', 'zu': 'झुलू'}</script>
+    </head>
+    <body>
+        <span class="fa d-none" id="faChecker"></span>
+        <script type="text/javascript">
+            if ($('#faChecker').css('fontFamily') !== 'FontAwesome') {
+                $('<link type="text/css" rel="stylesheet" href="./css/font-awesome.min.css">').appendTo('head');
+                console.warn('FontAwesome CSS from CDN not available - reverting to local copy');
+            }
+        </script>
+
+        <div id="wrap">
+            <nav class="navbar navbar-dark bg-dark navbarDefault navbar-expand-md mb-4 pt-0" role="navigation">
+                <div class="container position-relative">
+                    <div>
+                        <div>
+                            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Apertium Box" class="apertiumBox">
+                            <span class="apertiumSubLogo"></span>
+                            <span class="apertiumLogo" id="apertiumLogo">Apertium</span>
+                        </div>
+                        <p data-text="tagline" class="tagline">मुक्त/ओपन-सोर्स संगणकीय भाषांतराच्या साधनांचा समूह</p>
+                    </div>
+                    <div class="float-right d-none d-md-block align-self-start" id="localeSelectContainer">
+                        <!-- <i class="icon-globe localeGlobe float-right"></i> -->
+                        <i class="fa fa-globe fa-2x fa-inverse float-right localeGlobe pt-2 pr-1" id="primaryLocaleGlobe"></i>
+                        <select class="localeSelect float-right mt-2">
+                            <option></option>
+                        </select>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars navbarBars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarToggler">
+                        <ul class="nav navbar-nav mt-1 ml-auto">
+                            <li class="nav-item p-1">
+                                <a href="#translation" data-mode="translation" data-text="Translation" class="nav-link" data-toggle="tab" style="display: none;">भाषांतर</a>
+                            </li>
+                            <li class="nav-item p-1">
+                                <a href="#analyzation" data-mode="analyzation" data-text="Morphological_Analysis" class="nav-link" data-toggle="tab" style="display: none;">मॉरफोलॉजिकल ॲनॅलिसिस</a>
+                            </li>
+                            <li class="nav-item p-1">
+                                <a href="#generation" data-mode="generation" data-text="Morphological_Generation" class="nav-link" data-toggle="tab" style="display: none;">मॉरफोलॉजिकल जेनरेशन</a>
+                            </li>
+                            <li class="nav-item p-1">
+                                <a href="#sandbox" data-mode="sandbox" data-text="APy_Sandbox" class="nav-link" data-toggle="tab" style="display: none;">APy प्रयोग स्थळ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
+                <!-- Not found warning -->
+                <div class="position-absolute d-none" id="loadingIndicator">
+                    <i class="fa fa-spinner fa-spin fa-4x"></i>
+                </div>
+                <div class="tab-content">
+                    <div class="modeContainer tab-pane fade" id="translation">
+                        <h2 class="d-block d-md-none" data-text="Translation">भाषांतर</h2>
+                        <form id="translationForm">
+                            <fieldset>
+                                <div class="form-group d-flex d-md-none flex-column">
+                                    <div class="d-flex flex-wrap langSelectGroup">
+                                        <select class="langSelect d-inline-block" id="srcLangSelect" aria-label="Select Original Language" class="col">
+                                            <option data-text="Detect_Language" value="detect">भाषा ओळखा</option>
+                                        </select>
+                                        <button type="button" class="btn btn-dark btn-sm swapLangBtn" aria-label="Swap Languages" class="col">
+                                            <i class="fa fa-exchange"></i>
+                                        </button>
+                                        <select class="langSelect d-inline-block" id="dstLangSelect" aria-label="Select New Language" class="col">
+                                            <option> </option>
+                                        </select>
+                                        <button type="button" class="btn btn-primary btn-sm translateBtn ml-auto" data-text="Translate">भाषांतर करा</button>
+                                    </div>
+                                </div>
+                                <div class="form-group row d-none d-md-block">
+                                    <div class="col-6 d-inline-flex align-items-start justify-content-between">
+                                        <button type="button" class="btn btn-sm btn-secondary float-left" id="cancelTranslateWebpage" style="display: none">
+                                            <i class="fa fa-arrow-left"></i>
+                                            <span data-text="Cancel">रद्द</span>
+                                        </button>
+                                        <div class="btn-group d-flex flex-wrap pl-0" id="srcLangSelectors">
+                                            <button type="button" class="btn btn-secondary btn-sm srcLang active" id="srcLang1"></button>
+                                            <button type="button" class="btn btn-secondary btn-sm srcLang" id="srcLang2"></button>
+                                            <button type="button" class="btn btn-secondary btn-sm srcLang" id="srcLang3"></button>
+                                            <button type="button" class="btn btn-secondary btn-sm srcLang" id="detect">
+                                                <span data-text="Detect_Language" id="detectText">भाषा ओळखा</span>
+                                                <span id="detectedText"></span>
+                                            </button>
+                                            <button type="button" id="srcLanguagesDropdownTrigger" class="btn btn-secondary dropdown-toggle btn-sm" data-toggle="dropdown">
+                                                <span class="sr-only">Toggle Dropdown</span>
+                                            </button>
+                                            <div class="dropdown-menu" id="srcLanguages" role="menu">
+                                                <div class="row d-flex"></div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-secondary btn-sm swapLangBtn">
+                                            <i class="fa fa-exchange"></i>
+                                        </button>
+                                    </div>
+                                    <div class="col-6 d-inline-flex align-items-start justify-content-between dstLangParent">
+                                        <div class="btn-group d-flex flex-wrap" id="dstLangSelectors">
+                                            <button type="button" class="btn btn-secondary btn-sm dstLang active" id="dstLang1"></button>
+                                            <button type="button" class="btn btn-secondary btn-sm dstLang" id="dstLang2"></button>
+                                            <button type="button" class="btn btn-secondary btn-sm dstLang" id="dstLang3"></button>
+                                            <button type="button" id="dstLanguagesDropdownTrigger" class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown">
+                                                <span class="caret"></span>
+                                                <span class="sr-only">Toggle Dropdown</span>
+                                            </button>
+                                            <div class="dropdown-menu" id="dstLanguages" role="menu">
+                                                <div class="row d-flex"></div>
+                                            </div>
+                                        </div>
+                                        <button type="button" id="translate" class="btn btn-blue btn-sm translateBtn" data-text="Translate">भाषांतर करा</button>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div id="translateText">
+                                        <div class="row">
+                                            <div class="col-12 col-md-6">
+                                                <textarea class="form-control" id="originalText" rows="15" spellcheck="false" aria-label="Original Text"
+                                                    data-textattr="placeholder" data-text="Translation_Help"></textarea>
+                                                <button class="btn clearButton position-absolute" aria-label="Clear Text">
+                                                    <i class="fa fa-times"></i>
+                                                </button>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <textarea class="form-control bg-light" id="translatedText" rows="15" spellcheck="false" aria-label="Translated Text"
+                                                    readonly></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-2">
+                                            <div class="col-12 col-md-6 d-flex d-sm-block flex-wrap otherTranslationOptions">
+                                                <button id="translateDoc" class="btn btn-secondary mt-3">
+                                                    <i class="fa fa-file-text"></i>
+                                                    <span data-text="Translate_Document">डॉक्युमेंटचे भाषांतर करा</span>
+                                                </button>
+                                                <button id="showTranslateWebpage" class="btn btn-secondary mt-3">
+                                                    <i class="fa fa-link"></i>
+                                                    <span data-text="Translate_Webpage">वेबपेजचे भाषांतर करा</span>
+                                                </button>
+                                            </div>
+                                            <div class="col-12 col-md-6 form-check d-flex flex-column align-items-end justify-content-end w-auto mt-2" id="translateOptions">
+                                                <label>
+                                                    <input type="checkbox" id="markUnknown" checked>
+                                                    <span data-text="Mark_Unknown_Words">माहित नसलेले शब्द पहा</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" id="instantTranslation" checked>
+                                                    <span data-text="Instant_Translation">तात्काळ भाषांतर</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" id="chainedTranslation" class="chaining">
+                                                    <span data-text="Multi_Step_Translation" class="chaining"><a href='https://en.wikipedia.org/wiki/Pivot_language' target='_blank' rel='noopener'>बहु-भाषिक टप्प्यांनी भाषांतर</a> (प्रायोगिक)</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-backdrop" id="fileDropBackdrop" style="display: none">
+                                        <div class="card card-body bg-light text-center position-absolute" id="dropDocumentContainer">
+                                            <h1 class="font-weight-bold" data-text="Drop_Document">डॉक्युमेंट ड्रॅग करा</h1>
+                                        </div>
+                                        <div class="modal-backdrop" id="fileDropMask"></div>
+                                    </div>
+
+                                    <div id="docTranslation" class="row" style="display: none">
+                                        <div class="col-md-6">
+                                            <div class="card card-body bg-light">
+                                                <input type="file" id="fileInput" accept="text/plain,text/html,text/rtf,application/rtf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.openxmlformats-officedocument.presentationml.presentation,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.oasis.opendocument.text,application/x-latex,application/x-tex">
+                                                <div class="lead" id="fileName" style="display: none"></div>
+                                                <div class="mt-3" id="uploadErrorContainer">
+                                                    <span id="uploadError" class="text-danger lead" style="display: none"></span>
+                                                    <div class="progress mb-0 d-none" id="progressContainer">
+                                                        <div id="fileUploadProgress" class="progress-bar progress-bar-striped progress-bar-animated w-0" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    <span data-text="Supported_Formats">स्वीकृत फॉर्मॅट: .txt, .rtf, .odp, .ods, .odt (LibreOffice/OpenOffice), .xlsx, .pptx, .docx (Microsoft Office 2003 आणि पुढील आवृत्ती). <br/><i>Word 97 च्या .doc फाईल आणि .pdf फाईल स्वीकारल्या जात नाहीत.</i></span>
+                                                </p>
+                                                <button class="btn btn-sm btn-secondary position-absolute" id="cancelDocTranslate">
+                                                    <i class="fa fa-arrow-left"></i>
+                                                    <span data-text="Cancel">रद्द</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div id="fileLoading" class="text-center position-absolute" style="display: none">
+                                                <i class="fa fa-spinner fa-spin fa-4x"></i>
+                                            </div>
+                                            <h1>
+                                                <a id="fileDownload" href="#" class="text-center lead" style="display: none">
+                                                    <i class="fa fa-download"></i>
+                                                    <span id="fileDownloadText"></span>
+                                                </a>
+                                            </h1>
+                                        </div>
+                                    </div>
+
+                                    <div class="overflow-hidden" id="translateWebpage">
+                                        <div class="col-sm-12 row">
+                                            <div class="input-group mb-2 w-100">
+                                                <div class="input-group-prepend">
+                                                    <i class="fa fa-link input-group-text"></i>
+                                                </div>
+                                                <input id="webpage" placeholder="URL ⏎" class="form-control" autocomplete="url">
+                                            </div>
+                                            <iframe class="w-100" id="translatedWebpage" src="about:blank">
+                                            </iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="modeContainer tab-pane fade" id="analyzation">
+                        <h2 class="d-block d-md-none" data-text="Morphological_Analysis">मॉरफोलॉजिकल ॲनॅलिसिस</h2>
+                        <form role="form" id="analysisForm">
+                            <fieldset>
+                                <div class="form-group row">
+                                    <label for="primaryAnalyzerMode" class="col-md-2 col-lg-1 col-form-label text-md-right" data-text="Language">भाषा</label>
+                                    <div class="col-md-3">
+                                        <select class="form-control analyzerMode" id="primaryAnalyzerMode" name="primaryAnalyzerMode" required>
+                                            <option> </option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <select class="form-control analyzerMode" id="secondaryAnalyzerMode" name="secondaryAnalyzerMode" required>
+                                            <option> </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="morphAnalyzerInput" class="col-md-2 col-lg-1 col-form-label text-md-right" data-text="Input_Text">इन्पुट</label>
+                                    <div class="col-md-10">
+                                        <textarea class="form-control" rows="5" id="morphAnalyzerInput" name="morphAnalyzerInput" spellcheck="false" data-textattr="placeholder"
+                                            data-text="Morphological_Analysis_Help" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="offset-md-2 col-md-10 offset-lg-1">
+                                        <button type="submit" class="btn btn-primary" id="analyze" data-text="Analyze">ॲनॅलिसिस करा</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+
+                        <table class="table table-hover outputContainer" id="morphAnalyzerOutput"></table>
+                    </div>
+                    <div class="modeContainer tab-pane fade" id="generation">
+                        <h2 class="d-block d-md-none" data-text="Morphological_Generation">मॉरफोलॉजिकल जेनरेशन</h2>
+                        <form role="form" id="generateForm">
+                            <fieldset>
+                                <div class="form-group row">
+                                    <label for="primaryGeneratorMode" class="col-md-2 col-lg-1 col-form-label text-md-right" data-text="Language">भाषा</label>
+                                    <div class="col-md-3">
+                                        <select class="form-control generatorMode" id="primaryGeneratorMode" name="primaryGeneratorMode" required>
+                                            <option> </option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <select class="form-control generatorMode" id="secondaryGeneratorMode" name="secondaryGeneratorMode" required>
+                                            <option> </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="morphGeneratorInput" class="col-md-2 col-lg-1 col-form-label text-md-right" data-text="Input_Text">इन्पुट</label>
+                                    <div class="col-md-10">
+                                        <textarea class="form-control" rows="5" id="morphGeneratorInput" name="morphGeneratorInput" spellcheck="false" data-textattr="placeholder"
+                                            data-text="Morphological_Generation_Help" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="offset-md-2 col-md-10 offset-lg-1">
+                                        <button type="submit" class="btn btn-primary" id="generate" data-text="Generate">जेनरेशन करा</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <div id="morphGenOutput" class="outputContainer"></div>
+                    </div>
+                    <div class="modeContainer tab-pane fade" id="sandbox">
+                        <h2 class="d-block d-md-none" data-text="APy_Sandbox">APy प्रयोग स्थळ</h2>
+                        <form role="form" id="sandboxForm">
+                            <fieldset>
+                                <legend>
+                                    <span data-text="APy_Sandbox_Help">APy ला हवे ते रिक्वेस्ट पाठवा</span>
+                                    <a href="http://wiki.apertium.org/wiki/Apertium-apy" target="_blank" class="float-right" rel="noopener">
+                                        <abbr title="Apertium API in Python">APy</abbr>
+                                        <i class="fa fa-question-circle"></i>
+                                    </a>
+                                </legend>
+                                <div class="form-group row">
+                                    <label for="sandboxInput" class="col-md-2 col-form-label text-md-right">
+                                        <label data-text="APy_Request">APy रिक्वेस्ट</label>
+                                        <i id="endpoint" class="fa fa-info-circle" data-toggle="tooltip"></i>
+                                    </label>
+                                    <div class="col-md-10">
+                                        <textarea class="form-control" rows="3" id="sandboxInput" name="sandboxInput" spellcheck="false" required></textarea>
+                                        <div class="form-text text-muted">e.g. /perWord?lang=en-es&amp;modes=morph+translate+biltrans&amp;q=let+there+be+light</div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="offset-md-2 col-md-10">
+                                        <button type="submit" class="btn btn-primary" id="request" data-text="Request">रिक्वेस्ट</button>
+                                        <code id="time" class="float-right"></code>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <pre id="sandboxOutput" class="outputContainer small"></pre>
+                    </div>
+                </div>
+
+                <div class="d-block d-sm-none">
+                    <select class="localeSelect float-left my-2" aria-label="Select Language">
+                        <option> </option>
+                    </select>
+                    <i class="fa fa-globe fa-2x float-left localeGlobe pt-1 pl-1" id="secondaryLocaleGlobe"></i>
+                    <!-- <i class="fa fa-globe localeGlobe float-left"></i> -->
+                </div>
+            </div>
+            <div id="push"></div>
+        </div>
+
+        <div id="footer" class="d-flex flex-column container">
+            <div class="d-none d-md-flex flex-wrap flex-row justify-content-between position-relative row">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a data-toggle="modal" data-target="#aboutModal" data-keyboard="true" class="nav-link" tabindex="0">
+                            <i class="fa fa-question-circle"></i>
+                            <span data-text="About">माहिती</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-toggle="modal" data-target="#downloadModal" data-keyboard="true" class="nav-link" tabindex="0">
+                            <i class="fa fa-download"></i>
+                            <span data-text="Download">डाऊनलोड</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-toggle="modal" data-target="#docModal" data-keyboard="true" class="nav-link" tabindex="0">
+                            <i class="fa fa-book"></i>
+                            <span data-text="Documentation">तांत्रिक निर्देश</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-toggle="modal" data-target="#contactModal" data-keyboard="true" class="nav-link" tabindex="0">
+                            <i class="fa fa-envelope"></i>
+                            <span data-text="Contact">संपर्क</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="card d-inline-block bg-light helpMessage mr-3 mb-4 ml-3 p-2">
+                    <span data-text="Notice_Mistake">चूक सापडली?</span>
+                    <a tabindex="0"data-toggle="modal" data-target="#aboutModal" data-text="Help_Improve" data-keyboard="true" id="aboutModalTrigger">अपर्टियम सुधारायला मदत करा!</a>
+                </div>
+                <a id="version" class="text-muted d-none d-lg-block" href="https://github.com/apertium/apertium-html-tools" target="_blank"
+                    rel="noopener">
+                    <small>
+                        v4.0.0-7-ge6226cc
+                    </small>
+                </a>
+            </div>
+
+            <div class="align-self-end card card-body d-block bg-light d-md-none helpMessage mt-2 mr-0 mb-0 p-2" id="xsHelpMessageContainer">
+                <span data-text="Notice_Mistake">चूक सापडली?</span>
+                <a tabindex="0"data-toggle="modal" data-target="#infoModal" data-text="Help_Improve" data-keyboard="true">अपर्टियम सुधारायला मदत करा!</a>
+            </div>
+        </div>
+
+        <div class="modal fade" id="aboutModal" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" data-text="About_Apertium">अपर्टियम बद्दल माहिती</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div data-text="What_Is_Apertium"><p>अपर्टियम हा <b>मुक्त/ओपन-सोर्स संगणकीय भाषांतराच्या साधनांचा समूह</b> आहे. पूर्वी ही साधने फक्त् जवळचे संबंध असलेल्या भाषांसाठी उपयुक्त होती, पण ती आता इतर भाषांमधल्या भाषांतरासाठीही वापरली जाऊ शकतात, जसे की इंग्रजी-कॅटलान. ही साधने नेमकी कोणती?</p> <ol> <li>कोणत्याही भाषांसाठी उपयुक्त भाषांतराचे सॉफ्टवेअर इंजिन;</li> <li>ह्या इंजिनसाठी आवश्यक असलेला प्रत्येक भाषेचा डेटा: शब्दकोश, नियमावल्या, इ.; आणि</li> <li>ह्या सगळ्याचे संचलन करण्यासाठी व ते उपयोगात आणण्यासाठी सॉफ्टवेअर साधने.</li> </ol> <p>अपर्टियम मध्ये नवीन डेव्हलपर्सचे नेहमी स्वागत असते: तुम्हाला जर ही साधने किंवा हा भाषांचा डेटा सुधारण्यात मदत करायची असेल, तर आमच्याशी जरूर <a data-toggle='modal' data-target='#contactModal' data-text='Help_Improve' data-keyboard='true' data-dismiss='modal' style='cursor: pointer'>संपर्क साधा</a>.</p></div>
+                        <div data-text="Maintainer" id="aboutModalMaintainer">या वेबसाईटची देखभाल <a href='http://wiki.apertium.org/wiki/Apertium' target='_blank' rel='noopener'>Apertium</a> तर्फे केली जाते.</div>
+
+                        <div class="row lead">
+                            <div class="col-md-6">
+                                <div class="mx-auto">
+                                    <a href="https://developers.google.com/open-source/soc/" target="_blank" id="gsocLogoContainer" rel="noopener">
+                                        <img alt="Google Summer of Code" data-src="https://summerofcode.withgoogle.com/static/img/summer-of-code-logo.svg" id="gsocLogo">
+                                    </a>
+                                    <a href="https://developers.google.com/open-source/gci/" target="_blank" id="codeInLogoContainer" rel="noopener">
+                                        <img alt="Google Code-In" data-src="https://developers.google.com/open-source/gci/images/logo-icon.png" id="codeInLogo">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 text-center">
+                                <a href="http://www.bytemark.co.uk/" target="_blank" rel="noopener">
+                                    <img alt="Bytemark" class="w-100" data-src="./img/logo_bytemark.gif" id="bytemarkLogo">
+                                </a>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <a href="https://www.github.com/apertium" target="_blank" rel="noopener">
+                                    <img alt="GitHub" data-src="./img/github.png" id="githubLogo">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="row lead">
+                            <div class="col-md-6 text-center">
+                                <a href="http://www.minetur.gob.es/" target="_blank" rel="noopener">
+                                    <img alt="Ministry of Industry, Energy and Tourism" data-src="./img/logomitc120.jpg">
+                                </a>
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <a href="http://www.ua.es/" target="_blank" rel="noopener">
+                                    <img alt="Universidad de Alicante" data-src="./img/logouapp.gif">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4 text-center">
+                                <a href="http://www.prompsit.com/" target="_blank" rel="noopener">
+                                    <img alt="Prompsit Language Engineering S.L." data-src="./img/prompsit150x52.png">
+                                </a>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <a href="http://www10.gencat.net" target="_blank" rel="noopener">
+                                    <img alt="Generalitat de Catalunya" data-src="./img/stsi.gif">
+                                </a>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <a href="http://www.mae.ro/" target="_blank" rel="noopener">
+                                    <img alt="ROMÂNIA  Ministerul Afacerilor Externe" data-src="./img/logo_mae_ro_75pc.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="d-inline-block my-o" id="creativeCommonsLicence">
+                                <a href="http://creativecommons.org/licenses/by-sa/3.0/">
+                                    <img alt="Creative Commons licence" data-src="./img/cc-by-sa-3.0-88x31.png">
+                                </a>
+                            </div>
+
+                            <div class="d-inline-block my-0" id="gnuGplLicence">
+                                <a href="https://www.gnu.org/licenses/gpl.html">
+                                    <img alt="GNU GPL License" data-src="./img/gplv3-88x31.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="docModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" data-text="Apertium_Documentation">Apertium Documentation</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p data-text="Documentation_Para">आमच्या <a href='http://wiki.apertium.org/'>विकीवर</a> तांत्रिक निर्देश <a href='http://wiki.apertium.org/wiki/Documentation' target='_blank' rel='noopener'>'Documentation'</a> ह्या पृष्ठावर उपलब्ध आहेत. विविध कॉन्फरन्स् आणि जर्नल मधले लेख <a href='http://wiki.apertium.org/wiki/Publications' target='_blank' rel='noopener'>'Publications'</a> ह्या पृष्ठावर उपलब्ध आहेत.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="downloadModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" data-text="Apertium_Downloads">अपर्टियमचे डाऊनलोड</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p data-text="Downloads_Para"><b>अपर्टियमच्या साधनांच्या</b> आणि <b>भाषांच्या डेटाच्या</b> चालू आवृत्त्या <a href='https://github.com/apertium' target='_blank' rel='noopener'>सोर्सफोर्जवर</a> उपलब्ध आहेत. सर्व प्रकारच्या संगणकांवर अपर्टियम इन्स्टॉल करण्यासाठी निर्देश <a href='http://wiki.apertium.org/wiki/Installation' target='_blank' rel='noopener'>विकीवर</a> उपलब्ध आहेत.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="contactModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" data-text="Contact">संपर्क</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p data-text="Contact_Us">जर तुम्हाला काही चूक सापडली असेल, तुम्हाला नवीन फीचर्सची इच्छा असेल, किंवा तुम्हाला मदत करण्याची इच्छा असेल, तर आमच्याशी जरूर संपर्क साधा.</p>
+                        <div data-text="Contact_Para"><h4>आय.आर.सी. चॅनेल</h4> <p>आमच्याशी संपर्क साधण्याचा सर्वात तुरंत मार्ग म्हणजे आमचे <a href='http://wiki.apertium.org/wiki/IRC' target='_blank' rel='noopener'><abbr title='इंटरनेट रीले चॅट'>आय.आर.सी.</abbr> चॅनेल, #apertium</a> (irc.freenode.net ह्या सर्व्हरवर). ह्या चॅनेलवर डेव्हलपर्स् आणि इतर यूजर्सशी बोलायला <a href='http://webchat.freenode.net/?channels=apertium'>freenode webchat</a> वापरू शकता.</p> <h4>मेलिंग लिस्ट</h4> <p><a href='https://lists.sourceforge.net/lists/listinfo/apertium-stuff' target='_blank' rel='noopener'>apertium-stuff मेलिंग लिस्टला</a> सबस्क्राइब केल्यास तुम्ही तुमचे प्रस्ताव किंवा तुमच्या समस्या सविस्तर मांडू शकता, आणि इतर चर्चांमध्ये सहभागी होऊ शकता.</p> <h4>संपर्क</h4> <p>जर तुम्हाला काही चूक सापडली असेल, तुम्हाला नवीन फीचर्सची इच्छा असेल, किंवा तुम्हाला मदत करण्याची इच्छा असेल, तर आमच्याशी <a href='mailto:apertium-contact@lists.sourceforge.net' target='_blank' rel='noopener'>apertium-contact मेलिंग लिस्टद्वारेही</a> संपर्क साधू शकता.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="infoModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" data-text="About_Title">या वेबसाईट बाद्दल माहिती</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            <span data-text="Maintainer">या वेबसाईटची देखभाल <a href='http://wiki.apertium.org/wiki/Apertium' target='_blank' rel='noopener'>Apertium</a> तर्फे केली जाते.</span>
+                            <span class="float-right">
+                                <a href="mailto:apertium-contact@lists.sourceforge.net">
+                                    <i class="fa fa-envelope"></i>
+                                    apertium-contact@lists.sourceforge.net
+                                </a>
+                            </span>
+                        </p>
+                        <p data-text="Contact_Us">जर तुम्हाला काही चूक सापडली असेल, तुम्हाला नवीन फीचर्सची इच्छा असेल, किंवा तुम्हाला मदत करण्याची इच्छा असेल, तर आमच्याशी जरूर संपर्क साधा.</p>
+
+                        <div class="center-block" id="infoModalApertiumLogoContainer">
+                            <a href="http://www.apertium.org/" target="_blank" rel="noopener">
+                                <img alt="Apertium" data-src="./img/Apertium.png" class="center-block mw-100" id="infoModalApertiumLogo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <noscript id="noscript">
+            <div class="lead text-warning well well-sm" data-text="Enable_JS_Warning">ह्या वेबसाईटसाठी JavaScript आवश्यक आहे. जर तुम्ही JavaScript <a href='http://www.enable-javascript.com/' target='_blank' rel='noopener'>चालू</a> करू शकत नसाल, तर <a href='http://traductor.prompsit.com' target='_blank' rel='noopener'>प्रॉम्पसिट ची भाषांतर सेवा</a> वापरून पहा.</div>
+            <img src="None/piwik.php?idsite=None" class="border-0" alt="">
+        </noscript>
+        <button class="btn btn-secondary" id="backToTop" style="display: none;">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </button>
+        <div id="installationNotice" class="alert alert-warning alert-dismissible m-2 p-2" style="display: none;">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="m-0 pb-2" id="installationNoticeTitle" data-text="Install_Apertium">अपर्टियम इन्स्टॉल करा</h4>
+            <p class="mb-0" data-text="Install_Apertium_Para">ही वेबसाईट खूप हळू चालते आहे का? आमच्या सर्वर्सवर कदाचित जास्त भार असेल. पण तुम्ही स्वतःच्या संगणकावरही <a href='http://wiki.apertium.org/wiki/Installation' target='_blank' rel='noopener'>अपर्टियम इन्स्टॉल करू शकता</a>!</p>
+        </div>
+    </body>
+</html>
