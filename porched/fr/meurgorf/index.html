@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Meurgorf</title>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="/porched/semantic/dist/semantic.min.css">
-    <link rel="stylesheet" type="text/css" href="/porched/style.css">
-    <script src="/porched/semantic/dist/semantic.min.js"></script>
-  </head>
-  <body>
-    <!-- header -->
-    <div class="ui inverted stackable borderless top fixed menu topbar">
-      <div class="ui container">
-        <a class="item" href="/porched/fr/">
-          <h1 class="ui inverted header"><img src="/porched/images/LogoOPLB.svg">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Meurgorf</title>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/porched/semantic/dist/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="/porched/style.css">
+  <script src="/porched/semantic/dist/semantic.min.js"></script>
+</head>
+
+<body>
+  <!-- header -->
+  <div class="ui inverted stackable borderless top fixed menu topbar">
+    <div class="ui container">
+      <a class="item" href="/porched/fr/">
+        <h1 class="ui inverted header"><img src="/porched/images/LogoOPLB.svg">
           <div class="content">Portail numérique de la langue bretonne<div class="ui sub header">Office public de la langue bretonne</div>
-        </div>
+          </div>
         </h1>
       </a>
       <div class="right menu">
@@ -34,7 +36,7 @@
     </div>
   </div>
   <div class="full height">
-    
+
     <!-- side menu -->
     <div class="toc">
       <div class="ui vertical secondary big menu">
@@ -127,36 +129,54 @@
     <div class="page">
       <div class="ui grid container main">
         <div class="ui sixteen wide column">
-          
+
           <!-- sub menu -->
           <div class="ui four item pointing menu">
             <a class="item active" href="/porched/fr/meurgorf/index.html">
+              <i class="search icon"></i>
               Rechercher
             </a>
-            <a class="item" href="/porched/fr/meurgorf/presentation.html">
-              Présentation
+            <a class="item" href="/porched/fr/meurgorf/en-savoir-plus.html">
+              <i class="info icon"></i>
+              En savoir plus
             </a>
-            <a class="item" href="meurgorf-sources.html">
+            <a class="item" href="/porched/fr/meurgorf/sources.html">
               Sources
             </a>
-            <a class="ui item" href="meurgorf-abrev.html">
+            <a class="ui item" href="/porched/fr/meurgorf/abreviations.html">
               Abréviations
             </a>
           </div>
+
           <div class="ui very padded segment">
             <div class="ui stackable grid">
+
               <div class="six wide column">
                 <h1 class="ui header">
-                <em data-emoji=":book:" class="small"> </em>
-                <div class="content">
-                  Meurgorf
-                  <div class="sub header">
-                    Dictionnaire historique du breton
+                  <em data-emoji=":book:" class="small"> </em>
+                  <div class="content">
+                    Meurgorf
+                    <div class="sub header">
+                      Dictionnaire historique du breton
+                    </div>
+                  </div>
+                </h1>
+
+                <div class="ui small statistic">
+                  <div class="label">
+                    Le dictionnaire contient
+                  </div>
+                  <div class="value">
+                    74 747
+                  </div>
+                  <div class="label">
+                    entrées
                   </div>
                 </div>
-                </h1>
               </div>
+
               <div class="ten wide column">
+
                 <div class="ui form">
                   <div class="ui fluid action input">
                     <input type="text" placeholder="Rechercher..." value="kement">
@@ -170,6 +190,25 @@
                       <i class="search icon"></i>
                     </a>
                   </div>
+
+
+                  <p class="" id="history">
+                    Recherches récentes :
+                    <a class="ui label">
+                      kador
+                    </a>
+                    <a class="ui label">
+                      kement
+                    </a>
+                    <a class="ui label">
+                      perak
+                    </a>
+                    <a class="ui label">
+                      taolenn
+                    </a>
+                  </p>
+
+
                   <div class="ui accordion field">
                     <div class="title">
                       <i class="icon dropdown"></i>
@@ -200,160 +239,206 @@
                     </div>
                   </div>
                 </div>
+
               </div>
-              
+
             </div>
           </div>
-          <div class="six wide column">
-            <div class="ui padded segment">
-            <h3 class="ui header">Historique de recherche</h3>
-            <div class="ui horizontal list">
-              <a class="item">lenn</a>
-              <a class="item">daol</a>
-              <a class="item">kador</a>
-              <a class="item">debriñ</a>
-            </div>
+
+
+          <div class="ui very padded segment">
+            <h2 class="ui header">La recherche a renvoyé<span class="ui horizontal big label">38</span>résultats</h2>
+            <table class="ui selectable celled striped table">
+              <thead>
+                <tr>
+                  <th>Entrée</th>
+                  <th>Catégorie grammaticale</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>c'hwec'h<mark>kement</mark></td>
+                  <td>anv-gwan</td>
+                </tr>
+                <tr>
+                  <td>c'hwec'h<mark>kement</mark></td>
+                  <td>anv-kadarn</td>
+                </tr>
+                <tr>
+                  <td>c'hwec'h<mark>kement</mark>ad</td>
+                  <td>anv-kadarn</td>
+                </tr>
+                <tr>
+                  <td>c'hwec'h<mark>kement</mark>iñ</td>
+                  <td>verb</td>
+                </tr>
+                <tr>
+                  <td>dek<mark>kement</mark></td>
+                  <td>anv-gwan</td>
+                </tr>
+                <tr>
+                  <td>dek<mark>kement</mark>ad</td>
+                  <td>anv-kadarn gourel</td>
+                </tr>
+                <tr>
+                  <td>dek<mark>kement</mark>iñ</td>
+                  <td>verb</td>
+                </tr>
+                <tr>
+                  <td>eizh<mark>kement</mark></td>
+                  <td>anv-gwan</td>
+                </tr>
+                <tr>
+                  <td>eizh<mark>kement</mark>iñ</td>
+                  <td>verb</td>
+                </tr>
+                <tr>
+                  <td>kant<mark>kement</mark></td>
+                  <td>anv-kadarn</td>
+                </tr>
+                <tr>
+                  <td>kant<mark>kement</mark>iñ</td>
+                  <td>verb</td>
+                </tr>
+                <tr>
+                  <td><mark>kement</mark></td>
+                  <td>adverb</td>
+                </tr>
+                <tr>
+                  <td><mark>kement</mark></td>
+                  <td>anv-gwan</td>
+                </tr>
+                <tr>
+                  <td><mark>kement</mark></td>
+                  <td>anv-gwan amresis</td>
+                </tr>
+                <tr>
+                  <td><mark>kement</mark></td>
+                  <td>anv-kadarn gourel</td>
+                </tr>
+                <tr>
+                  <td><mark>kement</mark></td>
+                  <td>raganv amresis</td>
+                </tr>
+                <tr>
+                  <td><mark>kement</mark>-ha-<mark>kement</mark></td>
+                  <td>adverb</td>
+                </tr>
+                <tr>
+                  <td><mark>kement</mark>-mañ</td>
+                  <td>raganv diskouez</td>
+                </tr>
+                <tr>
+                  <td><mark>kement</mark>-mañ-<mark>kement</mark></td>
+                  <td>raganv diskouez</td>
+                </tr>
+                <tr>
+                  <td><mark>kement</mark>-se</td>
+                  <td>raganv diskouez</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th colspan="5">
+                    <div class="ui right floated pagination menu">
+                      <a class="icon item">
+                        <i class="left chevron icon"></i>
+                      </a>
+                      <a class="active item">1</a>
+                      <a class="item">2</a>
+                      <a class="item">3</a>
+                      <a class="item">4</a>
+                      <a class="icon item">
+                        <i class="right chevron icon"></i>
+                      </a>
+                    </div>
+                  </th>
+                </tr>
+              </tfoot>
+            </table>
           </div>
-          </div>
-          
-          
+
+
         </div>
       </div>
-      
+
     </div>
-    <div class="row">
-      <div class="ui sixteen wide column">
-        <div class="ui segment">
-          <h2 class="ui header">La recherche a renvoyé<span class="ui horizontal big label">38</span>résultats</h2>
-          <table class="ui selectable celled striped table">
-            <thead>
-              <tr><th>Entrée</th>
-              <th>Catégorie grammaticale</th>
-            </tr></thead>
-            <tbody>
-              <tr><td>c'hwec'h<mark>kement</mark></td><td>anv-gwan</td></tr>
-              <tr><td>c'hwec'h<mark>kement</mark></td><td>anv-kadarn</td></tr>
-              <tr><td>c'hwec'h<mark>kement</mark>ad</td><td>anv-kadarn</td></tr>
-              <tr><td>c'hwec'h<mark>kement</mark>iñ</td><td>verb</td></tr>
-              <tr><td>dek<mark>kement</mark></td><td>anv-gwan</td></tr>
-              <tr><td>dek<mark>kement</mark>ad</td><td>anv-kadarn gourel</td></tr>
-              <tr><td>dek<mark>kement</mark>iñ</td><td>verb</td></tr>
-              <tr><td>eizh<mark>kement</mark></td><td>anv-gwan</td></tr>
-              <tr><td>eizh<mark>kement</mark>iñ</td><td>verb</td></tr>
-              <tr><td>kant<mark>kement</mark></td><td>anv-kadarn</td></tr>
-              <tr><td>kant<mark>kement</mark>iñ</td><td>verb</td></tr>
-              <tr><td><mark>kement</mark></td><td>adverb</td></tr>
-              <tr><td><mark>kement</mark></td><td>anv-gwan</td></tr>
-              <tr><td><mark>kement</mark></td><td>anv-gwan amresis</td></tr>
-              <tr><td><mark>kement</mark></td><td>anv-kadarn gourel</td></tr>
-              <tr><td><mark>kement</mark></td><td>raganv amresis</td></tr>
-              <tr><td><mark>kement</mark>-ha-<mark>kement</mark></td><td>adverb</td></tr>
-              <tr><td><mark>kement</mark>-mañ</td><td>raganv diskouez</td></tr>
-              <tr><td><mark>kement</mark>-mañ-<mark>kement</mark></td><td>raganv diskouez</td></tr>
-              <tr><td><mark>kement</mark>-se</td><td>raganv diskouez</td></tr>
-            </tbody>
-            <tfoot>
-            <tr><th colspan="5">
-              <div class="ui right floated pagination menu">
-                <a class="icon item">
-                  <i class="left chevron icon"></i>
-                </a>
-                <a class="active item">1</a>
-                <a class="item">2</a>
-                <a class="item">3</a>
-                <a class="item">4</a>
-                <a class="icon item">
-                  <i class="right chevron icon"></i>
-                </a>
-              </div>
-            </th>
-          </tr></tfoot>
-        </table>
+
+  </div>
+  </div>
+
+  <div class="footer ui basic segment">
+    <div class="ui three column grid container ">
+      <div class="column">
+        <div class="ui basic segment">
+          <h4 class="ui header">L'Office public de la langue bretonne</h4>
+          <div class="ui link list">
+            <a href="#" class="item">
+              <i class="external alternate icon"></i>
+              <div class="content">Site internet</div>
+            </a>
+            <a class="item">
+              <i class="envelope icon"></i>
+              <div class="content">Contact</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui basic segment">
+          <h4 class="ui header">Réseaux sociaux</h4>
+          <div class="ui link list">
+            <a class="item">
+              <i class="twitter icon"></i>
+              <div class="content">Twitter</div>
+            </a>
+            <a class="item">
+              <i class="facebook icon"></i>
+              <div class="content">Facebook</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui basic segment">
+          <div class="ui link list">
+            <div class="item">
+              Copyright © 2021 - Ofis publik ar brezhoneg
+            </div>
+            <a href="#" class="item">Politique de confidentialité</a>
+            <div class="item">Ce site n'utilise pas de cookies</div>
+          </div>
+
+
+        </div>
       </div>
     </div>
   </div>
-</div>
-</div>
-</div>
-<!-- FOOTER -->
-<div class="ui basic segment">
-<p></p>
-</div>
-<div class="footer">
-<div class="ui container">
-<div class="ui grid">
-  <div class="ui four wide column">
-    <p></p>
-    <h4 class="ui inverted header">Réseaux sociaux</h4>
-    <div class="ui inverted link list">
-      <a class="item">
-        <i class="twitter icon"></i>
-        <div class="content">Twitter</div>
-      </a>
-      <a class="item">
-        <i class="facebook icon"></i>
-        <div class="content">Facebook</div>
-      </a>
-    </div>
+
   </div>
-  <div class="eight wide column">
-    <p></p>
-    <h4 class="ui inverted header">L'Office public de la langue bretonne</h4>
-    <div class="ui inverted link list">
-      <a href="#" class="item">
-        <i class="external alternate icon"></i>
-        <div class="content">Site internet</div>
-      </a>
-      <a class="item">
-        <i class="envelope icon"></i>
-        <div class="content">Contact</div>
-      </a>
-    </div>
-  </div>
-  <div class="ui four wide inverted column">
-    <p></p>
-    <h4></h4>
-    <div class="ui inverted link list">
-      <a class="item">
-        Mentions légales
-      </a>
-      <a href="#" class="item">
-        Crédit
-      </a>
-    </div>
-    <div class="ui inverted basic segment">Copyright 2020</div>
-  </div>
-</div>
-</div>
-</div>
-<script>
-$('.ui.accordion')
-.accordion()
-;
-</script>
-<script>
-$('.ui.dropdown')
-.dropdown()
-;
-</script>
-<script>
-$('.menu .item')
-.tab()
-;
-</script>
-<script>
-$('.label')
-.popup()
-;
-$('.rating')
-.popup()
-;
-$('.ui.sticky')
-.sticky()
-;
-$('.ui.rating')
-.rating()
-;
-</script>
+
+  <script>
+    $('.ui.accordion')
+      .accordion();
+  </script>
+  <script>
+    $('.ui.dropdown')
+      .dropdown();
+  </script>
+  <script>
+    $('.menu .item')
+      .tab();
+  </script>
+  <script>
+    $('.label')
+      .popup();
+    $('.rating')
+      .popup();
+    $('.ui.sticky')
+      .sticky();
+    $('.ui.rating')
+      .rating();
+  </script>
 </body>
+
 </html>

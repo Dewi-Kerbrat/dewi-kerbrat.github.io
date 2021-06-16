@@ -32,7 +32,7 @@
         <div class="column">
 
           <div class="ui two item pointing menu">
-            <a class="item" href="/porched/fr/apertium/">
+            <a class="item" href="/porched/fr/apertium/index.fra.html">
               Traducteur
             </a>
             <a class="active item" href="/porched/fr/apertium/apropos.php">
