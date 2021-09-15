@@ -227,45 +227,73 @@
 								</div>
 							</div>
 							<div class="sixteen wide column">
-								<div class="ui right internal very close rail" style="z-index: 1;">
-									<div class="ui fluid raised card">
-										<div class="content">
-											<h3 class="ui pink header">
-												<i class="calendar check outline icon"></i>
-												<div class="content">
-													Nom de lieu du jour
-												</div>
-											</h3>
-										</div>
-										<div class="content">
-											<h2 class="ui header">
-												Sant-Nikolaz-an-Hent
-												<div class="sub header">
-													Saint-Nicolas-de-Redon
-												</div>
-											</h2>
-										</div>
-										<div class="ui bottom attached pink button">
-											<i class="ui info icon"></i>
-											En savoir plus
-										</div>
-									</div>
-									<div class="ui raised segment">
-										<div class="ui statistic">
-											<div class="label">
-												la base contient
-											</div>
-											<div class="value">
-												<i class="map marker alternate icon"></i>
-												41 430
-											</div>
-											<div class="label">
-												noms de lieux
-											</div>
-										</div>
-									</div>
-								</div>
+								<h2 class="ui header">La recherche a renvoyé
+									<span class="ui horizontal big label">25</span>
+									résultats
+								</h2>
 								<div id="mapid"></div>
+								<p></p>
+								<table class="ui celled table">
+        <thead>
+        <tr>
+            <th>Générique</th>
+            <th>Spécifique</th>
+            <th>Forme bretonne correcte</th>
+            <th>Commune</th>
+            <th>Catégorie</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>generic_name</td>
+            <td>name</td>
+            <td>standardized_form</td>
+            <td>city.name_fra</td>
+            <td>category.name_fra</td>
+            <td>
+                <a href="#" class="ui fluid primary icon button" data-content="Voir la fiche">
+                    <i class="plus circle icon"></i>
+                </a>
+            </td>
+        </tr>
+
+				<tr>
+            <td>generic_name</td>
+            <td>name</td>
+            <td>standardized_form</td>
+            <td>city.name_fra</td>
+            <td>category.name_fra</td>
+            <td>
+                <a href="#" class="ui fluid primary icon button" data-content="Voir la fiche">
+                    <i class="plus circle icon"></i>
+                </a>
+            </td>
+        </tr>
+
+				<tr>
+            <td>generic_name</td>
+            <td>name</td>
+            <td>standardized_form</td>
+            <td>city.name_fra</td>
+            <td>category.name_fra</td>
+            <td>
+                <a href="#" class="ui fluid primary icon button" data-content="Voir la fiche">
+                    <i class="plus circle icon"></i>
+                </a>
+            </td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <th colspan="6">
+                <div class="ui right floated pagination menu">
+                    <a data-value="1" class="item paginator active">1</a>
+                </div>
+            </th>
+        </tr>
+        </tfoot>
+    </table>
 							</div>
 						</div>
 					</div>
