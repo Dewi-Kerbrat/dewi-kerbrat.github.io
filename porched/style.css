@@ -17,6 +17,7 @@ body {
   flex: 0 0 auto;
   margin-left: 2rem;
   margin-top: 2rem;
+  overflow: hidden;
 }
 
 .page {

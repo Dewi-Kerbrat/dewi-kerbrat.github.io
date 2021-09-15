@@ -1,0 +1,88 @@
+<div class="toc">
+  <div class="ui vertical secondary big menu">
+    <div class="header item">
+      <div class="ui sub header">{% translate "Ressources numériques" %}</div>
+    </div>
+    <div class="ui left pointing dropdown item">
+      {% translate "Dictionnaires" %}
+      <i class="book icon"></i>
+      <i class="ui dropdown icon"></i>
+      <div class="menu">
+        <a class="item" href="{% url 'term' %}"><i class="history icon"></i>{% translate "MeurGorf - Dictionnaire historique du breton" %}</a>
+      </div>
+    </div>
+    <div class="ui left pointing dropdown item">
+      {% translate "Bases de données" %}
+      <i class="database icon"></i>
+      <i class="ui dropdown icon"></i>
+      <div class="menu">
+        <a class="item" href="{% url 'kerofis' %}"><i class="map marked alternate icon"></i>{% translate "KerOfis - Base de donnée toponymique" %}</a>
+        <a class="item" href="http://www.fr.brezhoneg.bzh/36-termofis.htm"><i class="search icon"></i>{% translate "TermOfis - Base de donnée terminologique" %}</a>
+      </div>
+    </div>
+    <div class="ui left pointing dropdown item">
+      <i class="folder icon"></i>
+      {% translate "Corpus" %}
+      <i class="ui dropdown icon"></i>
+      <div class="menu">
+        <a href="#" class="item"><i class="file alternate icon"></i>{% translate "Corpus textuel" %}</a>
+        <a href="#" class="item"><i class="file audio icon"></i>{% translate "Corpus audio" %}</a>
+      </div>
+    </div>
+    <div class="ui left pointing dropdown item">
+      <i class="user icon"></i>
+      {% translate "Utiliser le breton" %}
+      <i class="dropdown icon"></i>
+      <div class="menu">
+        <a href="#" class="item">
+          <i class="users icon"></i>
+          {% translate "Sur les réseaux sociaux" %}
+        </a>
+        <a href="#" class="item">
+          <i class="desktop icon"></i>
+          {% translate "Sur son site internet" %}
+        </a>
+
+      </div>
+    </div>
+    <div class="ui divider">
+    </div>
+    <div class="header item">
+      <div class="ui sub header">{% translate "Outils numériques" %}</div>
+    </div>
+    <div class="ui left pointing dropdown item">
+      <i class="globe europe icon"></i>{% translate "Traduction" %}
+      <i class="ui dropdown icon"></i>
+      <div class="menu">
+        <a class="item" href="#"><i class="language icon"></i>{% translate "Apertium - Traducteur automatique" %}</a>
+      </div>
+    </div>
+    <div class="ui left pointing dropdown item">
+      <i class="microphone icon"></i>
+      {% translate "Parole" %}
+      <i class="ui dropdown icon"></i>
+      <div class="menu">
+        <a class="item" href="#"><i class="comment icon"></i>{% translate "MouezhOfis - Synthèse de la parole" %}</a>
+      </div>
+    </div>
+    <div class="ui left pointing dropdown item">
+      <i class="tools icon"></i>
+      {% translate "Autres outils" %}
+      <i class="ui dropdown icon"></i>
+      <div class="menu">
+        <a href="#" class="item"><i class="spell check icon"></i>{% translate "Correcteurs orthographiques" %}</a>
+      </div>
+    </div>
+    <div class="ui divider"></div>
+    <div class="header item">
+      <div class="ui sub header">{% translate "Les technologies de la langue" %}</div>
+    </div>
+    <a class="item" href="/porched/fr/strategie/">
+      <i class="tasks icon"></i>{% translate "Stratégie numérique" %}
+    </a>
+    <a class="item">
+      <i class="question icon"></i>{% translate "A propos" %}
+    </a>
+    <div class="ui divider"></div>
+  </div>
+</div>
