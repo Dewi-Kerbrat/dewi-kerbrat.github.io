@@ -8,7 +8,7 @@ body {
 
 .full.height > .toc {
   position: fixed;
-  z-index: 1;
+  z-index: 6;
   width: 300px;
   height: 750px;
   -webkit-box-flex: 0;
