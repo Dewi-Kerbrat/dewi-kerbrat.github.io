@@ -1,0 +1,444 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Portail numérique de la langue bretonne</title>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="../style.css">
+
+  <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+  <script src="../semantic/dist/semantic.min.js"></script>
+
+</head>
+
+<body>
+
+
+  <!-- header -->
+  <div class="ui inverted stackable borderless top fixed menu topbar">
+      <div class="ui item">
+          <div class="ui labeled icon inverted button">
+            <i class="arrow left icon"></i>
+            Accéder au portail numérique
+          </div>
+
+      </div>
+      <div class="item">
+        <h2 class="ui inverted header">
+          <div class="content">Traducteur automatique
+          </div>
+        </h2>
+    </div>
+      <div class="right menu">
+        <div class="ui item">
+          <div class="ui dropdown inverted button">
+            <i class="globe icon"></i>
+            français
+            <i class="dropdown icon"></i>
+            <div class="menu">
+              <a href="/porched/br/" class="item">brezhoneg</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+  <div class="full height">
+
+    <!-- side menu 
+    <div class="toc">
+      <div class="ui vertical secondary big menu">
+        <div class="header item">
+          <div class="ui sub header">Ressources numériques</div>
+        </div>
+        <div class="ui left pointing dropdown item">
+          Dictionnaires
+          <i class="book icon"></i>
+          <i class="ui dropdown icon"></i>
+          <div class="menu">
+            <a class="item" href="/porched/fr/meurgorf/"><em data-emoji=":book:"></em>MeurGorf - Dictionnaire historique du breton</a>
+          </div>
+        </div>
+        <div class="ui left pointing dropdown item">
+          Bases de données
+          <i class="database icon"></i>
+          <i class="ui dropdown icon"></i>
+          <div class="menu">
+            <a class="item" href="/porched/fr/kerofis/"><em data-emoji=":map:"></em>KerOfis - Base de donnée toponymique</a>
+            <a class="item" href="http://www.fr.brezhoneg.bzh/36-termofis.htm"><em data-emoji=":mag:"></em>TermOfis - Base de donnée terminologique</a>
+          </div>
+        </div>
+        <div class="ui left pointing dropdown item">
+          <i class="folder icon"></i>
+          Corpus
+          <i class="ui dropdown icon"></i>
+          <div class="menu">
+            <a href="/porched/fr/corpus/text/" class="item"><i class="file alternate icon"></i>Corpus textuel</a>
+            <a href="/porched/fr/corpus/audio/" class="item"><i class="file audio icon"></i>Corpus audio</a>
+          </div>
+        </div>
+        <div class="ui left pointing dropdown item">
+          <i class="user icon"></i>
+          Utiliser le breton
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <a href="/porched/fr/utiliser/" class="item">
+              <i class="users icon"></i>
+              Sur les réseaux sociaux
+            </a>
+            <a href="#" class="item">
+              <i class="desktop icon"></i>
+              Sur son site internet
+            </a>
+
+          </div>
+        </div>
+        <div class="ui divider">
+        </div>
+        <div class="header item">
+          <div class="ui sub header">Outils numériques</div>
+        </div>
+        <div class="ui left pointing dropdown item">
+          <i class="globe europe icon"></i>Traduction
+          <i class="ui dropdown icon"></i>
+          <div class="menu">
+            <a class="item" href="/porched/fr/apertium/index.fra.html"><em data-emoji=":earth_africa:"></em> Apertium - Traducteur automatique</a>
+          </div>
+        </div>
+        <div class="ui left pointing dropdown item">
+          <i class="microphone icon"></i>
+          Parole
+          <i class="ui dropdown icon"></i>
+          <div class="menu">
+            <a class="item" href="/porched/fr/sintezenn/"><em data-emoji="speech_left"></em>Sintezenn - Synthèse de la parole</a>
+          </div>
+        </div>
+        <div class="ui left pointing dropdown item">
+          <i class="tools icon"></i>
+          Autres outils
+          <i class="ui dropdown icon"></i>
+          <div class="menu">
+            <a href="#" class="item"><i class="spell check icon"></i>Correcteurs orthographiques</a>
+          </div>
+        </div>
+        <div class="ui divider"></div>
+        <div class="header item">
+          <div class="ui sub header">Les technologies de la langue</div>
+        </div>
+        <a class="item" href="/porched/fr/strategie/">
+          <i class="tasks icon"></i>Stratégie numérique
+        </a>
+        <a class="item">
+          <i class="question icon"></i>A propos
+        </a>
+        <div class="ui divider"></div>
+      </div>
+    </div>
+     end side menu -->
+
+
+
+    <div class="page">
+      <div class="ui doubling stackable grid container main">
+        <div class="sixteen wide column">
+            <div class="ui three item pointing menu">
+                <a href="./troer.html" class="item">Traducteur</a>
+                <a href="./frazenn.html" class="active item">Base de phrases</a>
+                <a href="" class="item">En savoir plus</a>
+            </div>
+          <div class="ui very padded teal segment">
+            <div class="ui stackable grid">
+              <div class="sixteen wide column">
+
+                
+
+                <h1 class="ui header" data-text="Translation">
+                  <em data-emoji=":earth_africa:" class="small"></em>
+                    <div class="content">
+                    Troer emgefre
+                    <div class="sub header">
+                    Traducteur automatique
+                  </div>
+                </div>
+                <a class="ui right floated icon button" href="./frazenn.html" data-content="Quitter l'interface d'administration">
+                  <i class="times icon"></i>
+                </a>
+                </h1>
+
+    
+                <h3 class="ui header">Base d'exemples de phrases traduites</h3>
+    
+                <div class="ui form">
+                  <div class="field">
+                    <div class="ui right action left icon input">
+                      <i class="search icon"></i>
+                      <input type="text" placeholder="Rechercher...">
+                      <div class="ui floating dropdown button">
+                        <div class="text">Français</div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                          <div class="item">Breton</div>
+                          <div class="active item">Français</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui accordion">
+                    <div class="title">
+                      <i class="dropdown icon"></i>
+                      Options de recherche
+                    </div>
+                    <div class="content">
+                      <div class="ui inline fields">
+                        <label>Afficher :</label>
+                        <div class="field">
+                          <div class="ui checkbox">
+                            <input type="checkbox" class="hidden">
+                            <label>Seulement les traductions validées</label>
+                          </div>
+                        </div>
+                        <div class="field">
+                          <div class="ui checkbox">
+                            <input type="checkbox" class="hidden">
+                            <label>Inclure les traductions algorithmiques</label>
+                          </div>
+                        </div>
+                        <div class="field">
+                          <div class="ui checkbox">
+                            <input type="checkbox" class="hidden">
+                            <label>Inclure les traductions humaines</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="inline field">
+                        <label>Trier par :</label>
+                        <div class="ui selection dropdown">
+                          <input type="hidden" name="pet">
+                          <i class="dropdown icon"></i>
+                          <div class="text">Les dernières traductions</div>
+                          <div class="scrollhint menu">
+                            <div class="item" data-value="default">Les dernières traductions</div>
+                            <div class="item" data-value="1">Le plus de votes positifs</div>
+                            <div class="item" data-value="2">Le plus de votes négatifs</div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>       
+                </div>
+              </div>
+            
+
+            
+              <div class="sixteen wide column">
+
+                <table class="ui very basic celled table">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p><i class="certificate icon" data-content="Traduction vérifiée"></i></p>
+                        <p><i class="user icon" data-content="Traduction humaine"></i></p>
+                      </td>
+                      <td>Chaise installée aujourd'hui à Bruxelles, faite par l’arrière-grand-père Pierre Ropers, menuisier en Centre-Bretagne.</td>
+                      <td>
+                        <p>Ur gador hag a zo bremañ e Brusel, graet gant e dad-kuñv Pierre Roperzh a oa munuzer e Kreiz-Breizh.</p>
+                      </td>
+                      <td class="collapsing">
+                        <p class="ui label"><i class="thumbs up link green icon"></i> 23</p>
+                        <p></p>
+                        <p class="ui label"><i class="thumbs down link red icon"></i> 5</p>
+                      </td>
+                      <td>
+                        <div class="ui vertical buttons">
+                          <div class="ui mini icon green button">
+                            <i class="check icon"></i>
+                          </div>
+                          <div class="ui mini icon button">
+                            <i class="edit icon"></i>
+                          </div>
+                          <div class="ui mini icon red button">
+                            <i class="trash icon"></i>
+                          </div>
+                        </div>
+                        
+                      </td>
+
+                    </tr>
+                   
+                    <tr>
+                      <td>
+                        <p><i class="certificate icon" data-content="Traduction vérifiée"></i></p>
+                        <p><i class="user icon" data-content="Traduction humaine"></i></p>
+                      </td>
+                      <td>
+                        <p>Décoré de tissu jaune et de boiseries dessinées en 1903 par l’artiste Georges de Feure pour le compte de la maison Bing, le cabinet de toilette était pourvu de deux meubles à hauteur d’appui, de chaises et probablement d’une chaise longue, sur le modèle du cabinet de toilette féminin exposé dans le Pavillon Bing que James de Kerjégu a certainement visité pendant l’Exposition universelle de Paris en 1900. </p>
+                      </td>
+                      <td>
+                        <p>Er gambr-emwalc’hiñ, kinklet gant lien melen ha koadajoù treset e 1903 gant an arzour Georges de Feure evit kont an ti Bing, e oa daou bezh arrebeuri a c’halled en em harpañ warno, kadorioù ha, moarvat, ur gador hir, diwar batrom ar gambr-emwalc’hiñ evit ar merc’hed a voe diskouezet er Pavilhon Bing hag a voe gweladennet gant James Keryegu e-pad an Diskouezadeg hollvedel e Pariz e 1900. </p>
+                      </td>
+                      <td class="collapsing">
+                        <p class="ui label"><i class="thumbs up link green icon"></i> 23</p>
+                        <p></p>
+                        <p class="ui label"><i class="thumbs down link red icon"></i> 5</p>
+                      </td>
+                      <td>
+                        <div class="ui vertical buttons">
+                          <div class="ui mini icon green button">
+                            <i class="check icon"></i>
+                          </div>
+                          <div class="ui mini icon button">
+                            <i class="edit icon"></i>
+                          </div>
+                          <div class="ui mini icon red button">
+                            <i class="trash icon"></i>
+                          </div>
+                        </div>
+                      </td>
+                      
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <p><i class="certificate icon" data-content="Traduction vérifiée"></i></p>
+                        <p><i class="user icon" data-content="Traduction humaine"></i></p>
+                      </td>
+                      <td>
+                        <p>Chaise installée aujourd'hui à Bruxelles, faite par l’arrière-grand-père Pierre Ropers, menuisier en Centre-Bretagne.</p>
+                      </td>
+                      <td>
+                        <p>Ur gador hag a zo bremañ e Brusel, graet gant e dad-kuñv Pierre Roperzh a oa munuzer e Kreiz-Breizh.</p>
+                      </td>
+                      <td class="collapsing">
+                        <p class="ui label"><i class="thumbs up link green icon"></i> 23</p>
+                        <p></p>
+                        <p class="ui label"><i class="thumbs down link red icon"></i> 5</p>
+                      </td>
+                        <td class="">
+                          <div class="ui vertical buttons">
+                            <div class="ui mini icon green button">
+                              <i class="check icon"></i>
+                            </div>
+                            <div class="ui mini icon button">
+                              <i class="edit icon"></i>
+                            </div>
+                            <div class="ui mini icon red button">
+                              <i class="trash icon"></i>
+                            </div>
+                          </div>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><i class="certificate icon" data-content="Traduction vérifiée"></i></p>
+                        <p><i class="user icon" data-content="Traduction humaine"></i></p>
+                      </td>
+                      <td>
+                        <p>Chaise installée aujourd'hui à Bruxelles, faite par l’arrière-grand-père Pierre Ropers, menuisier en Centre-Bretagne.</p>
+                      </td>
+                      <td>
+                        <p>Ur gador hag a zo bremañ e Brusel, graet gant e dad-kuñv Pierre Roperzh a oa munuzer e Kreiz-Breizh.</p>
+                      </td>
+                      <td class="collapsing">
+                        <p class="ui label"><i class="thumbs up link green icon"></i> 23</p>
+                        <p></p>
+                        <p class="ui label"><i class="thumbs down link red icon"></i> 5</p>
+                      </td>
+                        <td class="">
+                          <div class="ui vertical buttons">
+                            <div class="ui mini icon green button">
+                              <i class="check icon"></i>
+                            </div>
+                            <div class="ui mini icon button">
+                              <i class="edit icon"></i>
+                            </div>
+                            <div class="ui mini icon red button">
+                              <i class="trash icon"></i>
+                            </div>
+                          </div>
+                        </td>
+                    </tr>
+                  </tbody>
+                </table>
+                
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="footer ui basic segment">
+      <div class="ui three column grid container ">
+        <div class="column">
+          <div class="ui basic segment">
+            <h4 class="ui header">L'Office public de la langue bretonne</h4>
+            <div class="ui link list">
+              <a href="#" class="item">
+                <i class="external alternate icon"></i>
+                <div class="content">Site internet</div>
+              </a>
+              <a class="item">
+                <i class="envelope icon"></i>
+                <div class="content">Contact</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui basic segment">
+            <h4 class="ui header">Réseaux sociaux</h4>
+            <div class="ui link list">
+              <a class="item">
+                <i class="twitter icon"></i>
+                <div class="content">Twitter</div>
+              </a>
+              <a class="item">
+                <i class="facebook icon"></i>
+                <div class="content">Facebook</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui basic segment">
+            <div class="ui link list">
+              <div class="item">
+                Copyright © 2021 - Ofis publik ar brezhoneg
+              </div>
+              <a href="#" class="item">Politique de confidentialité</a>
+              <div class="item">Ce site n'utilise pas de cookies</div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+      $('.ui.accordion')
+        .accordion();
+      $('.ui.sticky')
+        .sticky();
+      $('.icon').popup();
+      $('.ui.checkbox').checkbox();
+      $('.ui.dropdown').dropdown();
+    </script>
+
+
+</body>
+
+</html>

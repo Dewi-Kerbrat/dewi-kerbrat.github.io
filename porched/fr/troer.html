@@ -1,0 +1,236 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Portail numérique de la langue bretonne</title>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="../style.css">
+
+  <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+  <script src="../semantic/dist/semantic.min.js"></script>
+
+</head>
+
+<body>
+
+
+  <!-- header -->
+  <div class="ui inverted stackable borderless top  menu topbar">
+      <div class="ui item">
+          <a href="https://porched.korr.bzh/fr/home/" class="ui labeled icon inverted button">
+            <i class="arrow left icon"></i>
+            Accéder au portail numérique
+          </a>
+
+      </div>
+      <div class="item">
+        <h2 class="ui inverted header">
+          <div class="content">Traducteur automatique
+          </div>
+        </h2>
+    </div>
+      <div class="right menu">
+        <div class="item">
+          <div class="ui inverted button">
+            <i class="user icon"></i>
+            Connexion
+          </div>
+        </div>
+        <div class="item">
+          <div class="ui dropdown inverted button">
+            <i class="globe icon"></i>
+            français
+            <i class="dropdown icon"></i>
+            <div class="menu">
+              <a href="/porched/br/" class="item">brezhoneg</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+  <div class="">
+    <div class="">
+      <div class="ui modal form" id="correction_form">
+          <div class="header">Proposer une correction</div>
+          <div class="content">
+            
+              <div class="ui field">
+                <label>Quelle serait la traduction attendue selon vous ?</label>
+                <textarea name="field1" id="" cols="15" rows="5"></textarea>
+              </div>
+              <div class="ui error message"></div>
+            </div>
+          
+          <div class="actions">
+            <button class="ui cancel button">Je ne sais pas</button>
+            <button class="ui approve green submit button" action="submit">Envoyer</button>
+          </div>
+      </div>
+      <div class="ui doubling stackable grid container">
+        <div class="sixteen wide column">
+            <div class="ui three item pointing menu">
+                <a href="" class="active item">Traducteur</a>
+                <a href="./frazenn.html" class="item">Base de phrases</a>
+                <a href="" class="item">En savoir plus</a>
+            </div>
+          <div class="ui very padded segment">
+            
+            <h1 class="ui header" data-text="Translation">
+              <em data-emoji=":earth_africa:" class="small"></em>
+                <div class="content">
+                Troer emgefre
+                <div class="sub header">
+                Traducteur automatique
+              </div>
+            </div>
+            </h1>
+
+            <div class="ui hidden divider"></div>
+            <div class="ui form">
+              <div class="field">
+                <div class="ui buttons">
+                  <div class="ui button">
+                    Français
+                  </div>
+                  <div class="ui icon button" data-content="Inverser le sens de la traduction">
+                    <i class="exchange alternate icon"></i>
+                  </div>
+                  <div class="ui button">
+                    Breton
+                  </div>
+                </div>
+                <div class="ui right floated pink button">
+                  Traduire
+                </div>
+              </div>
+
+              
+              
+              <div class="ui two fields">
+                <div class="field">
+                  <textarea name="" id="" cols="30" rows="5" placeholder="Texte en français">Comment tu t'appelles ?</textarea>
+                </div>
+                <div class="field">
+                  <textarea name="" id="" cols="30" rows="5" placeholder="Texte en breton">Penaos e vez graet ganit?</textarea>
+                </div>
+
+              </div>
+              
+              <div class="field">
+                <div class="ui icon right floated buttons">
+                  
+                  <div class="ui button" data-content="Bonne traduction">
+                    <i class="thumbs up outline green icon"></i>
+                  </div>
+                  <button class="ui button" data-content="Mauvaise traduction" id="correction">
+                    <i class="thumbs down outline red icon"></i>
+                  </button>
+                </div>
+              </div>
+              <p>Nombre de caracères restants : 23/1000</p>
+            </div>
+
+         
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer ui basic segment">
+      <div class="ui three column grid container ">
+        <div class="column">
+          <div class="ui basic segment">
+            <h4 class="ui header">L'Office public de la langue bretonne</h4>
+            <div class="ui link list">
+              <a href="#" class="item">
+                <i class="external alternate icon"></i>
+                <div class="content">Site internet</div>
+              </a>
+              <a class="item">
+                <i class="envelope icon"></i>
+                <div class="content">Contact</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui basic segment">
+            <h4 class="ui header">Réseaux sociaux</h4>
+            <div class="ui link list">
+              <a class="item">
+                <i class="twitter icon"></i>
+                <div class="content">Twitter</div>
+              </a>
+              <a class="item">
+                <i class="facebook icon"></i>
+                <div class="content">Facebook</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui basic segment">
+            <div class="ui link list">
+              <div class="item">
+                Copyright © 2021 - Ofis publik ar brezhoneg
+              </div>
+              <a href="#" class="item">Politique de confidentialité</a>
+              <div class="item">Ce site n'utilise pas de cookies</div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    
+
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+      $('.ui.accordion')
+        .accordion();
+
+      $('.ui.dropdown')
+        .dropdown();
+
+      $('.menu .item')
+        .tab();
+
+      $('.label')
+        .popup();
+      $('.button').popup();
+      $('.ui.sticky')
+        .sticky();
+
+      $("#correction").click(function() {
+        $(".ui.modal").modal('show');
+      });
+
+      $('#correction_form .ui.form').form({
+        fields: {
+          field1: {
+            rules: [{
+              type    : 'empty',
+              prompt  : 'Veuillez porposer une correction, ou cliquer sur "Je ne sais pas"'
+            }]
+          },
+        }
+      });
+    </script>
+
+
+</body>
+
+</html>

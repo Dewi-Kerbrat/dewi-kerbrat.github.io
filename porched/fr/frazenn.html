@@ -1,0 +1,382 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Portail numérique de la langue bretonne</title>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="../style.css">
+
+  <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+  <script src="../semantic/dist/semantic.min.js"></script>
+
+</head>
+
+<body>
+
+
+  <!-- header -->
+  <div class="ui inverted stackable borderless top menu topbar">
+      <div class="ui item">
+          <a href="https://porched.korr.bzh/fr/home/" class="ui labeled icon inverted button">
+            <i class="arrow left icon"></i>
+            Accéder au portail numérique
+          </a>
+
+      </div>
+      <div class="item">
+        <h2 class="ui inverted header">
+          <div class="content">Traducteur automatique
+          </div>
+        </h2>
+    </div>
+      <div class="right menu">
+        <div class="ui item">
+          <div class="ui dropdown inverted button">
+            <i class="globe icon"></i>
+            français
+            <i class="dropdown icon"></i>
+            <div class="menu">
+              <a href="/porched/br/" class="item">brezhoneg</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+  <div class="">
+
+    <div class="">
+      <div class="ui doubling stackable grid container main">
+        <div class="sixteen wide column">
+            <div class="ui three item pointing menu">
+                <a href="./troer.html" class="item">Traducteur</a>
+                <a href="./frazenn.html" class="active item">Base de phrases</a>
+                <a href="" class="item">En savoir plus</a>
+            </div>
+          <div class="ui very padded clearing segment">
+            <div class="ui stackable grid">
+              <div class="sixteen wide column">
+
+                
+
+                <h1 class="ui header" data-text="Translation">
+                  <em data-emoji=":earth_africa:" class="small"></em>
+                    <div class="content">
+                    Troer emgefre
+                    <div class="sub header">
+                    Traducteur automatique
+                  </div>
+                </div>
+                <button class="ui right floated icon button" id="admin_btn" data-content="Accéder à l'interface d'administration">
+                  <i class="tools icon"></i>
+                </button>
+                </h1>
+
+    
+                <h3 class="ui header">Base d'exemples de phrases traduites</h3>
+    
+                <div class="ui form">
+                  <div class="field">
+                    <div class="ui right action left icon input">
+                      <i class="search icon"></i>
+                      <input type="text" placeholder="Rechercher...">
+                      <div class="ui floating dropdown button">
+                        <div class="text">Français</div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                          <div class="item">Breton</div>
+                          <div class="active item">Français</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui accordion">
+                    <div class="title">
+                      <i class="dropdown icon"></i>
+                      Options de recherche
+                    </div>
+                    <div class="content">
+                      <div class="ui inline fields">
+                        <label>Afficher :</label>
+                        <div class="field">
+                          <div class="ui checkbox">
+                            <input type="checkbox" class="hidden">
+                            <label>Seulement les traductions validées</label>
+                          </div>
+                        </div>
+                        <div class="field">
+                          <div class="ui checkbox">
+                            <input type="checkbox" class="hidden">
+                            <label>Inclure les traductions algorithmiques</label>
+                          </div>
+                        </div>
+                        <div class="field">
+                          <div class="ui checkbox">
+                            <input type="checkbox" class="hidden">
+                            <label>Inclure les traductions humaines</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="inline field">
+                        <label>Trier par :</label>
+                        <div class="ui selection dropdown">
+                          <input type="hidden" name="pet">
+                          <i class="dropdown icon"></i>
+                          <div class="text">Les dernières traductions</div>
+                          <div class="scrollhint menu">
+                            <div class="item" data-value="default">Les dernières traductions</div>
+                            <div class="item" data-value="1">Le plus de votes positifs</div>
+                            <div class="item" data-value="2">Le plus de votes négatifs</div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>       
+                </div>
+              </div>
+            
+
+            
+              <div class="eight wide column">
+
+
+                <div class="ui secondary clearing segment">
+                 
+                  <div class="ui segment" style="color: rgba(0,0,0,.87);">
+                    <div class="" style="width: fit-content;">
+                      <p><span class="ui horizontal label">français</span>Chaise installée aujourd'hui à Bruxelles, faite par l’arrière-grand-père Pierre Ropers, menuisier en Centre-Bretagne.</p>
+                      <p><span class="ui horizontal label">breton</span>Ur gador hag a zo bremañ e Brusel, graet gant e dad-kuñv Pierre Roperzh a oa munuzer e Kreiz-Breizh.</p>
+                    </div>
+                    
+                    
+                  </div>
+                    <i class="certificate pink icon" data-content="Traduction vérifiée"></i>
+                    <i class="user icon" data-content="Traduction humaine"></i>
+                  <div class="ui mini icon right floated buttons">
+                    <div class="ui mini icon right floated button">
+                      <i class="edit icon"></i>
+                    </div>
+                    <div class="ui button">
+                      <i class="thumbs up link icon"></i>
+                      <span class="admin">125</span>
+                    </div>
+                    <div class="ui button">
+                      <i class="thumbs down link icon"></i>
+                      <span class="admin">32</span>
+                    </div>
+                    <div class="ui red button admin">
+                      <i class="trash icon"></i>
+                    </div>
+                    <div class="ui admin button" data-content="Marquer comme non-vérifiée">
+                      <i class="cancel icon"></i>
+                    </div>
+                  </div>
+                  
+                </div>
+
+              </div>
+              <div class="eight wide column">
+
+
+                <div class="ui secondary clearing segment">
+                 
+                  <div class="ui segment" style="color: rgba(0,0,0,.87);">
+                    <div class="" style="width: fit-content;">
+                      <p><span class="ui horizontal label">français</span>Chaise installée aujourd'hui à Bruxelles, faite par l’arrière-grand-père Pierre Ropers, menuisier en Centre-Bretagne.</p>
+                      <p><span class="ui horizontal label">breton</span>Ur gador hag a zo bremañ e Brusel, graet gant e dad-kuñv Pierre Roperzh a oa munuzer e Kreiz-Breizh.</p>
+                    </div>
+                    
+                    
+                  </div>
+                    <i class="user icon" data-content="Traduction humaine"></i>
+                  <div class="ui mini icon right floated buttons">
+                    <div class="ui mini icon right floated button">
+                      <i class="edit icon"></i>
+                    </div>
+                    <div class="ui button">
+                      <i class="thumbs up link icon"></i>
+                      <span class="admin">125</span>
+                    </div>
+                    <div class="ui button">
+                      <i class="thumbs down link icon"></i>
+                      <span class="admin">32</span>
+                    </div>
+                    <div class="ui red button admin">
+                      <i class="trash icon"></i>
+                    </div>
+                    <div class="ui admin pink button" data-content="Marquer comme vérifiée">
+                      <i class="check icon"></i>
+                    </div>
+                  </div>
+                  
+                </div>
+
+              </div>
+              <div class="eight wide column">
+
+
+                <div class="ui secondary clearing segment">
+                 
+                  <div class="ui segment" style="color: rgba(0,0,0,.87);">
+                    <div class="" style="width: fit-content;">
+                      <p><span class="ui horizontal label">français</span>Chaise installée aujourd'hui à Bruxelles, faite par l’arrière-grand-père Pierre Ropers, menuisier en Centre-Bretagne.</p>
+                      <p><span class="ui horizontal label">breton</span>Ur gador hag a zo bremañ e Brusel, graet gant e dad-kuñv Pierre Roperzh a oa munuzer e Kreiz-Breizh.</p>
+                    </div>
+                    
+                    
+                  </div>
+                    <i class="certificate pink icon" data-content="Traduction vérifiée"></i>
+                    <i class="user icon" data-content="Traduction humaine"></i>
+                  <div class="ui mini icon right floated buttons">
+                    <div class="ui mini icon right floated button">
+                      <i class="edit icon"></i>
+                    </div>
+                    <div class="ui button">
+                      <i class="thumbs up link icon"></i>
+                      <span class="admin">125</span>
+                    </div>
+                    <div class="ui button">
+                      <i class="thumbs down link icon"></i>
+                      <span class="admin">32</span>
+                    </div>
+                    <div class="ui red button admin">
+                      <i class="trash icon"></i>
+                    </div>
+                    <div class="ui admin button" data-content="Marquer comme non-vérifiée">
+                      <i class="cancel icon"></i>
+                    </div>
+                  </div>
+                  
+                </div>
+
+              </div>
+              <div class="eight wide column">
+
+
+                <div class="ui secondary clearing segment">
+                 
+                  <div class="ui segment" style="color: rgba(0,0,0,.87);">
+                    <div class="" style="width: fit-content;">
+                      <p><span class="ui horizontal label">français</span>Chaise installée aujourd'hui à Bruxelles, faite par l’arrière-grand-père Pierre Ropers, menuisier en Centre-Bretagne.</p>
+                      <p><span class="ui horizontal label">breton</span>Ur gador hag a zo bremañ e Brusel, graet gant e dad-kuñv Pierre Roperzh a oa munuzer e Kreiz-Breizh.</p>
+                    </div>
+                    
+                    
+                  </div>
+                    <i class="certificate pink icon" data-content="Traduction vérifiée"></i>
+                    <i class="user icon" data-content="Traduction humaine"></i>
+                  <div class="ui mini icon right floated buttons">
+                    <div class="ui mini icon right floated button">
+                      <i class="edit icon"></i>
+                    </div>
+                    <div class="ui button">
+                      <i class="thumbs up link icon"></i>
+                      <span class="admin">125</span>
+                    </div>
+                    <div class="ui button">
+                      <i class="thumbs down link icon"></i>
+                      <span class="admin">32</span>
+                    </div>
+                    <div class="ui red button admin">
+                      <i class="trash icon"></i>
+                    </div>
+                    <div class="ui admin button" data-content="Marquer comme non-vérifiée">
+                      <i class="cancel icon"></i>
+                    </div>
+                  </div>
+                  
+                </div>
+
+              </div>
+
+
+                
+                
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="footer ui basic segment">
+      <div class="ui three column grid container ">
+        <div class="column">
+          <div class="ui basic segment">
+            <h4 class="ui header">L'Office public de la langue bretonne</h4>
+            <div class="ui link list">
+              <a href="#" class="item">
+                <i class="external alternate icon"></i>
+                <div class="content">Site internet</div>
+              </a>
+              <a class="item">
+                <i class="envelope icon"></i>
+                <div class="content">Contact</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui basic segment">
+            <h4 class="ui header">Réseaux sociaux</h4>
+            <div class="ui link list">
+              <a class="item">
+                <i class="twitter icon"></i>
+                <div class="content">Twitter</div>
+              </a>
+              <a class="item">
+                <i class="facebook icon"></i>
+                <div class="content">Facebook</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui basic segment">
+            <div class="ui link list">
+              <div class="item">
+                Copyright © 2022 - Ofis publik ar brezhoneg
+              </div>
+              <a href="#" class="item">Politique de confidentialité</a>
+              <div class="item">Ce site n'utilise pas de cookies</div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+      $('.ui.accordion')
+        .accordion();
+      $('.ui.sticky')
+        .sticky();
+      $('.icon').popup();
+      $('.ui.button').popup();
+      $('.ui.checkbox').checkbox();
+      $('.ui.dropdown').dropdown();
+
+      $("#admin_btn").click(function() {
+        $(".admin").toggle()
+        $("#admin_btn .icon").toggleClass("tools cancel")
+      })
+    </script>
+
+
+</body>
+
+</html>

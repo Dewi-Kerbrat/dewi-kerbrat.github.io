@@ -73,3 +73,11 @@ video#bgvid {
   text-align: center;
   padding: 15rem;
 }
+
+.admin {
+  display: none;
+}
+
+.button.admin {
+  display: none;
+}
